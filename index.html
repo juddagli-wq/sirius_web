@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIRIUS Technologies | Geleceğin Kuantum ve Uzay Ağları</title>
+    <meta name="description" content="Sirius Labs, kuantum hesaplama, yapay zeka entegrasyonu ve derin uzay iletişim ağları geliştiren fütüristik bir teknoloji girişimidir.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;600;800;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Yıldızlı Arka Plan Efekti -->
+    <div id="stars-container"></div>
+    <div id="glow-container">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+
+    <!-- Gezinme Çubuğu (Navbar) -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z" fill="url(#star-grad)" />
+                    <defs>
+                        <linearGradient id="star-grad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#00f2fe" />
+                            <stop offset="1" stop-color="#4facfe" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span>SIRIUS</span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#home" class="nav-link active">Ana Sayfa</a>
+                <a href="#technologies" class="nav-link">Teknolojiler</a>
+                <a href="#vision" class="nav-link">Vizyon</a>
+                <a href="#console" class="nav-link">Kontrol Paneli</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#console" class="btn-cta">Sistemi Başlat</a>
+                <button class="mobile-toggle" aria-label="Menüyü Aç">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobil Gezinme Menüsü -->
+    <div class="mobile-menu">
+        <a href="#home" class="mobile-link">Ana Sayfa</a>
+        <a href="#technologies" class="mobile-link">Teknolojiler</a>
+        <a href="#vision" class="mobile-link">Vizyon</a>
+        <a href="#console" class="mobile-link">Kontrol Paneli</a>
+        <a href="#console" class="btn-cta mobile-cta">Sistemi Başlat</a>
+    </div>
+
+    <!-- Kahraman Bölümü (Hero Section) -->
+    <section id="home" class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="badge">SIRIUS KONTROL MERKEZİ V2.8</div>
+                <h1 class="hero-title">Yıldızların Ötesinde <br><span class="gradient-text">Geleceği Tasarla</span></h1>
+                <p class="hero-subtitle">
+                    Sirius Labs; derin uzay veri iletim ağları, kuantum şifreleme ve yapay zeka tabanlı otonom keşif motorları geliştirerek insanlığı geleceğin teknolojileriyle buluşturuyor.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#technologies" class="btn-primary">Teknolojiyi Keşfet</a>
+                    <a href="#console" class="btn-secondary">Kontrol Paneli</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-wrapper">
+                    <div class="glow-ring"></div>
+                    <img src="assets/sirius_hero.png" alt="Futuristic Quantum Star Core Illustration" class="hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İstatistikler Bölümü (Stats Section) -->
+    <section class="stats-section">
+        <div class="container stats-grid">
+            <div class="stat-card">
+                <div class="stat-value" data-target="8.6">0</div>
+                <div class="stat-label">Işık Yılı Uzaklık Veri Senkronizasyonu</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" data-target="150">0</div>
+                <div class="stat-label">Terabit / Saniye Kuantum Bant Genişliği</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" data-target="99.9">0</div>
+                <div class="stat-label">Hata Payı Olmayan Kuantum Kararlılık Oranı</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teknolojiler Bölümü (Technologies Section) -->
+    <section id="technologies" class="tech-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Geleceğin Ağ Protokolleri</h2>
+                <p class="section-desc">Kuantum mekaniği ve yapay zekanın gücünü birleştirerek geliştirdiğimiz yeni nesil çekirdek teknolojiler.</p>
+            </div>
+            
+            <div class="tech-grid">
+                <!-- Teknoloji Kartı 1 -->
+                <div class="tech-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                        </svg>
+                    </div>
+                    <h3>Kuantum Dolaşıklık Ağı</h3>
+                    <p>Mesafe tanımayan, anlık ve kuantum anahtarı ile şifrelenmiş veri iletim katmanı. Dinlenemez ve müdahale edilemez veri güvenliği.</p>
+                    <div class="card-glow"></div>
+                </div>
+
+                <!-- Teknoloji Kartı 2 -->
+                <div class="tech-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                        </svg>
+                    </div>
+                    <h3>Otonom Keşif Motoru</h3>
+                    <p>Yıldız sistemleri arasındaki devasa sensör verilerini gerçek zamanlı işleyen, makine öğrenimi tabanlı karar destek algoritmaları.</p>
+                    <div class="card-glow"></div>
+                </div>
+
+                <!-- Teknoloji Kartı 3 -->
+                <div class="tech-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M8 12h8M12 8v8" />
+                        </svg>
+                    </div>
+                    <h3>Merkeziyetsiz Uzay Mesh</h3>
+                    <p>Yörüngedeki uydular ve yer istasyonları arasında dinamik olarak kendini yönlendirebilen, kesintisiz iletişim ağı topolojisi.</p>
+                    <div class="card-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vizyon Bölümü (Vision Section) -->
+    <section id="vision" class="vision-section">
+        <div class="container vision-grid">
+            <div class="vision-visual">
+                <div class="cosmic-compass">
+                    <div class="compass-ring ring-outer"></div>
+                    <div class="compass-ring ring-middle"></div>
+                    <div class="compass-ring ring-inner"></div>
+                    <div class="compass-core">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z" fill="#00f2fe" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="vision-content">
+                <h2 class="section-title">Gökyüzünün En Parlak Yıldızı, Rehberimiz</h2>
+                <p>
+                    Antik çağlardan beri gezginlerin yollarını bulmalarına yardımcı olan Sirius, bugün bizim teknolojik serüvenimizde rehberimizdir. Biz, verinin evrensel ölçekte serbestçe akabileceği, kesintisiz ve kuantum düzeyinde korunan bir iletişim altyapısı kurmayı hedefliyoruz.
+                </p>
+                <p>
+                    Vizyonumuz, gezegenler arası ağ altyapısının temellerini atmak ve insan zekasını kuantum ağlarıyla çarparak sınırları kaldırmaktır.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Etkileşimli Kontrol Paneli (Interactive Console Section) -->
+    <section id="console" class="console-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sirius Terminali</h2>
+                <p class="section-desc">Kuantum çekirdeğini simüle edin ve Sirius ağ durumunu gerçek zamanlı test edin.</p>
+            </div>
+
+            <div class="terminal-container">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="terminal-title">sirius-core-diagnostic.sh</div>
+                    <div class="terminal-status">Durum: <span id="diagnostics-status" class="status-standby">STANDBY</span></div>
+                </div>
+                <div class="terminal-body">
+                    <div class="console-output" id="console-output">
+                        <p class="system-line">[SİSTEM] Sirius Kuantum Tanılama Arayüzüne Hoş Geldiniz.</p>
+                        <p class="system-line">[SİSTEM] Başlatmak için aşağıdaki butona tıklayın...</p>
+                    </div>
+                    <div class="terminal-progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                    <div class="terminal-controls">
+                        <button class="btn-console" id="btn-run-diagnostics">Tanılamayı Başlat</button>
+                        <button class="btn-console-clear" id="btn-clear-diagnostics">Konsolu Temizle</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Alt Bilgi Bölümü) -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z" fill="url(#footer-grad)" />
+                        <defs>
+                            <linearGradient id="footer-grad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#9d4edd" />
+                                <stop offset="1" stop-color="#00f2fe" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span>SIRIUS</span>
+                </div>
+                <p>Geleceğin parlayan teknolojisi.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Sayfalar</h4>
+                <a href="#home">Ana Sayfa</a>
+                <a href="#technologies">Teknolojiler</a>
+                <a href="#vision">Vizyon</a>
+                <a href="#console">Kontrol Paneli</a>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Haber Bülteni</h4>
+                <p>Gelişmelerden ve kuantum araştırmalarından ilk siz haberdar olun.</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="E-posta adresiniz" required class="input-email">
+                    <button type="submit" class="btn-submit">Katıl</button>
+                </form>
+                <div id="newsletter-message" class="newsletter-message"></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sirius Labs. Tüm hakları saklıdır. Göklerin rehberliğinde geliştirilmiştir.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
