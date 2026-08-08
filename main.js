@@ -1,6 +1,6 @@
 /* ==========================================
    SIRIUS GLOBAL - INTERACTIVE APPLICATION LOGIC
-   TalentOrange Dual-Perspective & Mega Menu Architecture
+   TalentOrange Dual-Perspective, Mega Menu & DSGVO Cookie Banner
    ========================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -13,7 +13,63 @@ document.addEventListener('DOMContentLoaded', () => {
     initCounterAnimations();
     initModalControls();
     initMobileNav();
+    initCookieBanner();
 });
+
+/* ==========================================
+   DSGVO / GDPR COOKIE CONSENT BANNER
+   ========================================== */
+function initCookieBanner() {
+    const consent = localStorage.getItem('sirius_cookie_consent');
+    if (!consent) {
+        showCookieBanner();
+    }
+
+    document.addEventListener('click', (e) => {
+        if (e.target && (e.target.id === 'footer-cookie-trigger' || e.target.closest('#footer-cookie-trigger'))) {
+            e.preventDefault();
+            showCookieBanner(true);
+        }
+    });
+}
+
+function showCookieBanner(force = false) {
+    let banner = document.getElementById('sirius-cookie-banner');
+    if (!banner) {
+        banner = document.createElement('div');
+        banner.id = 'sirius-cookie-banner';
+        banner.className = 'cookie-banner-overlay';
+        banner.setAttribute('role', 'dialog');
+        banner.setAttribute('aria-label', 'Cookie-Einstellungen / Çerez Tercihleri');
+        
+        banner.innerHTML = `
+            <div class="container cookie-banner-inner">
+                <div class="cookie-text">
+                    <strong><i class="fa-solid fa-cookie-bite" style="color: var(--brand-orange);" aria-hidden="true"></i> Cookie-Einstellungen / Çerez Politikası (DSGVO & TTDSG)</strong><br>
+                    Wir verwenden Cookies, um die Funktion unserer Website zu gewährleisten, Inhalte zu personalisieren und die Zugriffe zu analysieren. Weitere Informationen finden Sie in unserer <a href="datenschutz.html">Datenschutzerklärung</a> und unserem <a href="impressum.html">Impressum</a>.
+                </div>
+                <div class="cookie-actions">
+                    <button class="btn btn-outline" style="padding: 10px 18px; font-size: 0.88rem;" id="btn-cookie-essential" type="button">Nur essenzielle</button>
+                    <button class="btn btn-orange" style="padding: 10px 22px; font-size: 0.88rem;" id="btn-cookie-accept" type="button">Alle akzeptieren</button>
+                </div>
+            </div>
+        `;
+
+        document.body.appendChild(banner);
+
+        document.getElementById('btn-cookie-accept')?.addEventListener('click', () => {
+            localStorage.setItem('sirius_cookie_consent', 'accepted_all');
+            banner.remove();
+            showToast("Cookie-Einstellungen gespeichert / Çerez tercihleriniz kaydedildi.");
+        });
+
+        document.getElementById('btn-cookie-essential')?.addEventListener('click', () => {
+            localStorage.setItem('sirius_cookie_consent', 'essential_only');
+            banner.remove();
+            showToast("Nur essenzielle Cookies aktiviert.");
+        });
+    }
+}
 
 /* ==========================================
    MEGA MENU INTERACTION (Click & Hover Support)
@@ -30,7 +86,6 @@ function initMegaMenu() {
                 e.preventDefault();
                 e.stopPropagation();
 
-                // Close other open panels
                 triggerItems.forEach(otherItem => {
                     if (otherItem !== item) {
                         otherItem.classList.remove('open');
@@ -39,14 +94,12 @@ function initMegaMenu() {
                     }
                 });
 
-                // Toggle current
                 item.classList.toggle('open');
                 panel.classList.toggle('active');
             });
         }
     });
 
-    // Close mega dropdowns when clicking outside
     document.addEventListener('click', (e) => {
         if (!e.target.closest('.mega-trigger-item')) {
             triggerItems.forEach(item => {
@@ -59,7 +112,7 @@ function initMegaMenu() {
 }
 
 /* ==========================================
-   1. DUAL PERSPECTIVE SWITCHER (Adaylar / İşverenler)
+   1. DUAL PERSPECTIVE SWITCHER
    ========================================== */
 let currentMode = 'candidate';
 
@@ -82,28 +135,27 @@ function switchPerspective(mode) {
     const heroTitle = document.getElementById('hero-title');
     const heroDesc = document.getElementById('hero-desc');
     const primaryCta = document.getElementById('hero-primary-cta');
-    const secondaryCta = document.getElementById('hero-secondary-cta');
 
     if (mode === 'candidate') {
         if (candidateBtn) candidateBtn.classList.add('active');
         if (employerBtn) employerBtn.classList.remove('active');
 
-        if (heroTag) heroTag.innerHTML = `<i class="fa-solid fa-certificate"></i> ALMANYA'DA KANITLANMIŞ KARİYER YOLCULUĞU`;
+        if (heroTag) heroTag.innerHTML = `<i class="fa-solid fa-certificate" aria-hidden="true"></i> ALMANYA'DA KANITLANMIŞ KARİYER YOLCULUĞU`;
         if (heroTitle) heroTitle.innerHTML = `Almanya'da Hayalinizdeki Kariyer ve Yaşama Giden <span class="highlight">Uluslararası Köprü</span>`;
         if (heroDesc) heroDesc.textContent = `Sirius Global; sağlık çalışanları, doktorlar, hekimler ve uzman nitelikli profesyonelleri Almanya'nın önde gelen sağlık kurumları ve şirketleriyle buluşturuyor. Dil eğitiminden denkliğe, vizeden konaklamaya tüm süreçte sizinleyiz.`;
         if (primaryCta) {
-            primaryCta.innerHTML = `<i class="fa-solid fa-wand-magic-sparkles"></i> Uygunluk Testini Başlat`;
+            primaryCta.innerHTML = `<i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i> Uygunluk Testini Başlat`;
             primaryCta.setAttribute('href', '#wizard-section');
         }
     } else {
         if (employerBtn) employerBtn.classList.add('active');
         if (candidateBtn) candidateBtn.classList.remove('active');
 
-        if (heroTag) heroTag.innerHTML = `<i class="fa-solid fa-building-hospital"></i> SAĞLIK VE İŞ PİYASASI İÇİN YETENEK ÇÖZÜMLERİ`;
+        if (heroTag) heroTag.innerHTML = `<i class="fa-solid fa-building-hospital" aria-hidden="true"></i> SAĞLIK VE İŞ PİYASASI İÇİN YETENEK ÇÖZÜMLERİ`;
         if (heroTitle) heroTitle.innerHTML = `Kurumunuz İçin Nitelikli Uluslararası İnsan Kaynağı <span class="highlight" style="color: var(--text-primary);">Ve Etik İşe Alım</span>`;
         if (heroDesc) heroDesc.textContent = `Almanya'daki klinik, hastane ve kurumların uzman personel ihtiyacını uçtan uca yönetiyoruz. Sirius Talent & Partner modeli ile adayın dil yeterliliğinden denklik ve Almanya'ya intikaline kadar %100 güvence veriyoruz.`;
         if (primaryCta) {
-            primaryCta.innerHTML = `<i class="fa-solid fa-calendar-days"></i> İşveren Danışmanlığı Alın`;
+            primaryCta.innerHTML = `<i class="fa-solid fa-calendar-days" aria-hidden="true"></i> İşveren Danışmanlığı Alın`;
             primaryCta.setAttribute('href', '#contact-modal');
             primaryCta.onclick = (e) => { e.preventDefault(); openModal('employer'); };
         }
