@@ -15,91 +15,49 @@
 <body>
 
     <!-- TOP UTILITY BAR -->
-    <div class="top-bar">
+    <div class="top-bar" role="region" aria-label="Üst İletişim Çubuğu">
         <div class="container top-bar-inner">
             <div class="top-contact-info">
-                <a href="https://maps.google.com" target="_blank" class="top-contact-item">
-                    <i class="fa-solid fa-location-dot"></i> Katernberger Str. 107, 45327 Essen, Almanya
+                <a href="https://maps.google.com" target="_blank" rel="noopener" class="top-contact-item" aria-label="Adres: Katernberger Str. 107, 45327 Essen, Almanya">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Katernberger Str. 107, 45327 Essen, Almanya
                 </a>
-                <a href="tel:+4920436023427" class="top-contact-item">
-                    <i class="fa-solid fa-phone"></i> +49 2043 6023427
+                <a href="tel:+4920436023427" class="top-contact-item" aria-label="Telefon: +49 2043 6023427">
+                    <i class="fa-solid fa-phone" aria-hidden="true"></i> +49 2043 6023427
                 </a>
-                <a href="mailto:info@siriusglobal.de" class="top-contact-item">
-                    <i class="fa-solid fa-envelope"></i> info@siriusglobal.de
+                <a href="mailto:info@siriusglobal.de" class="top-contact-item" aria-label="E-posta: info@siriusglobal.de">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i> info@siriusglobal.de
                 </a>
             </div>
             
             <div class="top-actions">
-                <div class="perspective-toggle">
-                    <button id="btn-perspective-candidate" class="perspective-btn active">
-                        <i class="fa-solid fa-user-doctor"></i> Adaylar İçin
+                <div class="perspective-toggle" role="group" aria-label="Görünüm Seçimi">
+                    <button id="btn-perspective-candidate" class="perspective-btn active" type="button">
+                        <i class="fa-solid fa-user-doctor" aria-hidden="true"></i> Adaylar İçin
                     </button>
-                    <button id="btn-perspective-employer" class="perspective-btn">
-                        <i class="fa-solid fa-building-hospital"></i> İşverenler İçin
+                    <button id="btn-perspective-employer" class="perspective-btn" type="button">
+                        <i class="fa-solid fa-building-hospital" aria-hidden="true"></i> İşverenler İçin
                     </button>
                 </div>
 
-                <div class="lang-selector">
-                    <button class="lang-btn active" data-lang="tr">TR</button>
-                    <button class="lang-btn" data-lang="en">EN</button>
-                    <button class="lang-btn" data-lang="de">DE</button>
+                <div class="lang-selector" role="group" aria-label="Dil Seçimi">
+                    <button class="lang-btn active" data-lang="tr" type="button" aria-label="Türkçe">TR</button>
+                    <button class="lang-btn" data-lang="en" type="button" aria-label="İngilizce">EN</button>
+                    <button class="lang-btn" data-lang="de" type="button" aria-label="Almanca">DE</button>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- HEADER & NAVBAR -->
-    <header class="header-nav">
+    <header class="header-nav" role="banner">
         <div class="container navbar-inner">
-            <a href="index.html" class="brand-logo">
+            <a href="index.html" class="brand-logo" aria-label="Sirius Global Ana Sayfasına Git">
                 <img src="assets/sirius-global-logo-yeni.v2.png" alt="Sirius Global Logo" class="brand-logo-img">
             </a>
 
-            <nav>
-                <ul class="mega-nav-group">
-                    <li class="mega-trigger-item">
-                        <a href="index.html" class="mega-trigger-btn">
-                            Adaylar İçin <i class="fa-solid fa-chevron-down"></i>
-                        </a>
-                        <div class="mega-dropdown-panel">
-                            <div class="mega-panel-inner">
-                                <div>
-                                    <h4 class="mega-column-title">Almanya'da Çalışmak</h4>
-                                    <ul class="mega-links-list">
-                                        <li><a href="sirius-medicare.html">Sağlık Hizmetleri (Doktor/Hemşire)</a></li>
-                                        <li><a href="sirius-akademi.html">Almanca Dil Eğitimi</a></li>
-                                        <li><a href="sirius-home.html">Relokasyon & Konaklama</a></li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h4 class="mega-column-title">Hizmetler ve Bilgiler</h4>
-                                    <ul class="mega-links-list">
-                                        <li><a href="sirius-medicare.html">Sirius Programı</a></li>
-                                        <li><a href="sirius-akademi.html">Dil Okullarımız</a></li>
-                                        <li><a href="hakkimizda.html#faq">Sıkça Sorulan Sorular</a></li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h4 class="mega-column-title">Başvuru</h4>
-                                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 16px;">Almanya'da çalışmaya hazır mısınız?</p>
-                                    <button class="btn btn-orange" onclick="openModal('candidate')">
-                                        <i class="fa-solid fa-paper-plane"></i> Şimdi Başvur
-                                    </button>
-                                </div>
-                                <div class="mega-sidebar-box">
-                                    <div class="mega-sidebar-header">
-                                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80" alt="Danışman" class="mega-agent-img">
-                                        <div>
-                                            <div class="mega-sidebar-title">Size Nasıl Yardımcı Olabiliriz?</div>
-                                            <div style="font-size: 0.8rem; color: var(--text-secondary);">Sirius Danışmanlık Ekibi</div>
-                                        </div>
-                                    </div>
-                                    <div class="mega-sidebar-desc">info@siriusglobal.de</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
+            <nav role="navigation" aria-label="Ana Menü">
+                <ul class="nav-menu" style="display: flex; gap: 28px; list-style: none;">
+                    <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
                     <li><a href="hakkimizda.html" class="nav-link">Hakkımızda</a></li>
                     <li><a href="sirius-medicare.html" class="nav-link">Sirius Medicare</a></li>
                     <li><a href="sirius-akademi.html" class="nav-link">Sirius Akademi</a></li>
@@ -110,98 +68,100 @@
             </nav>
 
             <div style="display: flex; gap: 12px; align-items: center;">
-                <button class="btn btn-orange" onclick="openModal('candidate')">Hızlı Başvuru</button>
-                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Menüyü Aç">
-                    <i class="fa-solid fa-bars"></i>
+                <button class="btn btn-orange" type="button" onclick="openModal('candidate')" aria-label="Hızlı Başvuru Yapın">Hızlı Başvuru</button>
+                <button class="mobile-menu-toggle" id="mobile-toggle" type="button" aria-label="Mobil Menüyü Aç">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
                 </button>
             </div>
         </div>
     </header>
 
-    <!-- PAGE HERO -->
-    <section class="hero-section" style="padding: 60px 0 80px;">
-        <div class="container">
-            <div class="section-tag orange">İLETİŞİM & LOKASYONLARIMIZ</div>
-            <h1 class="hero-title" style="font-size: 3rem;">Bizimle <span class="highlight">İletişime Geçin</span></h1>
-            <p class="hero-description" style="max-width: 750px;">
-                Almanya Essen merkezimiz veya online danışmanlık kanallarımız üzerinden Sirius Global ekibimize 7/24 ulaşabilirsiniz.
-            </p>
-        </div>
-    </section>
+    <main id="main-content" role="main">
+        <!-- PAGE HERO -->
+        <section class="hero-section" style="padding: 60px 0 80px;" aria-label="İletişim Tanıtımı">
+            <div class="container">
+                <div class="section-tag orange">İLETİŞİM & LOKASYONLARIMIZ</div>
+                <h1 class="hero-title" style="font-size: 3rem;">Bizimle <span class="highlight">İletişime Geçin</span></h1>
+                <p class="hero-description" style="max-width: 750px;">
+                    Almanya Essen merkezimiz veya online danışmanlık kanallarımız üzerinden Sirius Global ekibimize 7/24 ulaşabilirsiniz.
+                </p>
+            </div>
+        </section>
 
-    <!-- CONTACT DETAILS & FORM -->
-    <section class="pillars-section" style="padding: 60px 0 100px;">
-        <div class="container">
-            <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 48px;">
-                <!-- OFFICE CONTACT INFO -->
-                <div style="display: flex; flex-direction: column; gap: 24px;">
-                    <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 20px; padding: 28px;">
-                        <h3 style="font-size: 1.3rem; margin-bottom: 16px; color: var(--brand-orange);"><i class="fa-solid fa-building-flag"></i> Almanya Genel Merkez (Essen)</h3>
-                        <p style="margin-bottom: 10px; color: var(--text-primary); font-weight: 600;">Katernberger Straße 107, 45327 Essen, Almanya</p>
-                        <p style="margin-bottom: 10px; color: var(--text-secondary);"><i class="fa-solid fa-phone" style="color: var(--brand-orange);"></i> +49 2043 6023427</p>
-                        <p style="margin-bottom: 10px; color: var(--text-secondary);"><i class="fa-solid fa-envelope" style="color: var(--brand-orange);"></i> info@siriusglobal.de</p>
-                        <p style="color: var(--text-secondary);"><i class="fa-solid fa-clock" style="color: var(--brand-orange);"></i> Pazartesi - Cumartesi: 08:00 - 16:00</p>
-                    </div>
-
-                    <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 20px; padding: 28px;">
-                        <h3 style="font-size: 1.3rem; margin-bottom: 16px; color: var(--text-primary);"><i class="fa-solid fa-map-pin"></i> Türkiye Ofisi</h3>
-                        <p style="margin-bottom: 10px; color: var(--text-primary); font-weight: 600;">İstanbul Danışmanlık ve Dil Eğitimi Şubesi</p>
-                        <p style="color: var(--text-secondary);"><i class="fa-solid fa-envelope" style="color: var(--brand-orange);"></i> turkey@siriusglobal.de</p>
-                    </div>
-                </div>
-
-                <!-- DIRECT CONTACT FORM -->
-                <div style="background: var(--bg-white); border: 1px solid var(--border-color); border-radius: 24px; padding: 40px; box-shadow: var(--shadow-md);">
-                    <h3 style="font-size: 1.6rem; margin-bottom: 12px; color: var(--text-primary);">Bize Mesaj Gönderin</h3>
-                    <p style="color: var(--text-secondary); margin-bottom: 28px; font-size: 0.95rem;">Sorularınız veya danışmanlık talepleriniz için aşağıdaki formu doldurun.</p>
-
-                    <form id="contact-page-form">
-                        <div class="form-group">
-                            <label class="form-label" for="contact-name">Adınız Soyadınız *</label>
-                            <input type="text" id="contact-name" class="form-input" placeholder="Ahmet Yılmaz" required>
+        <!-- CONTACT DETAILS & FORM -->
+        <section class="pillars-section" style="padding: 60px 0 100px;" aria-label="İletişim Bilgileri ve Formu">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 48px;">
+                    <!-- OFFICE CONTACT INFO -->
+                    <div style="display: flex; flex-direction: column; gap: 24px;">
+                        <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 20px; padding: 28px;">
+                            <h2 style="font-size: 1.3rem; margin-bottom: 16px; color: var(--brand-orange);"><i class="fa-solid fa-building-flag" aria-hidden="true"></i> Almanya Genel Merkez (Essen)</h2>
+                            <p style="margin-bottom: 10px; color: var(--text-primary); font-weight: 600;">Katernberger Straße 107, 45327 Essen, Almanya</p>
+                            <p style="margin-bottom: 10px; color: var(--text-secondary);"><i class="fa-solid fa-phone" style="color: var(--brand-orange);" aria-hidden="true"></i> +49 2043 6023427</p>
+                            <p style="margin-bottom: 10px; color: var(--text-secondary);"><i class="fa-solid fa-envelope" style="color: var(--brand-orange);" aria-hidden="true"></i> info@siriusglobal.de</p>
+                            <p style="color: var(--text-secondary);"><i class="fa-solid fa-clock" style="color: var(--brand-orange);" aria-hidden="true"></i> Pazartesi - Cumartesi: 08:00 - 16:00</p>
                         </div>
 
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                        <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 20px; padding: 28px;">
+                            <h2 style="font-size: 1.3rem; margin-bottom: 16px; color: var(--text-primary);"><i class="fa-solid fa-map-pin" aria-hidden="true"></i> Türkiye Ofisi</h2>
+                            <p style="margin-bottom: 10px; color: var(--text-primary); font-weight: 600;">İstanbul Danışmanlık ve Dil Eğitimi Şubesi</p>
+                            <p style="color: var(--text-secondary);"><i class="fa-solid fa-envelope" style="color: var(--brand-orange);" aria-hidden="true"></i> turkey@siriusglobal.de</p>
+                        </div>
+                    </div>
+
+                    <!-- DIRECT CONTACT FORM -->
+                    <div style="background: var(--bg-white); border: 1px solid var(--border-color); border-radius: 24px; padding: 40px; box-shadow: var(--shadow-md);">
+                        <h2 style="font-size: 1.6rem; margin-bottom: 12px; color: var(--text-primary);">Bize Mesaj Gönderin</h2>
+                        <p style="color: var(--text-secondary); margin-bottom: 28px; font-size: 0.95rem;">Sorularınız veya danışmanlık talepleriniz için aşağıdaki formu doldurun.</p>
+
+                        <form id="contact-page-form">
                             <div class="form-group">
-                                <label class="form-label" for="contact-email">E-posta Adresiniz *</label>
-                                <input type="email" id="contact-email" class="form-input" placeholder="ahmet@example.com" required>
+                                <label class="form-label" for="contact-name">Adınız Soyadınız *</label>
+                                <input type="text" id="contact-name" class="form-input" placeholder="Ahmet Yılmaz" required>
+                            </div>
+
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                                <div class="form-group">
+                                    <label class="form-label" for="contact-email">E-posta Adresiniz *</label>
+                                    <input type="email" id="contact-email" class="form-input" placeholder="ahmet@example.com" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="contact-phone">Telefon Numaranız *</label>
+                                    <input type="tel" id="contact-phone" class="form-input" placeholder="+90 500 000 0000" required>
+                                </div>
                             </div>
 
                             <div class="form-group">
-                                <label class="form-label" for="contact-phone">Telefon Numaranız *</label>
-                                <input type="tel" id="contact-phone" class="form-input" placeholder="+90 500 000 0000" required>
+                                <label class="form-label" for="contact-subject">Konu *</label>
+                                <select id="contact-subject" class="form-select" required>
+                                    <option value="candidate">Almanya Kariyer ve Dil Kursu</option>
+                                    <option value="employer">İşveren / Kurum İş Birliği</option>
+                                    <option value="general">Genel Bilgi Talebi</option>
+                                </select>
                             </div>
-                        </div>
 
-                        <div class="form-group">
-                            <label class="form-label" for="contact-subject">Konu *</label>
-                            <select id="contact-subject" class="form-select" required>
-                                <option value="candidate">Almanya Kariyer ve Dil Kursu</option>
-                                <option value="employer">İşveren / Kurum İş Birliği</option>
-                                <option value="general">Genel Bilgi Talebi</option>
-                            </select>
-                        </div>
+                            <div class="form-group">
+                                <label class="form-label" for="contact-message">Mesajınız *</label>
+                                <textarea id="contact-message" class="form-textarea" style="width: 100%; padding: 12px 16px; border-radius: 10px; border: 1px solid var(--border-color); height: 120px;" placeholder="Bize iletmek istediğiniz detayları buraya yazabilirsiniz..." required></textarea>
+                            </div>
 
-                        <div class="form-group">
-                            <label class="form-label" for="contact-message">Mesajınız *</label>
-                            <textarea id="contact-message" class="form-textarea" style="height: 120px;" placeholder="Bize iletmek istediğiniz detayları buraya yazabilirsiniz..." required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-orange" style="width: 100%; margin-top: 10px;">
-                            <i class="fa-solid fa-paper-plane"></i> Mesajı Gönder
-                        </button>
-                    </form>
+                            <button type="submit" class="btn btn-orange" style="width: 100%; margin-top: 10px;" aria-label="Mesajı Gönder">
+                                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Mesajı Gönder
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- FOOTER -->
-    <footer class="site-footer">
+    <footer class="site-footer" role="contentinfo">
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <a href="index.html">
+                    <a href="index.html" aria-label="Sirius Global Ana Sayfa Footer Link">
                         <img src="assets/sirius-global-logo-yeni.v2.png" alt="Sirius Global Logo" class="footer-logo-img">
                     </a>
                     <p class="footer-brand-desc">
@@ -209,7 +169,7 @@
                     </p>
                 </div>
                 <div>
-                    <h4 class="footer-title">Hizmetlerimiz</h4>
+                    <h3 class="footer-title" style="font-size: 1.1rem; color: var(--brand-orange); margin-bottom: 16px;">Hizmetlerimiz</h3>
                     <ul class="footer-links">
                         <li><a href="sirius-medicare.html">Sirius Medicare</a></li>
                         <li><a href="sirius-akademi.html">Sirius Akademi</a></li>
@@ -217,7 +177,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-title">Kurumsal</h4>
+                    <h3 class="footer-title" style="font-size: 1.1rem; color: var(--brand-orange); margin-bottom: 16px;">Kurumsal</h3>
                     <ul class="footer-links">
                         <li><a href="hakkimizda.html">Hakkımızda</a></li>
                         <li><a href="kariyer-firsatlari.html">Kariyer Fırsatları</a></li>
@@ -225,9 +185,9 @@
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-title">Almanya Merkez</h4>
-                    <p style="margin-bottom: 8px;"><i class="fa-solid fa-location-dot" style="color: var(--brand-orange);"></i> Katernberger Str. 107, 45327 Essen, Almanya</p>
-                    <p style="margin-bottom: 8px;"><i class="fa-solid fa-phone" style="color: var(--brand-orange);"></i> +49 2043 6023427</p>
+                    <h3 class="footer-title" style="font-size: 1.1rem; color: var(--brand-orange); margin-bottom: 16px;">Almanya Merkez</h3>
+                    <p style="margin-bottom: 8px;"><i class="fa-solid fa-location-dot" style="color: var(--brand-orange);" aria-hidden="true"></i> Katernberger Str. 107, 45327 Essen, Almanya</p>
+                    <p style="margin-bottom: 8px;"><i class="fa-solid fa-phone" style="color: var(--brand-orange);" aria-hidden="true"></i> +49 2043 6023427</p>
                 </div>
             </div>
             <div class="footer-bottom">
