@@ -1,37 +1,44 @@
-# SIRIUS Technologies Landing Page
+# SIRIUS GLOBAL - Web Sitesi Yeniden Tasarımı (www.siriusglobal.de)
 
-Sirius Labs, kuantum hesaplama, yapay zeka entegrasyonu ve derin uzay iletişim ağları geliştiren fütüristik bir teknoloji girişimidir. Bu depo, Sirius projesi için hazırlanan modern, görsel açıdan zengin ve etkileşimli tanıtım web sitesini barındırır.
+**Sirius Global**, Almanya'da kariyer yapmak isteyen uluslararası sağlık çalışanları, doktorlar, hekimler, hemşireler ve nitelikli uzmanları Almanya'nın önde gelen sağlık kurumları ve şirketleriyle buluşturan uluslararası bir kariyer, dil eğitimi (Sirius Akademi), relokasyon (Sirius Home) ve etik işe alım (Sirius Medicare & Talent) ajansıdır.
 
-## 🚀 Özellikler
+Bu depo, **TalentOrange** (`www.talentorange.com/de`) mimarisinden esinlenilerek geliştirilen modern, yüksek dönüşümlü ve interaktif **Sirius Global** web uygulamasını barındırır.
 
-- **Çarpıcı Görsel Arayüz (Aesthetics):** Modern karanlık mod, derin uzay renk paleti (elektrik mavisi, neon mor, galaktik altın) ve akıcı cam morfolojisi (glassmorphism) efektleri.
-- **Dinamik Yıldız Alanı (Starfield):** Tamamen JavaScript tarafından dinamik olarak oluşturulan ve yanıp sönen yıldızlı arka plan simülasyonu.
-- **İnteraktif Tanılama Terminali (Sirius Console):** Kullanıcıların kuantum çekirdeği teşhisini başlatıp ilerlemeyi gerçek zamanlı izleyebileceği etkileşimli bir simülatör paneli.
-- **Animasyonlu İstatistikler (Stats Counter):** Sayfa kaydırıldığında devreye giren ve sayısal metrikleri sıfırdan hedef değere doğru hareketli şekilde artıran sayaç animasyonu.
-- **Duyarlı Tasarım (Responsive Layout):** Mobil, tablet ve masaüstü cihazlar için tamamen optimize edilmiş arayüz.
-- **SEO Uyumlu:** Semantik HTML5 etiketleri ve SEO dostu meta veriler ile zenginleştirilmiş yapı.
+---
 
-## 🛠️ Kullanılan Teknolojiler
+## 🌟 Öne Çıkan Özellikler & Yapı (TalentOrange Modeli)
 
-- **HTML5:** Yapısal ve semantik işaretleme.
-- **Vanilla CSS3:** Özel değişkenler (Custom Properties), animasyonlar (Keyframes), esnek yerleşimler (Grid & Flexbox).
-- **Vanilla JavaScript (ES6+):** Sayfa dinamikleri, etkileşimli öğeler ve animasyon kontrolleri.
+1. **Çift Perspektifli Arayüz (Dual-Perspective Switcher)**:
+   - **Adaylar İçin (Für Kandidaten)**: Almanya'da sağlık (Sirius Medicare), akademi (Sirius Akademi) ve relokasyon (Sirius Home) süreçleri, adım adım yol haritası ve kurs rehberi.
+   - **İşverenler İçin (Für Arbeitgeber)**: Alman hastaneleri ve şirketleri için nitelikli uluslararası insan kaynağı çözümleri (Sirius Talent / Partner), etik işe alım ilkeleri ve tam kapsamlı oryantasyon.
+
+2. **İnteraktif Araçlar**:
+   - **Almanya Kariyer Uygunluk Testi (Wizard)**: 3 adımlı profil değerlendirme ve kişiselleştirilmiş yol haritası motoru.
+   - **Sirius Akademi Dil Kursu Bulucu**: Genel Almanca (A1-B2), Tıp Uzmanları İçin C1 FSP Teknik Dil Sınavı ve TELC/Goethe sınav kampları filtresi.
+   - **Almanya Açık İlanlar Panosu**: Güncel hastane ve klinik ilanları ve hızlı başvuru entegrasyonu.
+   - **5 Adımda Almanya Yol Haritası**: İnteraktif zaman çizelgesi.
+   - **Çoklu Dil Motoru (TR / EN / DE)**: Tek tıkla dinamik dil değiştirme.
+   - **Dinamik Başvuru ve İletişim Modalı**: CV sürükle-bırak simülasyonu ve bildirim toast sistemi.
+
+3. **Tasarım & Estetik**:
+   - Kurumsal Derin Gece Mavisi (`#0B132B`), Sirius Safir Mavisi (`#00A8E8`) ve Marka Mercan Turuncusu (`#FF5D05`) renk paleti.
+   - Modern Google Fonts (`Outfit`, `Plus Jakarta Sans`, `Inter`).
+   - Cam morfolojisi (Glassmorphism), yüzen güven rozetleri ve mikro-animasyonlar.
+
+---
 
 ## 📂 Dosya Yapısı
 
 ```text
 SIRIUS/
-├── assets/
-│   └── sirius_hero.png  # Yapay zeka ile üretilmiş ana görsel
-├── index.html           # Ana sayfa HTML dosyası
-├── styles.css           # Tasarım ve stil kuralları
-├── main.js             # İnteraktif mantık ve animasyonlar
-└── README.md            # Proje açıklama belgesi
+├── index.html           # Ana sayfa semantik HTML5 dosyası
+├── styles.css           # Modern CSS3 tasarım sistemi & responsive kurallar
+├── main.js             # İnteraktif mantık, wizard, modallar & dil motoru
+└── README.md            # Proje dokümantasyonu
 ```
 
-## ⚡ Çalıştırma
-
-Projeyi yerel olarak çalıştırmak için herhangi bir derleme aracına gerek yoktur. `index.html` dosyasını doğrudan bir tarayıcıda açabilir veya bir Live Server eklentisi kullanarak yerel sunucu üzerinden görüntüleyebilirsiniz.
-
 ---
-*Göklerin ve geleceğin parlayan yıldızı Sirius rehberliğinde geliştirilmiştir.*
+
+## ⚡ Çalıştırma & Test
+
+Herhangi bir derleme bağımlılığı yoktur. `index.html` dosyasını doğrudan bir tarayıcıda açabilir veya bir yerel sunucu (örneğin `npx serve .` veya Live Server) üzerinden çalıştırabilirsiniz.

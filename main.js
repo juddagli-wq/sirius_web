@@ -1,264 +1,374 @@
+/* ==========================================
+   SIRIUS GLOBAL - INTERACTIVE APPLICATION LOGIC
+   TalentOrange Dual-Perspective & Mega Menu Architecture
+   ========================================== */
+
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Dinamik Yıldız Arka Planı
-    initStarfield();
-
-    // 2. Sayfa Kaydırma - Yarı Saydam Navbar Efekti
-    initNavbarScroll();
-
-    // 3. Mobil Menü Kontrolü
-    initMobileMenu();
-
-    // 4. İstatistik Sayaç Animasyonu (Intersection Observer)
-    initStatsCounter();
-
-    // 5. Kart Fare Hareketi (Glow Efekti Koordinatları)
-    initCardGlowEffects();
-
-    // 6. İnteraktif Tanılama Terminali (Console)
-    initTerminalDiagnostics();
-
-    // 7. Bülten Kayıt Formu
-    initNewsletterForm();
+    initMegaMenu();
+    initPerspectiveSwitcher();
+    initLanguageSwitcher();
+    initEligibilityWizard();
+    initCourseExplorer();
+    initJobBoard();
+    initCounterAnimations();
+    initModalControls();
+    initMobileNav();
 });
 
-// Yıldız Arka Planını Oluşturma
-function initStarfield() {
-    const container = document.getElementById('stars-container');
-    if (!container) return;
+/* ==========================================
+   MEGA MENU INTERACTION (Click & Hover Support)
+   ========================================== */
+function initMegaMenu() {
+    const triggerItems = document.querySelectorAll('.mega-trigger-item');
 
-    const starCount = 100;
-    for (let i = 0; i < starCount; i++) {
-        const star = document.createElement('div');
-        star.classList.add('star');
-        
-        // Rastgele boyutlar (1px - 3px)
-        const size = Math.random() * 2 + 1;
-        star.style.width = `${size}px`;
-        star.style.height = `${size}px`;
-        
-        // Rastgele konumlandırma
-        star.style.left = `${Math.random() * 100}%`;
-        star.style.top = `${Math.random() * 100}%`;
-        
-        // Rastgele yanıp sönme hızı ve gecikmesi
-        star.style.animationDuration = `${Math.random() * 3 + 2}s`;
-        star.style.animationDelay = `${Math.random() * 5}s`;
-        
-        container.appendChild(star);
+    triggerItems.forEach(item => {
+        const btn = item.querySelector('.mega-trigger-btn');
+        const panel = item.querySelector('.mega-dropdown-panel');
+
+        if (btn && panel) {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+
+                // Close other open panels
+                triggerItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('open');
+                        const otherPanel = otherItem.querySelector('.mega-dropdown-panel');
+                        if (otherPanel) otherPanel.classList.remove('active');
+                    }
+                });
+
+                // Toggle current
+                item.classList.toggle('open');
+                panel.classList.toggle('active');
+            });
+        }
+    });
+
+    // Close mega dropdowns when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.mega-trigger-item')) {
+            triggerItems.forEach(item => {
+                item.classList.remove('open');
+                const panel = item.querySelector('.mega-dropdown-panel');
+                if (panel) panel.classList.remove('active');
+            });
+        }
+    });
+}
+
+/* ==========================================
+   1. DUAL PERSPECTIVE SWITCHER (Adaylar / İşverenler)
+   ========================================== */
+let currentMode = 'candidate';
+
+function initPerspectiveSwitcher() {
+    const candidateBtn = document.getElementById('btn-perspective-candidate');
+    const employerBtn = document.getElementById('btn-perspective-employer');
+
+    if (candidateBtn && employerBtn) {
+        candidateBtn.addEventListener('click', () => switchPerspective('candidate'));
+        employerBtn.addEventListener('click', () => switchPerspective('employer'));
     }
 }
 
-// Navbar Scroll Dinamiği
-function initNavbarScroll() {
-    const navbar = document.querySelector('.navbar');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
+function switchPerspective(mode) {
+    currentMode = mode;
+    const candidateBtn = document.getElementById('btn-perspective-candidate');
+    const employerBtn = document.getElementById('btn-perspective-employer');
+
+    const heroTag = document.getElementById('hero-tag');
+    const heroTitle = document.getElementById('hero-title');
+    const heroDesc = document.getElementById('hero-desc');
+    const primaryCta = document.getElementById('hero-primary-cta');
+    const secondaryCta = document.getElementById('hero-secondary-cta');
+
+    if (mode === 'candidate') {
+        if (candidateBtn) candidateBtn.classList.add('active');
+        if (employerBtn) employerBtn.classList.remove('active');
+
+        if (heroTag) heroTag.innerHTML = `<i class="fa-solid fa-certificate"></i> ALMANYA'DA KANITLANMIŞ KARİYER YOLCULUĞU`;
+        if (heroTitle) heroTitle.innerHTML = `Almanya'da Hayalinizdeki Kariyer ve Yaşama Giden <span class="highlight">Uluslararası Köprü</span>`;
+        if (heroDesc) heroDesc.textContent = `Sirius Global; sağlık çalışanları, doktorlar, hekimler ve uzman nitelikli profesyonelleri Almanya'nın önde gelen sağlık kurumları ve şirketleriyle buluşturuyor. Dil eğitiminden denkliğe, vizeden konaklamaya tüm süreçte sizinleyiz.`;
+        if (primaryCta) {
+            primaryCta.innerHTML = `<i class="fa-solid fa-wand-magic-sparkles"></i> Uygunluk Testini Başlat`;
+            primaryCta.setAttribute('href', '#wizard-section');
         }
-        
-        // Aktif menü linki güncelleme
-        updateActiveNavLink();
-    });
+    } else {
+        if (employerBtn) employerBtn.classList.add('active');
+        if (candidateBtn) candidateBtn.classList.remove('active');
+
+        if (heroTag) heroTag.innerHTML = `<i class="fa-solid fa-building-hospital"></i> SAĞLIK VE İŞ PİYASASI İÇİN YETENEK ÇÖZÜMLERİ`;
+        if (heroTitle) heroTitle.innerHTML = `Kurumunuz İçin Nitelikli Uluslararası İnsan Kaynağı <span class="highlight" style="color: var(--text-primary);">Ve Etik İşe Alım</span>`;
+        if (heroDesc) heroDesc.textContent = `Almanya'daki klinik, hastane ve kurumların uzman personel ihtiyacını uçtan uca yönetiyoruz. Sirius Talent & Partner modeli ile adayın dil yeterliliğinden denklik ve Almanya'ya intikaline kadar %100 güvence veriyoruz.`;
+        if (primaryCta) {
+            primaryCta.innerHTML = `<i class="fa-solid fa-calendar-days"></i> İşveren Danışmanlığı Alın`;
+            primaryCta.setAttribute('href', '#contact-modal');
+            primaryCta.onclick = (e) => { e.preventDefault(); openModal('employer'); };
+        }
+    }
 }
 
-function updateActiveNavLink() {
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('.nav-link');
-    
-    let current = '';
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (window.scrollY >= (sectionTop - 150)) {
-            current = section.getAttribute('id');
-        }
-    });
-
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').slice(1) === current) {
-            link.classList.add('active');
-        }
-    });
-}
-
-// Mobil Menü
-function initMobileMenu() {
-    const toggle = document.querySelector('.mobile-toggle');
-    const menu = document.querySelector('.mobile-menu');
-    const links = document.querySelectorAll('.mobile-link, .mobile-cta');
-
-    if (!toggle || !menu) return;
-
-    toggle.addEventListener('click', () => {
-        toggle.classList.toggle('active');
-        menu.classList.toggle('active');
-    });
-
-    links.forEach(link => {
-        link.addEventListener('click', () => {
-            toggle.classList.remove('active');
-            menu.classList.remove('active');
+/* ==========================================
+   2. MULTI-LANGUAGE SWITCHER
+   ========================================== */
+function initLanguageSwitcher() {
+    const langBtns = document.querySelectorAll('.lang-btn');
+    langBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            langBtns.forEach(b => b.classList.remove('active'));
+            e.target.classList.add('active');
         });
     });
 }
 
-// İstatistik Sayaçları
-function initStatsCounter() {
-    const statsSection = document.querySelector('.stats-section');
-    const statValues = document.querySelectorAll('.stat-value');
-    
-    if (!statsSection) return;
+/* ==========================================
+   3. INTERACTIVE CAREER ELIGIBILITY WIZARD
+   ========================================== */
+let wizardData = { profession: '', germanLevel: '', goal: '' };
 
+function initEligibilityWizard() {
+    const optionCards = document.querySelectorAll('.wizard-option-card');
+    const nextBtn = document.getElementById('wizard-next-btn');
+    const prevBtn = document.getElementById('wizard-prev-btn');
+
+    let currentStep = 1;
+
+    optionCards.forEach(card => {
+        card.addEventListener('click', function() {
+            const step = this.dataset.step;
+            const value = this.dataset.value;
+
+            const siblings = this.parentElement.querySelectorAll('.wizard-option-card');
+            siblings.forEach(s => s.classList.remove('selected'));
+
+            this.classList.add('selected');
+
+            if (step === '1') wizardData.profession = value;
+            if (step === '2') wizardData.germanLevel = value;
+            if (step === '3') wizardData.goal = value;
+        });
+    });
+
+    if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+            if (currentStep < 3) {
+                document.getElementById(`wizard-step-${currentStep}`).style.display = 'none';
+                document.querySelector(`.step-node[data-step="${currentStep}"]`).classList.add('completed');
+                currentStep++;
+                document.getElementById(`wizard-step-${currentStep}`).style.display = 'block';
+                document.querySelector(`.step-node[data-step="${currentStep}"]`).classList.add('active');
+                if (prevBtn) prevBtn.style.display = 'inline-flex';
+                if (currentStep === 3) nextBtn.textContent = 'Sonucu Gör';
+            } else {
+                showWizardResult();
+            }
+        });
+    }
+
+    if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+            if (currentStep > 1) {
+                document.getElementById(`wizard-step-${currentStep}`).style.display = 'none';
+                document.querySelector(`.step-node[data-step="${currentStep}"]`).classList.remove('active');
+                currentStep--;
+                document.getElementById(`wizard-step-${currentStep}`).style.display = 'block';
+                if (currentStep === 1) prevBtn.style.display = 'none';
+                nextBtn.textContent = 'İleri';
+            }
+        });
+    }
+}
+
+function showWizardResult() {
+    const wizardBody = document.getElementById('wizard-body');
+    if (!wizardBody) return;
+
+    let recTitle = "Tebrikler! Almanya Kariyer Yolculuğunuz İçin Tam Uyumlu Bir Profildesiniz.";
+    let recDesc = "Sirius Medicare ve Sirius Akademi programlarımız ile Almanca dil eğitiminiz, denkliğiniz ve Almanya'da doğrudan klinik/hastane yerleşiminiz garantili olarak planlanabilir.";
+
+    if (wizardData.profession === 'doctor') {
+        recTitle = "Sirius Medicare - Tıp Uzmanları & Hekim Programı";
+        recDesc = "Almanya'da doktorluk yapmak için C1 Fachsprachenprüfung (FSP) sınav kampımız ve hastane eşleştirmemiz ile denkliğinizi hızlıca alabilirsiniz.";
+    } else if (wizardData.profession === 'nurse') {
+        recTitle = "Sirius Medicare - Hemşire & Sağlık Teknikeri Programı";
+        recDesc = "Almanya kliniklerinde doğrudan iş sözleşmesi, A1-B2 dil eğitimi ve Sirius Home relokasyon desteği ile kariyerinize başlayın.";
+    }
+
+    wizardBody.innerHTML = `
+        <div style="text-align: center; padding: 20px 0;">
+            <div style="width: 70px; height: 70px; background: rgba(255, 93, 5, 0.1); color: var(--brand-orange); border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 2.2rem; margin-bottom: 20px;">✓</div>
+            <h3 style="font-size: 1.8rem; margin-bottom: 12px; color: var(--text-primary);">${recTitle}</h3>
+            <p style="color: var(--text-secondary); font-size: 1.1rem; max-width: 600px; margin: 0 auto 30px;">${recDesc}</p>
+            <button class="btn btn-orange" onclick="openModal('candidate', '${wizardData.profession}')">Hemen Danışmanla Görüşün ve Başvurun</button>
+        </div>
+    `;
+}
+
+/* ==========================================
+   4. COURSE EXPLORER
+   ========================================== */
+function initCourseExplorer() {
+    const tabBtns = document.querySelectorAll('.course-tab-btn');
+    const courseCards = document.querySelectorAll('.course-card');
+
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            tabBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+
+            const filter = this.dataset.filter;
+
+            courseCards.forEach(card => {
+                if (filter === 'all' || card.dataset.category === filter) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+}
+
+/* ==========================================
+   5. GERMANY JOB BOARD
+   ========================================== */
+function initJobBoard() {
+    document.addEventListener('click', (e) => {
+        if (e.target && e.target.classList.contains('btn-job-apply')) {
+            const role = e.target.dataset.role || 'Genel Başvuru';
+            openModal('candidate', role);
+        }
+    });
+}
+
+/* ==========================================
+   6. ANIMATED COUNTERS
+   ========================================== */
+function initCounterAnimations() {
+    const statNumbers = document.querySelectorAll('.stat-number');
     let animated = false;
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting && !animated) {
                 animated = true;
-                statValues.forEach(val => {
-                    const target = parseFloat(val.getAttribute('data-target'));
-                    animateValue(val, 0, target, 2000);
+                statNumbers.forEach(stat => {
+                    const target = parseInt(stat.dataset.target, 10) || 0;
+                    let current = 0;
+                    const step = Math.max(1, Math.ceil(target / 40));
+                    const timer = setInterval(() => {
+                        current += step;
+                        if (current >= target) {
+                            stat.textContent = target.toLocaleString() + (stat.dataset.suffix || '');
+                            clearInterval(timer);
+                        } else {
+                            stat.textContent = current.toLocaleString() + (stat.dataset.suffix || '');
+                        }
+                    }, 30);
                 });
             }
         });
-    }, { threshold: 0.3 });
+    }, { threshold: 0.5 });
 
-    observer.observe(statsSection);
+    const impactSection = document.getElementById('impact-section');
+    if (impactSection) observer.observe(impactSection);
 }
 
-function animateValue(obj, start, end, duration) {
-    let startTimestamp = null;
-    const isDecimal = end % 1 !== 0;
+/* ==========================================
+   7. MODAL CONTROLS
+   ========================================== */
+function initModalControls() {
+    const modalOverlay = document.getElementById('contact-modal');
+    const modalClose = document.getElementById('modal-close');
+    const appForm = document.getElementById('sirius-app-form');
 
-    const step = (timestamp) => {
-        if (!startTimestamp) startTimestamp = timestamp;
-        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-        
-        let currentVal = progress * (end - start) + start;
-        if (isDecimal) {
-            obj.innerHTML = currentVal.toFixed(1);
-        } else {
-            obj.innerHTML = Math.floor(currentVal);
-        }
+    if (modalClose && modalOverlay) {
+        modalClose.addEventListener('click', closeModal);
+        modalOverlay.addEventListener('click', (e) => {
+            if (e.target === modalOverlay) closeModal();
+        });
+    }
 
-        // Değerlerin sonuna sembol ekleme
-        if (progress < 1) {
-            window.requestAnimationFrame(step);
-        } else {
-            if (end === 8.6) obj.innerHTML = "8.6 L/Y";
-            else if (end === 150) obj.innerHTML = "150+ QP";
-            else if (end === 99.9) obj.innerHTML = "%99.99";
-        }
-    };
-    window.requestAnimationFrame(step);
-}
-
-// Kartların Üzerinde Parlama Efekti (Fare Hareketi Takibi)
-function initCardGlowEffects() {
-    const cards = document.querySelectorAll('.tech-card');
-    
-    cards.forEach(card => {
-        card.addEventListener('mousemove', (e) => {
-            const rect = card.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
+    if (appForm) {
+        appForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const nameInput = document.getElementById('form-name');
+            const name = nameInput ? nameInput.value : 'Aday';
             
-            card.style.setProperty('--x', `${x}px`);
-            card.style.setProperty('--y', `${y}px`);
+            closeModal();
+            showToast(`Sayın ${name}, başvurunuz başarıyla alındı! Danışmanımız en kısa sürede sizinle iletişime geçecektir.`);
+            appForm.reset();
         });
-    });
+    }
 }
 
-// İnteraktif Terminal Diagnostic Mantığı
-function initTerminalDiagnostics() {
-    const btnRun = document.getElementById('btn-run-diagnostics');
-    const btnClear = document.getElementById('btn-clear-diagnostics');
-    const statusText = document.getElementById('diagnostics-status');
-    const progressFill = document.getElementById('progress-fill');
-    const consoleOutput = document.getElementById('console-output');
+function openModal(type = 'candidate', role = '') {
+    const modalOverlay = document.getElementById('contact-modal');
+    const modalTitle = document.getElementById('modal-title');
+    const roleSelect = document.getElementById('form-profession');
 
-    if (!btnRun) return;
+    if (modalTitle) {
+        modalTitle.textContent = type === 'employer' 
+            ? "İşveren Danışmanlık ve İnsan Kaynağı Talebi" 
+            : "Almanya Kariyer ve Dil Kursu Başvurusu";
+    }
 
-    const mockLogs = [
-        { text: "[BİLGİ] Sirius diagnostic süreci başlatılıyor...", delay: 300, type: 'info' },
-        { text: "[SİSTEM] Kuantum Çekirdeği modülleri yükleniyor...", delay: 800, type: 'system' },
-        { text: "[SİSTEM] Işık hızı sinyal iletim portları kontrol ediliyor (8.6 Işık Yılı)...", delay: 1400, type: 'system' },
-        { text: "[UYARI] Gözlemlenen kozmik toz gürültüsü yüksek, filtreleme aktif edildi.", delay: 2000, type: 'warning' },
-        { text: "[BİLGİ] Bant genişliği optimize ediliyor... Güncel Hız: 152.4 QP/sn.", delay: 2600, type: 'info' },
-        { text: "[SİSTEM] Çift taraflı dolaşıklık şifrelemesi doğrulandı.", delay: 3200, type: 'system' },
-        { text: "[BAŞARILI] Sirius Ağı Durumu: Kararlı ve Aktif.", delay: 3800, type: 'success' },
-        { text: "[SİSTEM] Teşhis tamamlandı. Sistem tam kapasite çalışıyor.", delay: 4200, type: 'system' }
-    ];
+    if (roleSelect && role) {
+        roleSelect.value = role;
+    }
 
-    btnRun.addEventListener('click', () => {
-        btnRun.disabled = true;
-        btnClear.disabled = true;
-        
-        statusText.innerHTML = "RUNNING";
-        statusText.className = "status-running";
-        
-        consoleOutput.innerHTML = '<p class="system-line">[SİSTEM] Sirius Kuantum Tanılama Arayüzü Başlatıldı...</p>';
-        progressFill.style.width = "0%";
+    if (modalOverlay) modalOverlay.classList.add('active');
+}
 
-        let progressInterval = setInterval(() => {
-            let width = parseFloat(progressFill.style.width) || 0;
-            if (width < 98) {
-                progressFill.style.width = (width + 1) + "%";
+function closeModal() {
+    const modalOverlay = document.getElementById('contact-modal');
+    if (modalOverlay) modalOverlay.classList.remove('active');
+}
+
+function showToast(message) {
+    let toast = document.getElementById('sirius-toast');
+    if (!toast) {
+        toast = document.createElement('div');
+        toast.id = 'sirius-toast';
+        toast.className = 'toast-notification';
+        document.body.appendChild(toast);
+    }
+
+    toast.innerHTML = `
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+        <span>${message}</span>
+    `;
+
+    toast.classList.add('active');
+    setTimeout(() => {
+        toast.classList.remove('active');
+    }, 4500);
+}
+
+/* ==========================================
+   8. MOBILE NAV
+   ========================================== */
+function initMobileNav() {
+    const toggle = document.getElementById('mobile-toggle');
+    const navMenu = document.querySelector('.mega-nav-group');
+
+    if (toggle && navMenu) {
+        toggle.addEventListener('click', () => {
+            if (navMenu.style.display === 'flex') {
+                navMenu.style.display = 'none';
+            } else {
+                navMenu.style.display = 'flex';
+                navMenu.style.flexDirection = 'column';
+                navMenu.style.position = 'absolute';
+                navMenu.style.top = '100%';
+                navMenu.style.left = '0';
+                navMenu.style.width = '100%';
+                navMenu.style.background = '#FFFFFF';
+                navMenu.style.padding = '24px';
+                navMenu.style.boxShadow = '0 10px 25px rgba(0,0,0,0.1)';
             }
-        }, 42);
-
-        mockLogs.forEach(log => {
-            setTimeout(() => {
-                const line = document.createElement('p');
-                line.className = log.type + '-line';
-                line.innerHTML = log.text;
-                consoleOutput.appendChild(line);
-                consoleOutput.scrollTop = consoleOutput.scrollHeight;
-                
-                if (log.type === 'success') {
-                    clearInterval(progressInterval);
-                    progressFill.style.width = "100%";
-                    statusText.innerHTML = "ACTIVE";
-                    statusText.className = "status-active";
-                    btnRun.disabled = false;
-                    btnClear.disabled = false;
-                }
-            }, log.delay);
         });
-    });
-
-    btnClear.addEventListener('click', () => {
-        consoleOutput.innerHTML = `
-            <p class="system-line">[SİSTEM] Sirius Kuantum Tanılama Arayüzüne Hoş Geldiniz.</p>
-            <p class="system-line">[SİSTEM] Başlatmak için aşağıdaki butona tıklayın...</p>
-        `;
-        progressFill.style.width = "0%";
-        statusText.innerHTML = "STANDBY";
-        statusText.className = "status-standby";
-    });
-}
-
-// Haber Bülteni mock formu
-function initNewsletterForm() {
-    const form = document.getElementById('newsletter-form');
-    const msg = document.getElementById('newsletter-message');
-
-    if (!form || !msg) return;
-
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const email = form.querySelector('.input-email').value;
-
-        // E-posta gönderimi simülasyonu
-        msg.className = 'newsletter-message success';
-        msg.innerHTML = `Teşekkürler! <strong>${email}</strong> başarıyla kuantum ağ bültenimize kaydedildi.`;
-        form.reset();
-
-        setTimeout(() => {
-            msg.innerHTML = '';
-        }, 5000);
-    });
+    }
 }
