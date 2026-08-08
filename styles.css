@@ -293,7 +293,7 @@ h1, h2, h3, h4, h5, h6 {
     position: static;      /* Allow full-width panel positioning relative to header-nav */
 }
 
-.mega-trigger-btn {
+.mega-trigger-btn, .nav-link {
     background: transparent;
     border: none;
     font-family: var(--font-heading);
@@ -301,15 +301,17 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     color: var(--text-primary);
     cursor: pointer;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 8px;
     padding: 12px 0;
     transition: var(--transition-fast);
     text-decoration: none;
+    line-height: 1.2;
 }
 
-.mega-trigger-btn:hover, .mega-trigger-btn.active {
+.mega-trigger-btn:hover, .mega-trigger-btn.active,
+.nav-link:hover, .nav-link.active {
     color: var(--brand-orange);
 }
 
