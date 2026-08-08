@@ -1100,6 +1100,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Responsive */
 @media (max-width: 992px) {
+    /* Hide top bar & header navigation on mobile screens, keep only on web/desktop */
+    .top-bar,
+    .header-nav {
+        display: none !important;
+    }
     .hero-grid {
         grid-template-columns: 1fr;
     }
