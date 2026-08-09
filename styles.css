@@ -464,6 +464,23 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.3) !important;
 }
 
+/* Event Cards */
+.event-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg) !important;
+}
+.event-card:hover img {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
+.event-card img {
+    transition: transform 0.5s ease;
+}
+.event-card:hover .reel-play-btn {
+    transform: translate(-50%, -50%) scale(1.12) !important;
+    background: rgba(255, 255, 255, 0.55) !important;
+}
+
 /* ==========================================
    VIBRANT DYNAMIC HERO SECTION
    ========================================== */

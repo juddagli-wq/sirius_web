@@ -129,6 +129,20 @@ const translations = {
         stat_hospitals: "Anlaşmalı Klinik & Hastane",
         stat_satisfaction: "Aday & Kurum Memnuniyeti",
         
+        // Events section
+        section_events_tag: `<i class="fa-solid fa-people-group" aria-hidden="true"></i> SİRİUS TOPLU ETKİNLİKLER`,
+        section_events_title: `Birlikte Büyüyoruz <span>& Eğleniyoruz</span>`,
+        section_events_subtitle: `Sirius Global ailesi olarak adaylarımız ve ekibimizle düzenlediğimiz spor, kültür ve sosyal etkinliklerden kareler.`,
+        event_1_badge: "SPORTİF ETKİNLİK",
+        event_1_title: "Pilates & Wellness Günü",
+        event_1_desc: "Ekip olarak bedensel ve zihinsel sağlığımıza yatırım yapıyoruz.",
+        event_2_badge: "KÜLTÜR GEZİSİ",
+        event_2_title: "Paris Kültür Turu",
+        event_2_desc: "Adaylarımız ve ekibimizle birlikte unutulmaz bir Paris gezisi.",
+        event_3_badge: "SOSYAL BULUŞMA",
+        event_3_title: "Kahvaltı Buluşması",
+        event_3_desc: "Sıcak bir kahvaltı sofrasında tanışma ve networking etkinliği.",
+        
         footer_brand_desc: "Sirius Global GmbH – Almanya Essen & Berlin merkezli, sürdürülebilir uluslararası personel istihdamı, sağlık çalışanları ve dil akademisi alanında sertifikalı iş ortağınız.",
         footer_services_title: "Hizmetler",
         footer_legal_title: "Mevzuat & Yasal (EU/DE)",
@@ -242,6 +256,20 @@ const translations = {
         stat_hospitals: "Partnerkliniken & Krankenhäuser",
         stat_satisfaction: "Zufriedenheit der Partner",
         
+        // Events section
+        section_events_tag: `<i class="fa-solid fa-people-group" aria-hidden="true"></i> SIRIUS GEMEINSCHAFTSEVENTS`,
+        section_events_title: `Gemeinsam wachsen <span>& Spaß haben</span>`,
+        section_events_subtitle: `Impressionen von unseren Sport-, Kultur- und Sozialveranstaltungen mit Kandidaten und Team.`,
+        event_1_badge: "SPORTEVENT",
+        event_1_title: "Pilates & Wellness Tag",
+        event_1_desc: "Als Team investieren wir in unsere körperliche und geistige Gesundheit.",
+        event_2_badge: "KULTURREISE",
+        event_2_title: "Paris Kulturreise",
+        event_2_desc: "Eine unvergessliche Paris-Reise mit unseren Kandidaten und dem Team.",
+        event_3_badge: "SOZIALES TREFFEN",
+        event_3_title: "Frühstücks-Treffen",
+        event_3_desc: "Networking und Kennenlernen bei einem gemütlichen Frühstück.",
+        
         footer_brand_desc: "Sirius Global GmbH – Ihr zertifizierter Partner für nachhaltige Personalvermittlung, Pflegekräfte und Sprachakademie in Essen & Berlin.",
         footer_services_title: "Leistungen",
         footer_legal_title: "Rechtliches (EU/DE)",
@@ -354,6 +382,20 @@ const translations = {
         stat_placed: "Specialists Placed in Germany",
         stat_hospitals: "Partner Hospitals & Clinics",
         stat_satisfaction: "Candidate & Client Satisfaction",
+        
+        // Events section
+        section_events_tag: `<i class="fa-solid fa-people-group" aria-hidden="true"></i> SIRIUS COMMUNITY EVENTS`,
+        section_events_title: `Growing Together <span>& Having Fun</span>`,
+        section_events_subtitle: `Highlights from our sports, cultural, and social events with candidates and our team.`,
+        event_1_badge: "SPORTS EVENT",
+        event_1_title: "Pilates & Wellness Day",
+        event_1_desc: "As a team, we invest in our physical and mental well-being.",
+        event_2_badge: "CULTURAL TRIP",
+        event_2_title: "Paris Cultural Tour",
+        event_2_desc: "An unforgettable trip to Paris with our candidates and team.",
+        event_3_badge: "SOCIAL MEETUP",
+        event_3_title: "Breakfast Meetup",
+        event_3_desc: "Networking and getting to know each other over a warm breakfast.",
         
         footer_brand_desc: "Sirius Global GmbH – Your certified partner for sustainable international recruitment, healthcare professionals, and language academy in Essen & Berlin.",
         footer_services_title: "Services",
@@ -629,6 +671,34 @@ function switchLanguage(lang, notify = true) {
         if (tag) tag.innerHTML = dict.section_reels_tag;
         if (title) title.innerHTML = dict.section_reels_title;
         if (sub) sub.textContent = dict.section_reels_subtitle;
+    }
+
+    // 4b. Events Section
+    const eventsSection = document.getElementById('events-section');
+    if (eventsSection) {
+        const tag = document.getElementById('events-tag');
+        const title = document.getElementById('events-title');
+        const sub = document.getElementById('events-subtitle');
+        if (tag) tag.innerHTML = dict.section_events_tag;
+        if (title) title.innerHTML = dict.section_events_title;
+        if (sub) sub.textContent = dict.section_events_subtitle;
+
+        const eventCards = eventsSection.querySelectorAll('.event-card');
+        const eventKeys = [
+            { badge: 'event_1_badge', title: 'event_1_title', desc: 'event_1_desc', icon: '<i class="fa-solid fa-dumbbell" aria-hidden="true"></i>' },
+            { badge: 'event_2_badge', title: 'event_2_title', desc: 'event_2_desc', icon: '<i class="fa-solid fa-plane" aria-hidden="true"></i>' },
+            { badge: 'event_3_badge', title: 'event_3_title', desc: 'event_3_desc', icon: '<i class="fa-solid fa-mug-hot" aria-hidden="true"></i>' }
+        ];
+        eventCards.forEach((card, i) => {
+            if (eventKeys[i]) {
+                const h3 = card.querySelector('.event-card-title');
+                const p = card.querySelector('.event-card-desc');
+                const badge = card.querySelector('span[style*="border-radius: 99px"]');
+                if (h3) h3.textContent = dict[eventKeys[i].title];
+                if (p) p.textContent = dict[eventKeys[i].desc];
+                if (badge) badge.innerHTML = eventKeys[i].icon + ' ' + dict[eventKeys[i].badge];
+            }
+        });
     }
 
     // 5. Stat Labels
