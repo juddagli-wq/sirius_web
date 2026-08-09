@@ -93,6 +93,13 @@ const translations = {
         // Header CTA button
         header_cta: "Şimdi Başvur",
         
+        // Floating badges
+        badge_1_sub: "Almanya'da Yerleşen Aday",
+        badge_2_sub: "Vize & Denklik Başarısı",
+        
+        // Top bar
+        top_address: "Katernberger Str. 107, 45327 Essen, Almanya",
+        
         hero_tag_candidate: `<i class="fa-solid fa-certificate" aria-hidden="true"></i> ALMANYA'DA KANITLANMIŞ KARİYER YOLCULUĞU`,
         hero_title_candidate: `Almanya'da Hayalinizdeki Kariyer ve Yaşama Giden <span class="highlight">Uluslararası Köprü</span>`,
         hero_desc_candidate: `Sirius Global; sağlık çalışanları, doktorlar, hekimler ve uzman nitelikli profesyonelleri Almanya'nın önde gelen sağlık kurumları ve şirketleriyle buluşturuyor. Dil eğitiminden denkliğe, vizeden konaklamaya tüm süreçte sizinleyiz.`,
@@ -199,6 +206,13 @@ const translations = {
         // Header CTA button
         header_cta: "Jetzt bewerben",
         
+        // Floating badges
+        badge_1_sub: "In DE platzierte Fachkräfte",
+        badge_2_sub: "Visum- & Anerkennungserfolg",
+        
+        // Top bar
+        top_address: "Katernberger Str. 107, 45327 Essen, Deutschland",
+        
         hero_tag_candidate: `<i class="fa-solid fa-certificate" aria-hidden="true"></i> BEWÄHRTER KARRIEREWEG IN DEUTSCHLAND`,
         hero_title_candidate: `Ihre internationale Brücke zu <span class="highlight">Karriere & Leben</span> in Deutschland`,
         hero_desc_candidate: `Sirius Global verbindet Pflegekräfte, Ärzte und hochqualifizierte Fachkräfte mit führenden deutschen Krankenhäusern und Unternehmen. Wir begleiten Sie vom Sprachkurs bis zur Anerkennung und Relocation.`,
@@ -304,6 +318,13 @@ const translations = {
         
         // Header CTA button
         header_cta: "Apply Now",
+        
+        // Floating badges
+        badge_1_sub: "Specialists Placed in Germany",
+        badge_2_sub: "Visa & Recognition Success",
+        
+        // Top bar
+        top_address: "Katernberger Str. 107, 45327 Essen, Germany",
         
         hero_tag_candidate: `<i class="fa-solid fa-certificate" aria-hidden="true"></i> PROVEN CAREER PATHWAY IN GERMANY`,
         hero_title_candidate: `Your International Bridge to <span class="highlight">Career & Life</span> in Germany`,
@@ -577,6 +598,17 @@ function switchLanguage(lang, notify = true) {
         headerCtaBtn.innerHTML = dict.header_cta + ' <i class="fa-regular fa-face-smile" aria-hidden="true"></i>';
     }
 
+    // 3g. Floating Badges on Hero
+    const badge1Sub = document.getElementById('floating-badge-1-sub');
+    const badge2Sub = document.getElementById('floating-badge-2-sub');
+    if (badge1Sub) badge1Sub.textContent = dict.badge_1_sub;
+    if (badge2Sub) badge2Sub.textContent = dict.badge_2_sub;
+
+    // 3h. Top Bar Address
+    const topAddressLink = document.querySelector('.top-contact-item[href*="maps"]');
+    if (topAddressLink) {
+        topAddressLink.innerHTML = '<i class="fa-solid fa-location-dot" aria-hidden="true"></i> ' + dict.top_address;
+    }
 
     // 4. Wizard & Reels Sections
     const wizardSection = document.getElementById('wizard-section');
