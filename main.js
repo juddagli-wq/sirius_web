@@ -34,6 +34,65 @@ const translations = {
         btn_candidate: "Adaylar İçin",
         btn_employer: "İşverenler İçin",
         
+        // Mega menu trigger labels
+        mega_talents: "Yetenekler İçin",
+        mega_employers: "İşverenler İçin",
+        mega_about: "Hakkımızda",
+        
+        // Mega Panel 1 - Talents
+        mega_t_col1_title: "Almanya'da Çalışmak",
+        mega_t_col1_1: "Sağlık Hizmeti (Doktor & Hemşire)",
+        mega_t_col1_2: "Eğitim & Dil Okulları",
+        mega_t_col1_3: "Fizyoterapi & Ergoterapi",
+        mega_t_col1_4: "Huzurevleri & Yaşlı Bakım",
+        mega_t_col2_title: "Hizmetler ve Bilgiler",
+        mega_t_col2_1: "Sirius Global Programı",
+        mega_t_col2_2: "Almanca Dil Okullarımız",
+        mega_t_col2_3: "Hemşirelik Denklik Eğitimi",
+        mega_t_col2_4: "Sirius Kampüsü & Konaklama",
+        mega_t_col2_5: "Sıkça Sorulan Sorular",
+        mega_t_col3_title: "Başvuru",
+        mega_t_col3_desc: "Almanya'da çalışmaya hazır mısınız?",
+        mega_t_col3_btn: "Şimdi Başvur",
+        mega_t_sidebar_title: "Size Nasıl Yardımcı Olabiliriz?",
+        mega_t_sidebar_sub: "Sirius Global İletişim Kişiniz",
+        mega_t_sidebar_team: "Sirius Danışmanlık Ekibi",
+        mega_t_sidebar_link: "Profesyoneller İçin Bilgiler",
+        
+        // Mega Panel 2 - Employers
+        mega_e_col1_title: "Sağlık & Bakım Hizmetleri",
+        mega_e_col1_1: "Akut Bakım Hemşireleri",
+        mega_e_col1_2: "Ameliyathane & Anestezi (OTA/ATA)",
+        mega_e_col1_3: "Radyoloji & MTR Teknikeri",
+        mega_e_col1_4: "Klinik Doktorları",
+        mega_e_col2_title: "Hizmetlerimiz",
+        mega_e_col2_1: "Nitelikli Personel Vermittlung",
+        mega_e_col2_2: "İnterkültürel Atölyeler",
+        mega_e_col2_3: "Vize & Denklik Hizmetleri",
+        mega_e_col2_4: "Gütesiegel & Etik İşe Alım",
+        mega_e_col3_title: "İşveren Görüşmesi",
+        mega_e_col3_desc: "Kurumunuz için uzman mı arıyorsunuz?",
+        mega_e_col3_btn: "Görüşme Talebi Alın",
+        mega_e_sidebar_title: "Kurumsal İnsan Kaynağı",
+        mega_e_sidebar_sub: "Almanya Genel Merkez",
+        
+        // Mega Panel 3 - About
+        mega_a_col1_title: "Şirketimiz",
+        mega_a_col1_1: "Vizyon & Misyonumuz",
+        mega_a_col1_2: "Essen & Berlin Merkezlerimiz",
+        mega_a_col1_3: "Ekibimiz",
+        mega_a_col2_title: "Kalite & Etik",
+        mega_a_col2_1: "Gütesiegel Etik İşe Alım",
+        mega_a_col2_2: "Basın & Medya",
+        mega_a_col3_title: "İletişim",
+        mega_a_col3_desc: "Bizimle doğrudan iletişime geçin.",
+        mega_a_col3_btn: "İletişim Sayfası",
+        mega_a_sidebar_title: "Essen Merkez Ofisi",
+        mega_a_sidebar_desc: "Katernberger Str. 107, 45327 Essen, Almanya",
+        
+        // Header CTA button
+        header_cta: "Şimdi Başvur",
+        
         hero_tag_candidate: `<i class="fa-solid fa-certificate" aria-hidden="true"></i> ALMANYA'DA KANITLANMIŞ KARİYER YOLCULUĞU`,
         hero_title_candidate: `Almanya'da Hayalinizdeki Kariyer ve Yaşama Giden <span class="highlight">Uluslararası Köprü</span>`,
         hero_desc_candidate: `Sirius Global; sağlık çalışanları, doktorlar, hekimler ve uzman nitelikli profesyonelleri Almanya'nın önde gelen sağlık kurumları ve şirketleriyle buluşturuyor. Dil eğitiminden denkliğe, vizeden konaklamaya tüm süreçte sizinleyiz.`,
@@ -81,6 +140,65 @@ const translations = {
         btn_candidate: "Für Bewerber",
         btn_employer: "Für Arbeitgeber",
         
+        // Mega menu trigger labels
+        mega_talents: "Für Talente",
+        mega_employers: "Für Arbeitgeber",
+        mega_about: "Über uns",
+        
+        // Mega Panel 1 - Talents
+        mega_t_col1_title: "Arbeiten in Deutschland",
+        mega_t_col1_1: "Gesundheitswesen (Ärzte & Pflege)",
+        mega_t_col1_2: "Bildung & Sprachschulen",
+        mega_t_col1_3: "Physiotherapie & Ergotherapie",
+        mega_t_col1_4: "Altenpflege & Seniorenheime",
+        mega_t_col2_title: "Leistungen & Informationen",
+        mega_t_col2_1: "Das Sirius Global Programm",
+        mega_t_col2_2: "Unsere Sprachschulen",
+        mega_t_col2_3: "Anerkennungskurse Pflege",
+        mega_t_col2_4: "Sirius Campus & Unterkunft",
+        mega_t_col2_5: "Häufig gestellte Fragen",
+        mega_t_col3_title: "Bewerbung",
+        mega_t_col3_desc: "Bereit, in Deutschland zu arbeiten?",
+        mega_t_col3_btn: "Jetzt bewerben",
+        mega_t_sidebar_title: "Wie können wir helfen?",
+        mega_t_sidebar_sub: "Ihr Sirius Ansprechpartner",
+        mega_t_sidebar_team: "Sirius Beratungsteam",
+        mega_t_sidebar_link: "Infos für Fachkräfte",
+        
+        // Mega Panel 2 - Employers
+        mega_e_col1_title: "Gesundheit & Pflege",
+        mega_e_col1_1: "Akutpflege-Fachkräfte",
+        mega_e_col1_2: "OP & Anästhesie (OTA/ATA)",
+        mega_e_col1_3: "Radiologie & MTR-Techniker",
+        mega_e_col1_4: "Klinikärzte",
+        mega_e_col2_title: "Unsere Leistungen",
+        mega_e_col2_1: "Qualifizierte Personalvermittlung",
+        mega_e_col2_2: "Interkulturelle Workshops",
+        mega_e_col2_3: "Visum & Anerkennungsservice",
+        mega_e_col2_4: "Gütesiegel & Ethisches Recruiting",
+        mega_e_col3_title: "Arbeitgeber-Gespräch",
+        mega_e_col3_desc: "Suchen Sie Fachkräfte für Ihre Einrichtung?",
+        mega_e_col3_btn: "Beratung anfordern",
+        mega_e_sidebar_title: "Personalberatung",
+        mega_e_sidebar_sub: "Hauptsitz Deutschland",
+        
+        // Mega Panel 3 - About
+        mega_a_col1_title: "Unser Unternehmen",
+        mega_a_col1_1: "Vision & Mission",
+        mega_a_col1_2: "Standorte Essen & Berlin",
+        mega_a_col1_3: "Unser Team",
+        mega_a_col2_title: "Qualität & Ethik",
+        mega_a_col2_1: "Gütesiegel Faire Anwerbung",
+        mega_a_col2_2: "Presse & Medien",
+        mega_a_col3_title: "Kontakt",
+        mega_a_col3_desc: "Kontaktieren Sie uns direkt.",
+        mega_a_col3_btn: "Kontaktseite",
+        mega_a_sidebar_title: "Zentrale Essen",
+        mega_a_sidebar_desc: "Katernberger Str. 107, 45327 Essen, Deutschland",
+        
+        // Header CTA button
+        header_cta: "Jetzt bewerben",
+        
         hero_tag_candidate: `<i class="fa-solid fa-certificate" aria-hidden="true"></i> BEWÄHRTER KARRIEREWEG IN DEUTSCHLAND`,
         hero_title_candidate: `Ihre internationale Brücke zu <span class="highlight">Karriere & Leben</span> in Deutschland`,
         hero_desc_candidate: `Sirius Global verbindet Pflegekräfte, Ärzte und hochqualifizierte Fachkräfte mit führenden deutschen Krankenhäusern und Unternehmen. Wir begleiten Sie vom Sprachkurs bis zur Anerkennung und Relocation.`,
@@ -127,6 +245,65 @@ const translations = {
         
         btn_candidate: "For Candidates",
         btn_employer: "For Employers",
+        
+        // Mega menu trigger labels
+        mega_talents: "For Talents",
+        mega_employers: "For Employers",
+        mega_about: "About Us",
+        
+        // Mega Panel 1 - Talents
+        mega_t_col1_title: "Working in Germany",
+        mega_t_col1_1: "Healthcare (Doctors & Nurses)",
+        mega_t_col1_2: "Education & Language Schools",
+        mega_t_col1_3: "Physiotherapy & Occupational Therapy",
+        mega_t_col1_4: "Elderly Care & Nursing Homes",
+        mega_t_col2_title: "Services & Information",
+        mega_t_col2_1: "The Sirius Global Program",
+        mega_t_col2_2: "Our German Language Schools",
+        mega_t_col2_3: "Nursing Recognition Courses",
+        mega_t_col2_4: "Sirius Campus & Accommodation",
+        mega_t_col2_5: "Frequently Asked Questions",
+        mega_t_col3_title: "Application",
+        mega_t_col3_desc: "Ready to work in Germany?",
+        mega_t_col3_btn: "Apply Now",
+        mega_t_sidebar_title: "How Can We Help?",
+        mega_t_sidebar_sub: "Your Sirius Contact Person",
+        mega_t_sidebar_team: "Sirius Advisory Team",
+        mega_t_sidebar_link: "Information for Professionals",
+        
+        // Mega Panel 2 - Employers
+        mega_e_col1_title: "Healthcare & Nursing",
+        mega_e_col1_1: "Acute Care Nurses",
+        mega_e_col1_2: "OR & Anesthesia (OTA/ATA)",
+        mega_e_col1_3: "Radiology & MTR Technicians",
+        mega_e_col1_4: "Clinical Physicians",
+        mega_e_col2_title: "Our Services",
+        mega_e_col2_1: "Qualified Staff Placement",
+        mega_e_col2_2: "Intercultural Workshops",
+        mega_e_col2_3: "Visa & Recognition Services",
+        mega_e_col2_4: "Quality Seal & Ethical Recruiting",
+        mega_e_col3_title: "Employer Meeting",
+        mega_e_col3_desc: "Looking for specialists for your institution?",
+        mega_e_col3_btn: "Request Consultation",
+        mega_e_sidebar_title: "Corporate Recruitment",
+        mega_e_sidebar_sub: "Germany Headquarters",
+        
+        // Mega Panel 3 - About
+        mega_a_col1_title: "Our Company",
+        mega_a_col1_1: "Vision & Mission",
+        mega_a_col1_2: "Essen & Berlin Offices",
+        mega_a_col1_3: "Our Team",
+        mega_a_col2_title: "Quality & Ethics",
+        mega_a_col2_1: "Fair Recruitment Quality Seal",
+        mega_a_col2_2: "Press & Media",
+        mega_a_col3_title: "Contact",
+        mega_a_col3_desc: "Get in touch with us directly.",
+        mega_a_col3_btn: "Contact Page",
+        mega_a_sidebar_title: "Essen Head Office",
+        mega_a_sidebar_desc: "Katernberger Str. 107, 45327 Essen, Germany",
+        
+        // Header CTA button
+        header_cta: "Apply Now",
         
         hero_tag_candidate: `<i class="fa-solid fa-certificate" aria-hidden="true"></i> PROVEN CAREER PATHWAY IN GERMANY`,
         hero_title_candidate: `Your International Bridge to <span class="highlight">Career & Life</span> in Germany`,
@@ -243,6 +420,163 @@ function switchLanguage(lang, notify = true) {
         if (href === 'kariyer-firsatlari.html') link.textContent = dict.nav_jobs;
         if (href === 'iletisim.html') link.textContent = dict.nav_contact;
     });
+
+    // 3b. Mega Menu Trigger Buttons
+    const megaTriggers = document.querySelectorAll('.mega-trigger-btn');
+    if (megaTriggers.length >= 3) {
+        megaTriggers[0].innerHTML = dict.mega_talents + ' <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>';
+        megaTriggers[1].innerHTML = dict.mega_employers + ' <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>';
+        megaTriggers[2].innerHTML = dict.mega_about + ' <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>';
+    }
+
+    // 3c. Mega Panel 1 - Talents
+    const megaPanelTalents = document.getElementById('mega-panel-talents');
+    if (megaPanelTalents) {
+        const cols = megaPanelTalents.querySelectorAll('.mega-column-title');
+        const links = megaPanelTalents.querySelectorAll('.mega-links-list');
+        if (cols[0]) cols[0].textContent = dict.mega_t_col1_title;
+        if (cols[1]) cols[1].textContent = dict.mega_t_col2_title;
+        if (cols[2]) cols[2].textContent = dict.mega_t_col3_title;
+        // Column 1 links
+        if (links[0]) {
+            const items = links[0].querySelectorAll('a');
+            if (items[0]) items[0].textContent = dict.mega_t_col1_1;
+            if (items[1]) items[1].textContent = dict.mega_t_col1_2;
+            if (items[2]) items[2].textContent = dict.mega_t_col1_3;
+            if (items[3]) items[3].textContent = dict.mega_t_col1_4;
+        }
+        // Column 2 links
+        if (links[1]) {
+            const items = links[1].querySelectorAll('a');
+            if (items[0]) items[0].textContent = dict.mega_t_col2_1;
+            if (items[1]) items[1].textContent = dict.mega_t_col2_2;
+            if (items[2]) items[2].textContent = dict.mega_t_col2_3;
+            if (items[3]) items[3].textContent = dict.mega_t_col2_4;
+            if (items[4]) items[4].textContent = dict.mega_t_col2_5;
+        }
+        // Column 3 description & button
+        const col3Desc = megaPanelTalents.querySelectorAll('.mega-panel-inner > div')[2];
+        if (col3Desc) {
+            const p = col3Desc.querySelector('p');
+            const btn = col3Desc.querySelector('.btn');
+            if (p) p.textContent = dict.mega_t_col3_desc;
+            if (btn) btn.innerHTML = '<i class="fa-regular fa-face-smile" aria-hidden="true"></i> ' + dict.mega_t_col3_btn;
+        }
+        // Sidebar
+        const sidebar = megaPanelTalents.querySelector('.mega-sidebar-box');
+        if (sidebar) {
+            const sTitle = sidebar.querySelector('.mega-sidebar-title');
+            if (sTitle) sTitle.textContent = dict.mega_t_sidebar_title;
+            const sSub = sidebar.querySelectorAll('div[style]');
+            if (sSub.length > 0) {
+                for (const el of sSub) {
+                    if (el.textContent.trim() && el.style.fontSize === '0.8rem') {
+                        el.textContent = dict.mega_t_sidebar_sub;
+                        break;
+                    }
+                }
+            }
+            const sTeam = sidebar.querySelector('div[style*="font-weight: 700"][style*="color: var(--text-primary)"]');
+            if (sTeam) sTeam.textContent = dict.mega_t_sidebar_team;
+            const sLink = sidebar.querySelector('a');
+            if (sLink) sLink.innerHTML = '&gt; ' + dict.mega_t_sidebar_link;
+        }
+    }
+
+    // 3d. Mega Panel 2 - Employers
+    const megaPanelEmployers = document.getElementById('mega-panel-employers');
+    if (megaPanelEmployers) {
+        const cols = megaPanelEmployers.querySelectorAll('.mega-column-title');
+        const links = megaPanelEmployers.querySelectorAll('.mega-links-list');
+        if (cols[0]) cols[0].textContent = dict.mega_e_col1_title;
+        if (cols[1]) cols[1].textContent = dict.mega_e_col2_title;
+        if (cols[2]) cols[2].textContent = dict.mega_e_col3_title;
+        // Column 1 links
+        if (links[0]) {
+            const items = links[0].querySelectorAll('a');
+            if (items[0]) items[0].textContent = dict.mega_e_col1_1;
+            if (items[1]) items[1].textContent = dict.mega_e_col1_2;
+            if (items[2]) items[2].textContent = dict.mega_e_col1_3;
+            if (items[3]) items[3].textContent = dict.mega_e_col1_4;
+        }
+        // Column 2 links
+        if (links[1]) {
+            const items = links[1].querySelectorAll('a');
+            if (items[0]) items[0].textContent = dict.mega_e_col2_1;
+            if (items[1]) items[1].textContent = dict.mega_e_col2_2;
+            if (items[2]) items[2].textContent = dict.mega_e_col2_3;
+            if (items[3]) items[3].textContent = dict.mega_e_col2_4;
+        }
+        // Column 3 description & button
+        const col3Desc = megaPanelEmployers.querySelectorAll('.mega-panel-inner > div')[2];
+        if (col3Desc) {
+            const p = col3Desc.querySelector('p');
+            const btn = col3Desc.querySelector('.btn');
+            if (p) p.textContent = dict.mega_e_col3_desc;
+            if (btn) btn.innerHTML = '<i class="fa-solid fa-calendar-check" aria-hidden="true"></i> ' + dict.mega_e_col3_btn;
+        }
+        // Sidebar
+        const sidebar = megaPanelEmployers.querySelector('.mega-sidebar-box');
+        if (sidebar) {
+            const sTitle = sidebar.querySelector('.mega-sidebar-title');
+            if (sTitle) sTitle.textContent = dict.mega_e_sidebar_title;
+            const sSub = sidebar.querySelectorAll('div[style]');
+            if (sSub.length > 0) {
+                for (const el of sSub) {
+                    if (el.textContent.trim() && el.style.fontSize === '0.8rem') {
+                        el.textContent = dict.mega_e_sidebar_sub;
+                        break;
+                    }
+                }
+            }
+        }
+    }
+
+    // 3e. Mega Panel 3 - About
+    const megaPanelAbout = document.getElementById('mega-panel-about');
+    if (megaPanelAbout) {
+        const cols = megaPanelAbout.querySelectorAll('.mega-column-title');
+        const links = megaPanelAbout.querySelectorAll('.mega-links-list');
+        if (cols[0]) cols[0].textContent = dict.mega_a_col1_title;
+        if (cols[1]) cols[1].textContent = dict.mega_a_col2_title;
+        if (cols[2]) cols[2].textContent = dict.mega_a_col3_title;
+        // Column 1 links
+        if (links[0]) {
+            const items = links[0].querySelectorAll('a');
+            if (items[0]) items[0].textContent = dict.mega_a_col1_1;
+            if (items[1]) items[1].textContent = dict.mega_a_col1_2;
+            if (items[2]) items[2].textContent = dict.mega_a_col1_3;
+        }
+        // Column 2 links
+        if (links[1]) {
+            const items = links[1].querySelectorAll('a');
+            if (items[0]) items[0].textContent = dict.mega_a_col2_1;
+            if (items[1]) items[1].textContent = dict.mega_a_col2_2;
+        }
+        // Column 3 description & button
+        const col3Divs = megaPanelAbout.querySelectorAll('.mega-panel-inner > div');
+        if (col3Divs[2]) {
+            const p = col3Divs[2].querySelector('p');
+            const btn = col3Divs[2].querySelector('.btn');
+            if (p) p.textContent = dict.mega_a_col3_desc;
+            if (btn) btn.textContent = dict.mega_a_col3_btn;
+        }
+        // Sidebar
+        const sidebar = megaPanelAbout.querySelector('.mega-sidebar-box');
+        if (sidebar) {
+            const sTitle = sidebar.querySelector('.mega-sidebar-title');
+            const sDesc = sidebar.querySelector('.mega-sidebar-desc');
+            if (sTitle) sTitle.textContent = dict.mega_a_sidebar_title;
+            if (sDesc) sDesc.textContent = dict.mega_a_sidebar_desc;
+        }
+    }
+
+    // 3f. Header CTA Button
+    const headerCtaBtn = document.querySelector('header .btn-orange[onclick*="openModal"]');
+    if (headerCtaBtn) {
+        headerCtaBtn.innerHTML = dict.header_cta + ' <i class="fa-regular fa-face-smile" aria-hidden="true"></i>';
+    }
+
 
     // 4. Wizard & Reels Sections
     const wizardSection = document.getElementById('wizard-section');
