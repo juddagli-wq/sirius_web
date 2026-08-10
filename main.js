@@ -1103,6 +1103,21 @@ function switchLanguage(lang, notify = true) {
     const footerBottom = document.querySelector('.footer-bottom div');
     if (footerBottom) footerBottom.textContent = dict.footer_rights;
 
+    // 7. Universal data-i18n Automatic Element Translation Loop
+    const i18nElements = document.querySelectorAll('[data-i18n]');
+    i18nElements.forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (key && dict[key]) {
+            if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                el.placeholder = dict[key];
+            } else if (dict[key].includes('<') && dict[key].includes('>')) {
+                el.innerHTML = dict[key];
+            } else {
+                el.textContent = dict[key];
+            }
+        }
+    });
+
     if (notify) {
         const toastMessages = {
             tr: `Dil değiştirildi: Türkçe`,
