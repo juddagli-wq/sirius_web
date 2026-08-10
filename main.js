@@ -143,7 +143,7 @@ const translations = {
         event_3_title: "Kahvaltı Buluşması",
         event_3_desc: "Sıcak bir kahvaltı sofrasında tanışma ve networking etkinliği.",
         
-        footer_brand_desc: "Sirius Global GmbH – Almanya Essen & Berlin merkezli, sürdürülebilir uluslararası personel istihdamı, sağlık çalışanları ve dil akademisi alanında sertifikalı iş ortağınız.",
+        footer_brand_desc: "Sirius Global GmbH – Essen merkezli global ağımızla; sağlık sektöründe sürdürülebilir uluslararası personel istihdamı ve Dil Akademisi çözümlerinde güvenilir iş ortağınız.",
         footer_services_title: "Hizmetler",
         footer_legal_title: "Mevzuat & Yasal (EU/DE)",
         footer_contact_title: "Essen Merkez Ofis",
