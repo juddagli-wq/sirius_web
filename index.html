@@ -46,10 +46,18 @@
                     </button>
                 </div>
 
-                <div class="lang-selector" role="group" aria-label="Dil Seçimi">
-                    <button class="lang-btn active" data-lang="tr" type="button" aria-label="Türkçe Dili">TR</button>
-                    <button class="lang-btn" data-lang="en" type="button" aria-label="İngilizce Dili">EN</button>
-                    <button class="lang-btn" data-lang="de" type="button" aria-label="Almanca Dili">DE</button>
+                <div class="lang-selector-dropdown" role="group" aria-label="Dil Seçimi">
+                    <button class="lang-dropdown-btn" id="current-lang-label" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Dil Seçin">
+                        <span class="flag-icon">🇹🇷</span> TR <i class="fa-solid fa-chevron-down" style="font-size: 0.72rem; margin-left: 2px;"></i>
+                    </button>
+                    <div class="lang-dropdown-menu" role="menu">
+                        <button class="lang-option-btn active" data-lang="tr" type="button" role="menuitem"><span class="flag-icon">🇹🇷</span> Türkçe (TR)</button>
+                        <button class="lang-option-btn" data-lang="de" type="button" role="menuitem"><span class="flag-icon">🇩🇪</span> Deutsch (DE)</button>
+                        <button class="lang-option-btn" data-lang="en" type="button" role="menuitem"><span class="flag-icon">🇬🇧</span> English (EN)</button>
+                        <button class="lang-option-btn" data-lang="fr" type="button" role="menuitem"><span class="flag-icon">🇫🇷</span> Français (FR)</button>
+                        <button class="lang-option-btn" data-lang="ar" type="button" role="menuitem"><span class="flag-icon">🇸🇦</span> العربية (AR)</button>
+                        <button class="lang-option-btn" data-lang="fa" type="button" role="menuitem"><span class="flag-icon">🇮🇷</span> فارسی (FA)</button>
+                    </div>
                 </div>
             </div>
         </div>

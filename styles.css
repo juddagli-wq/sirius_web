@@ -244,25 +244,81 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 4px 12px rgba(0, 168, 232, 0.35);
 }
 
-.lang-selector {
-    display: flex;
-    gap: 4px;
+.lang-selector-dropdown {
+    position: relative;
+    display: inline-block;
 }
 
-.lang-btn {
-    background: transparent;
-    border: none;
-    color: var(--text-secondary);
+.lang-dropdown-btn {
+    background: var(--bg-white);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
     font-weight: 700;
     font-size: 0.82rem;
     cursor: pointer;
-    padding: 4px 10px;
-    border-radius: 6px;
+    padding: 6px 14px;
+    border-radius: 99px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-fast);
 }
 
-.lang-btn.active, .lang-btn:hover {
+.lang-dropdown-btn:hover {
+    border-color: var(--brand-orange);
     color: var(--brand-orange);
-    background: rgba(255, 93, 5, 0.1);
+}
+
+.lang-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 6px;
+    background: var(--bg-white);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    box-shadow: var(--shadow-md);
+    padding: 6px;
+    min-width: 150px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: var(--transition-fast);
+    z-index: 1100;
+}
+
+.lang-selector-dropdown:hover .lang-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.lang-option-btn {
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.84rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    cursor: pointer;
+    text-align: left;
+    transition: var(--transition-fast);
+}
+
+.lang-option-btn:hover, .lang-option-btn.active {
+    background: var(--bg-alt);
+    color: var(--brand-orange);
+}
+
+.flag-icon {
+    font-size: 1.1rem;
+    line-height: 1;
 }
 
 /* ==========================================

@@ -402,17 +402,371 @@ const translations = {
         footer_legal_title: "Legal (EU/DE)",
         footer_contact_title: "Essen HQ",
         footer_rights: "© 2026 Copyright © Sirius Global GmbH. All rights reserved."
+    },
+    fr: {
+        nav_home: "Accueil",
+        nav_about: "À propos",
+        nav_medicare: "Sirius Medicare",
+        nav_academy: "Sirius Académie",
+        nav_employers: "Pour les Employeurs",
+        nav_jobs: "Offres d'emploi",
+        nav_contact: "Contact",
+        
+        btn_candidate: "Pour les Candidats",
+        btn_employer: "Pour les Employeurs",
+        
+        mega_talents: "Pour les Talents",
+        mega_employers: "Pour les Employeurs",
+        mega_about: "À propos",
+        
+        mega_t_col1_title: "Travailler en Allemagne",
+        mega_t_col1_1: "Santé (Médecins & Infirmiers)",
+        mega_t_col1_2: "Éducation & Écoles de Langue",
+        mega_t_col1_3: "Physiothérapie & Ergothérapie",
+        mega_t_col1_4: "Soins aux Personnes Âgées",
+        mega_t_col2_title: "Services et Informations",
+        mega_t_col2_1: "Le Programme Sirius Global",
+        mega_t_col2_2: "Nos Écoles d'Allemand",
+        mega_t_col2_3: "Reconnaissance Infirmière",
+        mega_t_col2_4: "Campus Sirius & Logement",
+        mega_t_col2_5: "Foire Aux Questions (FAQ)",
+        mega_t_col3_title: "Candidature",
+        mega_t_col3_desc: "Prêt à travailler en Allemagne?",
+        mega_t_col3_btn: "Postuler Maintenant",
+        mega_t_sidebar_title: "Comment vous aider?",
+        mega_t_sidebar_sub: "Votre contact Sirius",
+        mega_t_sidebar_team: "Équipe de Conseil Sirius",
+        mega_t_sidebar_link: "Infos Professionnels",
+        
+        mega_e_col1_title: "Santé & Soins",
+        mega_e_col1_1: "Infirmiers en Soins Intensifs",
+        mega_e_col1_2: "Bloc Opératoire (OTA/ATA)",
+        mega_e_col1_3: "Radiologie & Techniciens MTR",
+        mega_e_col1_4: "Médecins Hospitaliers",
+        mega_e_col2_title: "Nos Services",
+        mega_e_col2_1: "Recrutement Qualifié",
+        mega_e_col2_2: "Ateliers Interculturels",
+        mega_e_col2_3: "Service Visa & Homologation",
+        mega_e_col2_4: "Label Éthique de Recrutement",
+        mega_e_col3_title: "Rendez-vous Employeur",
+        mega_e_col3_desc: "Vous cherchez des spécialistes?",
+        mega_e_col3_btn: "Demander un Conseil",
+        mega_e_sidebar_title: "Recrutement d'Entreprise",
+        mega_e_sidebar_sub: "Siège en Allemagne",
+        
+        mega_a_col1_title: "Notre Entreprise",
+        mega_a_col1_1: "Vision & Mission",
+        mega_a_col1_2: "Bureaux d'Essen & Berlin",
+        mega_a_col1_3: "Notre Équipe",
+        mega_a_col2_title: "Qualité & Éthique",
+        mega_a_col2_1: "Label de Recrutement Équitable",
+        mega_a_col2_2: "Presse & Médias",
+        mega_a_col3_title: "Contact",
+        mega_a_col3_desc: "Contactez-nous directement.",
+        mega_a_col3_btn: "Page de Contact",
+        mega_a_sidebar_title: "Siège Social Essen",
+        mega_a_sidebar_desc: "Katernberger Str. 107, 45327 Essen, Allemagne",
+        
+        header_cta: "Postuler Maintenant",
+        badge_1_sub: "Spécialistes Placés en Allemagne",
+        badge_2_sub: "Succès Visa & Homologation",
+        top_address: "Katernberger Str. 107, 45327 Essen, Allemagne",
+        
+        hero_tag_candidate: `<i class="fa-solid fa-certificate" aria-hidden="true"></i> PARCOURS DE CARRIÈRE EN ALLEMAGNE`,
+        hero_title_candidate: `Votre passerelle internationale vers <span class="highlight">Carrière & Vie</span> en Allemagne`,
+        hero_desc_candidate: `Sirius Global relie les professionnels de santé, médecins et spécialistes aux meilleurs hôpitaux allemands. Des cours de langue à l'homologation et au logement.`,
+        
+        hero_tag_employer: `<i class="fa-solid fa-building-hospital" aria-hidden="true"></i> SOLUTIONS DE RECRUTEMENT DE SANTÉ`,
+        hero_title_employer: `Talents internationaux qualifiés <span class="highlight">avec recrutement éthique</span>`,
+        hero_desc_employer: `Nous répondons durablement aux besoins en personnel des hôpitaux allemands avec le label 'Faire Anwerbung'.`,
+        
+        cta_wizard: `<i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i> Test d'Éligibilité`,
+        cta_jobs: `<i class="fa-solid fa-briefcase" aria-hidden="true"></i> Explorer les Offres`,
+        cta_consulting: `<i class="fa-solid fa-calendar-days" aria-hidden="true"></i> Demander une Consultation`,
+        
+        section_wizard_tag: `<i class="fa-solid fa-sliders" aria-hidden="true"></i> ÉVALUATION DE CARRIÈRE`,
+        section_wizard_title: `Test d'Éligibilité de Carrière en Allemagne`,
+        section_wizard_subtitle: `Évaluez votre profil en 3 étapes simples et trouvez votre programme Sirius idéal.`,
+        
+        section_services_tag: `<i class="fa-solid fa-cubes-stacked" aria-hidden="true"></i> SERVICES INTÉGRÉS`,
+        section_services_title: `L'Écosystème Sirius <span>Solutions Complètes</span>`,
+        section_services_subtitle: `Cours de langue, homologation de diplôme, soutien à l'installation et placement.`,
+        
+        section_reels_tag: `<i class="fa-brands fa-instagram" aria-hidden="true"></i> REELS INSTAGRAM & TÉMOIGNAGES`,
+        section_reels_title: `Expériences En Direct <span>& Témoignages</span>`,
+        section_reels_subtitle: `Découvrez les histoires réelles de nos médecins et infirmiers en Allemagne.`,
+        
+        stat_candidates: "Candidats Conseillés",
+        stat_placed: "Spécialistes Placés en Allemagne",
+        stat_hospitals: "Hôpitaux & Cliniques Partenaires",
+        stat_satisfaction: "Satisfaction Candidats & Clients",
+        
+        section_events_tag: `<i class="fa-solid fa-people-group" aria-hidden="true"></i> ÉVÉNEMENTS COMMUNAUTAIRES`,
+        section_events_title: `Grandir Ensemble <span>& S'Amuser</span>`,
+        section_events_subtitle: `Retrouvez les moments forts de nos activités sportives, culturelles et sociales.`,
+        event_1_badge: "ÉVÉNEMENT SPORTIF",
+        event_1_title: "Journée Pilates & Bien-être",
+        event_1_desc: "Investir dans notre bien-être physique et mental en équipe.",
+        event_2_badge: "VOYAGE CULTUREL",
+        event_2_title: "Visite Culturelle de Paris",
+        event_2_desc: "Un voyage inoubliable à Paris avec nos candidats et l'équipe.",
+        event_3_badge: "RENCONTRE SOCIALE",
+        event_3_title: "Petit-Déjeuner Réseau",
+        event_3_desc: "Rencontre et réseautage autour d'un petit-déjeuner convivial.",
+        
+        footer_brand_desc: "Sirius Global GmbH – Votre partenaire certifié pour le recrutement international durable en santé à Essen & Berlin.",
+        footer_services_title: "Services",
+        footer_legal_title: "Légal (UE/DE)",
+        footer_contact_title: "Siège Essen",
+        footer_rights: "© 2026 Copyright © Sirius Global GmbH. Tous droits réservés."
+    },
+    ar: {
+        nav_home: "الرئيسية",
+        nav_about: "من نحن",
+        nav_medicare: "سيريوس ميديكير",
+        nav_academy: "أكاديمية سيريوس",
+        nav_employers: "أصحاب العمل",
+        nav_jobs: "فرص العمل",
+        nav_contact: "اتصل بنا",
+        
+        btn_candidate: "للمرشحين",
+        btn_employer: "لأصحاب العمل",
+        
+        mega_talents: "للكوادر والكوادر الشابة",
+        mega_employers: "لأصحاب العمل",
+        mega_about: "عن سيريوس",
+        
+        mega_t_col1_title: "العمل في ألمانيا",
+        mega_t_col1_1: "الرعاية الصحية (أطباء وممرضون)",
+        mega_t_col1_2: "التعليم ومقاعد اللغة",
+        mega_t_col1_3: "العلاج الطبيعي والوظيفي",
+        mega_t_col1_4: "رعاية كبار السن",
+        mega_t_col2_title: "الخدمات والمعلومات",
+        mega_t_col2_1: "برنامج سيريوس غلوبال",
+        mega_t_col2_2: "مدارس اللغة الألمانية",
+        mega_t_col2_3: "معادلة شهادات التمريض",
+        mega_t_col2_4: "مجمع سيريوس والسكن",
+        mega_t_col2_5: "الأسئلة الشائعة",
+        mega_t_col3_title: "التقديم",
+        mega_t_col3_desc: "هل أنت مستعد للعمل في ألمانيا؟",
+        mega_t_col3_btn: "قدّم الآن",
+        mega_t_sidebar_title: "كيف يمكننا مساعدتك؟",
+        mega_t_sidebar_sub: "مستشارك في سيريوس",
+        mega_t_sidebar_team: "فريق استشارات سيريوس",
+        mega_t_sidebar_link: "معلومات للمختصين",
+        
+        mega_e_col1_title: "الرعاية الصحية والتمريض",
+        mega_e_col1_1: "تمريض الرعاية الحادة",
+        mega_e_col1_2: "غرف العمليات والتخدير",
+        mega_e_col1_3: "الأشعة وفنيو MTR",
+        mega_e_col1_4: "أطباء المستشفيات",
+        mega_e_col2_title: "خدماتنا المؤسسية",
+        mega_e_col2_1: "تأمين الكوادر المؤهلة",
+        mega_e_col2_2: "ورش العمل الثقافية",
+        mega_e_col2_3: "خدمات التأشيرة والمعادلة",
+        mega_e_col2_4: "علامة التوظيف الأخلاقي",
+        mega_e_col3_title: "استشارة أصحاب العمل",
+        mega_e_col3_desc: "هل تبحث عن كوادر لمؤسستك؟",
+        mega_e_col3_btn: "طلب استشارة",
+        mega_e_sidebar_title: "توظيف الكوادر",
+        mega_e_sidebar_sub: "المقر الرئيسي في ألمانيا",
+        
+        mega_a_col1_title: "شركتنا",
+        mega_a_col1_1: "الرؤية والرسالة",
+        mega_a_col1_2: "مقراتنا في إيسن وبرلين",
+        mega_a_col1_3: "فريق العمل",
+        mega_a_col2_title: "الجودة والأخلاقيات",
+        mega_a_col2_1: "معيار التوظيف العادل",
+        mega_a_col2_2: "الصحافة والإعلام",
+        mega_a_col3_title: "التواصل",
+        mega_a_col3_desc: "تواصل معنا مباشرة.",
+        mega_a_col3_btn: "صفحة التواصل",
+        mega_a_sidebar_title: "المقر الرئيسي - إيسن",
+        mega_a_sidebar_desc: "Katernberger Str. 107, 45327 Essen, Germany",
+        
+        header_cta: "قدّم الآن",
+        badge_1_sub: "متخصص تم توظيفهم في ألمانيا",
+        badge_2_sub: "نسبة نجاح التأشيرة والمعادلة",
+        top_address: "Katernberger Str. 107, 45327 Essen, Germany",
+        
+        hero_tag_candidate: `<i class="fa-solid fa-certificate" aria-hidden="true"></i> مسار مهني موثوق في ألمانيا`,
+        hero_title_candidate: `جسركم الدولي نحو <span class="highlight">المهنة والحياة</span> في ألمانيا`,
+        hero_desc_candidate: `تربط سيريوس غلوبال المتخصصين في الرعاية الصحية والأطباء بالمستشفيات الألمانية المرموقة. من تعلم اللغة إلى المعادلة والسكن.`,
+        
+        hero_tag_employer: `<i class="fa-solid fa-building-hospital" aria-hidden="true"></i> حلول توظيف الرعاية الصحية`,
+        hero_title_employer: `كوادر دولية مؤهلة <span class="highlight">مع توظيف أخلاقي عادل</span>`,
+        hero_desc_employer: `ندعم المستشفيات الألمانية بنخبة الكوادر الطبية وفق أعلى معايير التوظيف الأخلاقي المعتمدة.`,
+        
+        cta_wizard: `<i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i> بدء اختبار التأهيل`,
+        cta_jobs: `<i class="fa-solid fa-briefcase" aria-hidden="true"></i> استكشاف الوظائف`,
+        cta_consulting: `<i class="fa-solid fa-calendar-days" aria-hidden="true"></i> طلب استشارة مؤسسية`,
+        
+        section_wizard_tag: `<i class="fa-solid fa-sliders" aria-hidden="true"></i> تقييم المهنة`,
+        section_wizard_title: `اختبار التأهيل المهني للألمانية`,
+        section_wizard_subtitle: `قيّم ملفك الشخصي في 3 خطوات سريعة واكتشف برنامج سيريوس المناسب لك.`,
+        
+        section_services_tag: `<i class="fa-solid fa-cubes-stacked" aria-hidden="true"></i> الخدمات المتكاملة`,
+        section_services_title: `منظومة سيريوس <span>حلول شاملة متكاملة</span>`,
+        section_services_subtitle: `دورات اللغة، معادلة الشهادات، خدمات الاستقرار والتأطير تحت سقف واحد.`,
+        
+        section_reels_tag: `<i class="fa-brands fa-instagram" aria-hidden="true"></i> مقاطع انستغرام وقصص النجاح`,
+        section_reels_title: `تجارب حية <span>وقصص نجاح</span>`,
+        section_reels_subtitle: `شاهد قصصاً واقعية لأطبائنا وممرضينا الذين بدؤوا حياتهم المهنية في ألمانيا.`,
+        
+        stat_candidates: "مرشح تم تقديم الاستشارة لهم",
+        stat_placed: "متخصص تم توظيفهم في ألمانيا",
+        stat_hospitals: "مستشفى وعيادة شريكة",
+        stat_satisfaction: "نسبة رضا العملاء والمرشحين",
+        
+        section_events_tag: `<i class="fa-solid fa-people-group" aria-hidden="true"></i> الفعاليات الجماعية`,
+        section_events_title: `ننمو معا <span>ونستمتع بأوقاتنا</span>`,
+        section_events_subtitle: `لقطات من أنشطتنا الرياضية والثقافية والاجتماعية مع مرشحينا وفريقنا.`,
+        event_1_badge: "فعالية رياضية",
+        event_1_title: "يوم البيلاتس والعافية",
+        event_1_desc: "نستثمر كفريق في صحتنا البدنية والذهنية.",
+        event_2_badge: "رحلة ثقافية",
+        event_2_title: "جولة باريس الثقافية",
+        event_2_desc: "رحلة لا تُنسى إلى باريس رفقة مرشحينا وفريق العمل.",
+        event_3_badge: "لقاء الاجتماعي",
+        event_3_title: "لقاء الإفطار الجماعي",
+        event_3_desc: "تعارف وتواصل شبكي حول مائدة إفطار دافئة.",
+        
+        footer_brand_desc: "سيريوس غلوبال – شريككم المعتمد للتوظيف الدولي المستدام وأكاديمية اللغة في إيسن وبرلين.",
+        footer_services_title: "الخدمات",
+        footer_legal_title: "القوانين (الاتحاد الأوروبي)",
+        footer_contact_title: "المقر الرئيسي إيسن",
+        footer_rights: "© 2026 جميع الحقوق محفوظة لشركة Sirius Global GmbH."
+    },
+    fa: {
+        nav_home: "صفحه اصلی",
+        nav_about: "درباره ما",
+        nav_medicare: "سیریوس مدیکر",
+        nav_academy: "آکادمی سیریوس",
+        nav_employers: "برای کارفرمایان",
+        nav_jobs: "فرصت‌های شغلی",
+        nav_contact: "تماس با ما",
+        
+        btn_candidate: "برای متقاضیان",
+        btn_employer: "برای کارفرمایان",
+        
+        mega_talents: "برای متخصصین",
+        mega_employers: "برای کارفرمایان",
+        mega_about: "درباره ما",
+        
+        mega_t_col1_title: "کار در آلمان",
+        mega_t_col1_1: "کادر درمان (پزشکان و پرستاران)",
+        mega_t_col1_2: "آموزش و آموزشگاه‌های زبان",
+        mega_t_col1_3: "فیزیوتراپی و کاردرمانی",
+        mega_t_col1_4: "مراقبت از سالمندان",
+        mega_t_col2_title: "خدمات و اطلاعات",
+        mega_t_col2_1: "برنامه سیریوس گلوبال",
+        mega_t_col2_2: "آموزشگاه‌های زبان آلمانی",
+        mega_t_col2_3: "معادلسازی مدرک پرستاری",
+        mega_t_col2_4: "کمپ سیریوس و اسکان",
+        mega_t_col2_5: "سوالات متداول",
+        mega_t_col3_title: "ثبت درخواست",
+        mega_t_col3_desc: "آیا آماده کار در آلمان هستید؟",
+        mega_t_col3_btn: "همین حالا درخواست دهید",
+        mega_t_sidebar_title: "چگونه می‌توانیم کمک کنیم؟",
+        mega_t_sidebar_sub: "مشاور اختصاصی سیریوس",
+        mega_t_sidebar_team: "تیم مشاوره سیریوس",
+        mega_t_sidebar_link: "اطلاعات متخصصین",
+        
+        mega_e_col1_title: "بهداشت و درمان",
+        mega_e_col1_1: "پرستاران بخش‌های ویژه",
+        mega_e_col1_2: "اتاق عمل و بیهوشی",
+        mega_e_col1_3: "رادیولوژی و تکنیسین‌های MTR",
+        mega_e_col1_4: "پزشکان بیمارستان",
+        mega_e_col2_title: "خدمات سازمانی ما",
+        mega_e_col2_1: "جذب نیروهای متخصص",
+        mega_e_col2_2: "کارگاه‌های بین فرهنگی",
+        mega_e_col2_3: "خدمات ویزا و معادلسازی",
+        mega_e_col2_4: "توظیف اخلاقی و عادلانه",
+        mega_e_col3_title: "مشاوره کارفرمایان",
+        mega_e_col3_desc: "به دنبال جذب متخصص هستید؟",
+        mega_e_col3_btn: "درخواست مشاوره",
+        mega_e_sidebar_title: "جذب نیروی انسانی",
+        mega_e_sidebar_sub: "دفتر مرکزی آلمان",
+        
+        mega_a_col1_title: "شرکت ما",
+        mega_a_col1_1: "چشم‌انداز و ماموریت",
+        mega_a_col1_2: "دفاتر اسن و برلین",
+        mega_a_col1_3: "تیم ما",
+        mega_a_col2_title: "کیفیت و اخلاق",
+        mega_a_col2_1: "گواهی استخدام عادلانه",
+        mega_a_col2_2: "مطبوعات و رسانه‌ها",
+        mega_a_col3_title: "ارتباط با ما",
+        mega_a_col3_desc: "مستقیماً با ما در تماس باشید.",
+        mega_a_col3_btn: "صفحه تماس",
+        mega_a_sidebar_title: "دفتر مرکزی اسن",
+        mega_a_sidebar_desc: "Katernberger Str. 107, 45327 Essen, Germany",
+        
+        header_cta: "همین حالا درخواست دهید",
+        badge_1_sub: "متخصص مستقر شده در آلمان",
+        badge_2_sub: "موفقیت ویزا و معادلسازی",
+        top_address: "Katernberger Str. 107, 45327 Essen, Germany",
+        
+        hero_tag_candidate: `<i class="fa-solid fa-certificate" aria-hidden="true"></i> مسیر شغلی تایید شده در آلمان`,
+        hero_title_candidate: `پل بین‌المللی شما به سوی <span class="highlight">شغل و زندگی</span> در آلمان`,
+        hero_desc_candidate: `سیریوس گلوبال متخصصان بهداشت و درمان و پزشکان را به بیمارستان‌های برجسته آلمان متصل می‌کند. از آموزش زبان تا معادلسازی و اسکان.`,
+        
+        hero_tag_employer: `<i class="fa-solid fa-building-hospital" aria-hidden="true"></i> راهکارهای جذب کادر درمان`,
+        hero_title_employer: `نیروی متخصص بین‌المللی <span class="highlight">با استخدام اخلاقی و عادلانه</span>`,
+        hero_desc_employer: `ما نیاز بیمارستان‌های آلمان را به صورت پایدار و بر اساس استانداردهای اخلاقی بین‌المللی تامین می‌کنیم.`,
+        
+        cta_wizard: `<i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i> شروع ارزیابی اولیه`,
+        cta_jobs: `<i class="fa-solid fa-briefcase" aria-hidden="true"></i> مشاهده فرصت‌های شغلی`,
+        cta_consulting: `<i class="fa-solid fa-calendar-days" aria-hidden="true"></i> درخواست مشاوره کارفرما`,
+        
+        section_wizard_tag: `<i class="fa-solid fa-sliders" aria-hidden="true"></i> ارزیابی شغلی`,
+        section_wizard_title: `تست ارزیابی اولیه کار در آلمان`,
+        section_wizard_subtitle: `رزومه خود را در ۳ گام سریع ارزیابی کرده و بهترین مسیر سیریوس را انتخاب کنید.`,
+        
+        section_services_tag: `<i class="fa-solid fa-cubes-stacked" aria-hidden="true"></i> خدمات یکپارچه`,
+        section_services_title: `اکوسیستم سیریوس <span>راهکارهای جامع صفر تا صد</span>`,
+        section_services_subtitle: `دوره‌های زبان، معادلسازی مدرک، خدمات مهاجرت و کاریابی یکجا.`,
+        
+        section_reels_tag: `<i class="fa-brands fa-instagram" aria-hidden="true"></i> ویدیوها و داستان‌های موفقیت`,
+        section_reels_title: `تجارب واقعی <span>و داستان‌های موفقیت</span>`,
+        section_reels_subtitle: `داستان‌های واقعی پزشکان و پرستاران ما را که کار خود را در آلمان آغاز کرده‌اند ببینید.`,
+        
+        stat_candidates: "متقاضی دریافت مشاوره",
+        stat_placed: "متخصص مستقر شده در آلمان",
+        stat_hospitals: "بیمارستان و کلینیک طرف قرارداد",
+        stat_satisfaction: "میزان رضایت متقاضیان و کارفرمایان",
+        
+        section_events_tag: `<i class="fa-solid fa-people-group" aria-hidden="true"></i> رویدادهای گروهی`,
+        section_events_title: `رشد دسته‌جمعی <span>و لحظات خوش</span>`,
+        section_events_subtitle: `تصاویری از رویدادهای ورزشی، فرهنگی و اجتماعی ما با متقاضیان و تیم سیریوس.`,
+        event_1_badge: "رویداد ورزشی",
+        event_1_title: "روز پیلاتس و تندرستی",
+        event_1_desc: "سرمایه‌گذاری بر سلامتی جسمی و روحی به عنوان یک تیم.",
+        event_2_badge: "تور فرهنگی",
+        event_2_title: "تور فرهنگی پاریس",
+        event_2_desc: "سفری فراموش نشدنی به پاریس همراه متقاضیان و تیم سیریوس.",
+        event_3_badge: "دیدار دوستانه",
+        event_3_title: "دورهمی صبحانه",
+        event_3_desc: "آشنایی و شبکه‌سازی در یک محیط صمیمی.",
+        
+        footer_brand_desc: "سیریوس گلوبال – شریک معتبر شما در تامین نیروی متخصص بین‌المللی و آکادمی زبان در اسن و برلین.",
+        footer_services_title: "خدمات",
+        footer_legal_title: "قوانین و مقررات",
+        footer_contact_title: "دفتر مرکزی اسن",
+        footer_rights: "© 2026 تمامی حقوق برای Sirius Global GmbH محفوظ است."
     }
 };
 
 function initLanguageSwitcher() {
-    const langBtns = document.querySelectorAll('.lang-btn');
+    const langBtns = document.querySelectorAll('.lang-btn, .lang-option-btn');
     
     langBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
-            const selectedLang = e.target.dataset.lang;
-            if (selectedLang) {
-                switchLanguage(selectedLang);
+            const targetBtn = e.target.closest('.lang-btn, .lang-option-btn');
+            if (targetBtn) {
+                const selectedLang = targetBtn.dataset.lang;
+                if (selectedLang) {
+                    switchLanguage(selectedLang);
+                }
             }
         });
     });
@@ -428,8 +782,15 @@ function switchLanguage(lang, notify = true) {
     localStorage.setItem('sirius_lang', lang);
     document.documentElement.lang = lang;
 
-    // Highlight active lang buttons across top bar
-    const langBtns = document.querySelectorAll('.lang-btn');
+    // Handle RTL / LTR direction for Arabic and Persian/Farsi
+    if (lang === 'ar' || lang === 'fa') {
+        document.documentElement.dir = 'rtl';
+    } else {
+        document.documentElement.dir = 'ltr';
+    }
+
+    // Update active state and current language label in dropdown button
+    const langBtns = document.querySelectorAll('.lang-btn, .lang-option-btn');
     langBtns.forEach(b => {
         if (b.dataset.lang === lang) {
             b.classList.add('active');
@@ -437,6 +798,20 @@ function switchLanguage(lang, notify = true) {
             b.classList.remove('active');
         }
     });
+
+    const langLabels = {
+        tr: '🇹🇷 TR',
+        en: '🇬🇧 EN',
+        de: '🇩🇪 DE',
+        fr: '🇫🇷 FR',
+        ar: '🇸🇦 AR',
+        fa: '🇮🇷 FA'
+    };
+
+    const currentLangLabel = document.getElementById('current-lang-label');
+    if (currentLangLabel && langLabels[lang]) {
+        currentLangLabel.innerHTML = `<span class="flag-icon">${langLabels[lang].split(' ')[0]}</span> ${langLabels[lang].split(' ')[1]} <i class="fa-solid fa-chevron-down" style="font-size: 0.72rem; margin-left: 2px;"></i>`;
+    }
 
     const dict = translations[lang];
 
