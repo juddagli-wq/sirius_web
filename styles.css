@@ -16,23 +16,23 @@
     --text-muted: #64748B;
     --text-white: #FFFFFF;
 
-    /* Vibrant Brand Accents */
-    --brand-orange: #FF5D05;
-    --brand-orange-light: #FF7A28;
-    --brand-orange-dark: #E04D00;
-    --brand-orange-glow: rgba(255, 93, 5, 0.25);
+    /* Vibrant Brand Accents (Turquoise / Cyan Palette) */
+    --brand-orange: #00A8E8;
+    --brand-orange-light: #00B4D8;
+    --brand-orange-dark: #0077B6;
+    --brand-orange-glow: rgba(0, 168, 232, 0.25);
 
-    --gradient-orange: linear-gradient(135deg, #FF5D05 0%, #FF8000 100%);
+    --gradient-orange: linear-gradient(135deg, #00A8E8 0%, #0077B6 100%);
     --gradient-blue: linear-gradient(135deg, #00344F 0%, #0077B6 100%);
     --gradient-teal: linear-gradient(135deg, #00B4D8 0%, #47D3B0 100%);
-    --gradient-hero-badge: linear-gradient(135deg, rgba(255, 93, 5, 0.12) 0%, rgba(255, 128, 0, 0.06) 100%);
+    --gradient-hero-badge: linear-gradient(135deg, rgba(0, 168, 232, 0.12) 0%, rgba(0, 119, 182, 0.06) 100%);
 
     --sirius-blue: #0077B6;
     --sirius-cyan: #00A8E8;
-    --sirius-teal: #47D3B0;
+    --sirius-teal: #00A8E8;
 
     --border-color: #E2E8F0;
-    --border-focus: #FF5D05;
+    --border-focus: #00A8E8;
 
     /* Typography */
     --font-heading: 'Outfit', 'Plus Jakarta Sans', sans-serif;
@@ -45,8 +45,8 @@
     --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.04);
     --shadow-md: 0 10px 25px rgba(0, 52, 79, 0.08);
     --shadow-lg: 0 24px 48px rgba(0, 52, 79, 0.14);
-    --shadow-orange: 0 10px 28px rgba(255, 93, 5, 0.3);
-    --shadow-glow: 0 0 25px rgba(255, 93, 5, 0.2);
+    --shadow-orange: 0 10px 28px rgba(0, 168, 232, 0.3);
+    --shadow-glow: 0 0 25px rgba(0, 168, 232, 0.2);
 }
 
 /* Reset & Base Styles */
@@ -149,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-orange:hover {
     transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 14px 32px rgba(255, 93, 5, 0.4);
+    box-shadow: 0 14px 32px rgba(0, 168, 232, 0.4);
 }
 
 .btn-blue {
@@ -241,7 +241,7 @@ h1, h2, h3, h4, h5, h6 {
 .perspective-btn.active {
     background: var(--gradient-orange);
     color: var(--text-white);
-    box-shadow: 0 4px 12px rgba(255, 93, 5, 0.35);
+    box-shadow: 0 4px 12px rgba(0, 168, 232, 0.35);
 }
 
 .lang-selector {
