@@ -56,7 +56,7 @@ const translations = {
         mega_t_col3_btn: "Şimdi Başvur",
         mega_t_sidebar_title: "Size Nasıl Yardımcı Olabiliriz?",
         mega_t_sidebar_sub: "Sirius Global İletişim Kişiniz",
-        mega_t_sidebar_team: "Sirius Danışmanlık Ekibi",
+        mega_t_sidebar_team: "Yasemin Acar",
         mega_t_sidebar_link: "Profesyoneller İçin Bilgiler",
         
         // Mega Panel 2 - Employers
