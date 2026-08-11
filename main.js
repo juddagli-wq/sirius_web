@@ -79,7 +79,7 @@ const translations = {
         // Mega Panel 3 - About
         mega_a_col1_title: "Şirketimiz",
         mega_a_col1_1: "Vizyon & Misyonumuz",
-        mega_a_col1_2: "Essen & Berlin Merkezlerimiz",
+        mega_a_col1_2: "Essen Genel Merkezimiz",
         mega_a_col1_3: "Ekibimiz",
         mega_a_col2_title: "Kalite & Etik",
         mega_a_col2_1: "Gütesiegel Etik İşe Alım",
@@ -206,7 +206,7 @@ const translations = {
         // Mega Panel 3 - About
         mega_a_col1_title: "Unser Unternehmen",
         mega_a_col1_1: "Vision & Mission",
-        mega_a_col1_2: "Standorte Essen & Berlin",
+        mega_a_col1_2: "Standort Essen",
         mega_a_col1_3: "Unser Team",
         mega_a_col2_title: "Qualität & Ethik",
         mega_a_col2_1: "Gütesiegel Faire Anwerbung",
@@ -270,7 +270,7 @@ const translations = {
         event_3_title: "Frühstücks-Treffen",
         event_3_desc: "Networking und Kennenlernen bei einem gemütlichen Frühstück.",
         
-        footer_brand_desc: "Sirius Global GmbH – Ihr zertifizierter Partner für nachhaltige Personalvermittlung, Pflegekräfte und Sprachakademie in Essen & Berlin.",
+        footer_brand_desc: "Sirius Global GmbH – Ihr zertifizierter Partner für nachhaltige Personalvermittlung, Pflegekräfte und Sprachakademie in Essen.",
         footer_services_title: "Leistungen",
         footer_legal_title: "Rechtliches (EU/DE)",
         footer_contact_title: "Zentrale Essen",
@@ -333,7 +333,7 @@ const translations = {
         // Mega Panel 3 - About
         mega_a_col1_title: "Our Company",
         mega_a_col1_1: "Vision & Mission",
-        mega_a_col1_2: "Essen & Berlin Offices",
+        mega_a_col1_2: "Essen HQ Office",
         mega_a_col1_3: "Our Team",
         mega_a_col2_title: "Quality & Ethics",
         mega_a_col2_1: "Fair Recruitment Quality Seal",
@@ -397,7 +397,7 @@ const translations = {
         event_3_title: "Breakfast Meetup",
         event_3_desc: "Networking and getting to know each other over a warm breakfast.",
         
-        footer_brand_desc: "Sirius Global GmbH – Your certified partner for sustainable international recruitment, healthcare professionals, and language academy in Essen & Berlin.",
+        footer_brand_desc: "Sirius Global GmbH – Your certified partner for sustainable international recruitment, healthcare professionals, and language academy in Essen.",
         footer_services_title: "Services",
         footer_legal_title: "Legal (EU/DE)",
         footer_contact_title: "Essen HQ",
@@ -456,7 +456,7 @@ const translations = {
         
         mega_a_col1_title: "Notre Entreprise",
         mega_a_col1_1: "Vision & Mission",
-        mega_a_col1_2: "Bureaux d'Essen & Berlin",
+        mega_a_col1_2: "Bureau d'Essen",
         mega_a_col1_3: "Notre Équipe",
         mega_a_col2_title: "Qualité & Éthique",
         mega_a_col2_1: "Label de Recrutement Équitable",
@@ -514,7 +514,7 @@ const translations = {
         event_3_title: "Petit-Déjeuner Réseau",
         event_3_desc: "Rencontre et réseautage autour d'un petit-déjeuner convivial.",
         
-        footer_brand_desc: "Sirius Global GmbH – Votre partenaire certifié pour le recrutement international durable en santé à Essen & Berlin.",
+        footer_brand_desc: "Sirius Global GmbH – Votre partenaire certifié pour le recrutement international durable en santé à Essen.",
         footer_services_title: "Services",
         footer_legal_title: "Légal (UE/DE)",
         footer_contact_title: "Siège Essen",
