@@ -141,6 +141,13 @@
     function generateAIResponse(query) {
         const q = query.toLowerCase();
 
+        if (q.includes('tercüme') || q.includes('çeviri') || q.includes('yeminli tercüman')) {
+            return `📜 <strong>Evrak Tercüme ve Resmi Masraflar:</strong><br><br>
+                    • <strong>Tercüme Kuralı:</strong> NRW eyaleti Mart 2024 itibarıyla evrak tercümelerinin Almanya'da yeminli mütercimler tarafından yapılmasını şart koşmaktadır.<br>
+                    • <strong>Masraflar:</strong> Evrak tercümesi, posta gönderimi ve Eyalet Denklik Merkezlerinin talep ettiği resmi harçlar (ortalama 150 Euro) adaylarımıza aittir.<br>
+                    • <strong>Sirius Danışmanlık:</strong> Sirius olarak işe yerleştirme hizmetlerimiz tamamen ücretsiz olup, yalnızca denklik danışmanlık ücreti alınmaktadır. Denklik birimimiz tercüme yönlendirmesinde adaylarımıza rehberlik etmektedir.`;
+        }
+
         if (q.includes('ücret') || q.includes('fiyat') || q.includes('maliyet') || q.includes('paralı') || q.includes('ücretsiz')) {
             return `Sirius Global olarak <strong>yalnızca Mesleki Denklik Danışmanlığı ücreti</strong> almaktayız.<br><br>✅ <strong>İşe yerleştirme, mülakat organizasyonları ve iş sözleşmesi aşamasındaki tüm hizmetlerimiz tamamen ÜCRETSİZDİR.</strong><br><br>📌 <em>Not: Tercüme, posta masrafları ve eyalet denklik merkezlerinin harçları (ortalama 150 Euro) adaya aittir.</em>`;
         }
