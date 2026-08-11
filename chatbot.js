@@ -189,8 +189,13 @@
                     📍 Adres: Katernberger Str. 107, 45327 Essen, Almanya`;
         }
 
-        if (q.includes('denklik') || q.includes('anerkennung') || q.includes('vize')) {
-            return `Mesleki denklik (Anerkennung) sürecinizi vekaleten yürütüyor; ön onaylı vize, mülakat hazırlığı ve eyalet sağlık dairesi yazışmalarını üstleniyoruz.`;
+        if (q.includes('denklik') || q.includes('anerkennung') || q.includes('şart') || q.includes('bescheid') || q.includes('staj') || q.includes('sınav')) {
+            return `Almanya Federal Hükümeti resmi kurallarına (<strong>anerkennung-in-deutschland.de</strong>) göre:<br><br>
+                    🏥 <strong>Regüle Meslek Şartı:</strong> Fizyoterapist ve Hemşirelik regüle mesleklerdir (Reglementierte Berufe). Devlet İzni (Staatliche Erlaubnis / Urkunde) olmadan meslek icra edilemez.<br><br>
+                    📋 <strong>Denklik Karar Belgesi (Bescheid):</strong> Eyalet Sağlık Dairesi (Bezirksregierung) incelemesinde eksik müfredat çıkarsa 2 telafi seçeneği sunulur:<br>
+                    • <strong>Anpassungslehrgang:</strong> Klinikte maaşlı uyum stajı.<br>
+                    • <strong>Kenntnisprüfung:</strong> Mesleki bilgi denkliği sınavı.<br><br>
+                    📜 <strong>Dil & Belgeler:</strong> B2 Telc, Goethe veya ÖSD sertifikası, sağlık raporu (Gesundheitliche Eignung) ve adli sicil kaydı (Führungszeugnis) zorunludur.`;
         }
 
         return `Talebinizle ilgili size en doğru bilgiyi sunabilmemiz için hemen uzman danışmanımız <strong>Yasemin Acar</strong> ile iletişime geçebilirsiniz:<br><br>📞 <strong>+49 176 61645779</strong><br>✉️ <strong>info@siriusglobal.de</strong> veya sitemizdeki <a href="iletisim.html" style="color:var(--sirius-teal); font-weight:700;">İletişim Formunu</a> doldurabilirsiniz.`;

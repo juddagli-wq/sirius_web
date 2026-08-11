@@ -7,71 +7,49 @@
     "email": "info@siriusglobal.de",
     "contact_person": "Yasemin Acar",
     "tax_id": "DE362023214",
+    "official_portal_reference": "https://www.anerkennung-in-deutschland.de (Almanya Federal Hükümeti Resmi Denklik Portalı)",
     "description": "Almanya Essen (NRW) merkezli 3 ana birim (Ana Danışmanlar, Denklik Birimi, İşveren Servisi) ile sağlık personelinin mesleki denklik ve istihdam süreçlerini yürüten kurumsal danışmanlık firması."
   },
-  "operational_units": [
-    {
-      "unit": "Ana Danışmanlar Birimi",
-      "duties": "Adaylarla ilk temas, süreç bilgilendirmesi, bilgi ve evrak toplama ve süreci genel takip etme."
-    },
-    {
-      "unit": "Denklik Birimi",
-      "duties": "Eyalet Sağlık Daireleri nezdinde vekaleten resmi denklik işlemlerinin yürütülmesi, evrak yönlendirmesi ve rehberlik."
-    },
-    {
-      "unit": "İşveren Servisi",
-      "duties": "Almanca ön mülakat, işveren mülakat organizasyonu, iş sözleşmesi temini, vize başvurusu, havalimanı karşılama ve konaklama takibi."
+  "official_anerkennung_rules": {
+    "regulated_professions": "Almanya'da Fizyoterapist (Physiotherapeut/in) ve Hemşirelik (Pflegefachkraft) 'Reglementierte Berufe' (Regüle edilmiş meslekler) sınıfındadır. Devlet izni (Staatliche Erlaubnis / Urkunde) olmadan meslek icra edilemez.",
+    "core_requirements": [
+      "1. Eşdeğerlik İncelemesi (Gleichwertigkeitsprüfung): Yabancı diploma ve müfredatın Alman standartlarıyla karşılaştırılması.",
+      "2. Dil Yeterliliği: Hemşirelik ve Fizyoterapi için B2 Seviyesi (Telc, Goethe veya ÖSD); Doktorlar için B2 + C1 FSP Tıp Almancası.",
+      "3. Sağlık Uygunluğu (Gesundheitliche Eignung): Alman doktor onaylı sağlık raporu.",
+      "4. Kişisel Güvenilirlik (Persönliche Eignung): Adli sicil / İyi hal belgesi (Führungszeugnis)."
+    ],
+    "deficiency_compensation": {
+      "bescheid": "Yetkili makam (Bezirksregierung/Gesundheitsamt) inceleme sonunda 'Bescheid' (Denklik Karar Belgesi) düzenler.",
+      "compensation_options": "Eğitim müfredatında eksik veya farklılık bulunması durumunda adaya 2 telafi seçeneği sunulur:\n- A) Anpassungslehrgang (Uyum Stajı/Eğitimi): Kliniklerde maaşlı/destekli pratik çalışma ve eksik ders tamamlama.\n- B) Kenntnisprüfung (Bilgi Sınavı): Mesleki teorik ve pratik yeterlilik sınavını geçme."
     }
-  ],
+  },
+  "denklik_rules_nrw": {
+    "eyalet": "Nordrhein-Westfalen (NRW - Essen)",
+    "average_duration": "Ortalama 4-6 ay",
+    "proof_requirements": "31 Mayıs 2024 itibarıyla NRW eyaleti denklik başvurusunda iş sözleşmesi veya 3 işverenle görüşüldüğüne dair yazılı iş kanıtı / 1 işverenden kabul beyanı (Zusage) istemektedir. Sirius Denklik Birimimiz iş kanıtı temininde yardımcı olur.",
+    "translation_rule": "Mart 2024 itibarıyla evrak tercümelerinin Almanya'da yeminli tercümanlarca yapılması zorunludur."
+  },
   "pricing_and_fees": {
     "consulting_fee": "Sirius yalnızca Mesleki Denklik Danışmanlığı için ücret almaktadır.",
     "placement_fee": "İşe yerleştirme aşamasındaki tüm hizmetler (mülakat, sözleşme vb.) tamamen ÜCRETSİZDİR.",
     "official_costs": "Tercüme, posta ve denklik merkezlerinin talep ettiği harçlar (ortalama 150 Euro) adaya aittir."
   },
-  "denklik_rules_nrw": {
-    "eyalet": "Nordrhein-Westfalen (NRW - Essen)",
-    "average_duration": "Ortalama 6 ay",
-    "proof_requirements": "31 Mayıs 2024 itibarıyla denklik başvurusunda iş sözleşmesi veya 3 işverenle görüşüldüğüne dair yazılı iş kanıtı / 1 işverenden kabul beyanı (Zusage) istenmektedir. Denklik birimimiz bu kanıtın temininde yardımcı olmaktadır.",
-    "translation_rule": "Mart 2024 itibarıyla evrak tercümelerinin Almanya'da yapılması şarttır."
-  },
-  "services": [
-    {
-      "name": "Sirius Medicare",
-      "description": "Lisans mezunu ve Almanca eğitimi alan fizyoterapistlerin, ergoterapistlerin ve hemşirelerin (2017 öncesi lise mezunları dahil) denklik ve işe yerleşme süreçleri."
-    },
-    {
-      "name": "Sirius Akademi",
-      "description": "B2 Telc, Goethe, ÖSD ve C1 FSP dil sertifikası hazırlık eğitimleri."
-    },
-    {
-      "name": "Sirius Home & Relokasyon",
-      "description": "Havalimanında karşılama, konaklanacak yer temininde destek, ilk 3 ay resmi işlemlerde (Anmeldung, banka vb.) destek ve yönlendirme."
-    }
-  ],
-  "social_links": {
-    "instagram": "https://www.instagram.com/sirius_global/",
-    "telegram": "https://t.me/almanyadasaglikpersoneli (5000+ üyeli sağlık kanalı)"
-  },
   "faq": [
     {
-      "question": "Almanya'da fizyoterapist, ergoterapist veya hemşire olarak çalışmak için hangi şartlar gereklidir?",
-      "answer": "1) Mesleki denkliğin alınması\n2) B2 Almanca dil sertifikası (Telc, Goethe veya ÖSD)\n3) İşverenle iş sözleşmesi imzalanması\n4) Çalışma vizesinin alınması"
+      "question": "Fizyoterapist veya hemşire olarak Almanya'da çalışmak için denklik zorunlu mudur?",
+      "answer": "Evet! Almanya kanunlarına göre (Anerkennungsgesetz) hemşirelik ve fizyoterapi regüle mesleklerdir. Devlet izni (Staatliche Erlaubnis) olmadan doğrudan çalışılamaz. Süreç yetkili eyalet makamına başvuruyla başlar."
     },
     {
-      "question": "NRW eyaletinde denklik süresi ne kadar sürer ve iş kanıtı şartı nedir?",
-      "answer": "NRW eyaletinde normal denklik süreci ortalama 6 ay sürer. 31 Mayıs 2024'ten itibaren denklik başvurusunda iş sözleşmesi veya 3 işverenle görüşüldüğüne dair yazılı iş kanıtı istenmektedir. Sirius Denklik Birimimiz iş kanıtı temininde adaylara tam destek vermektedir."
+      "question": "Diploma denkliğinde eksik veya farklılık çıkarsa (Bescheid) ne yapılır?",
+      "answer": "Karar belgesinde (Bescheid) eksiklik çıkarsa aday iki yoldan birini seçer:\n1) Anpassungslehrgang (Klinikte maaşlı uyum stajı)\n2) Kenntnisprüfung (Bilgi denkliği sınavı)\nBu süreç tamamlandığında tam denklik (Urkunde) alınır."
     },
     {
-      "question": "İşe yerleştirme hizmeti ücretli midir?",
-      "answer": "Hayır! Sirius olarak yalnızca mesleki denklik danışmanlık ücreti almaktayız. İşe yerleştirme ve mülakat organizasyonlarının tamamı ÜCRETSİZ olarak sunulmaktadır."
+      "question": "Fizyoterapist ve hemşireler için hangi dil sertifikaları geçerlidir?",
+      "answer": "Almanya Eyalet Sağlık Daireleri tarafından kabul edilen B2 seviyesinde Telc B2, Goethe B2 veya ÖSD B2 sertifikalarından birinin alınması zorunludur."
     },
     {
-      "question": "Evrak tercümeleri nerede yapılmalıdır?",
-      "answer": "NRW eyaleti Mart 2024 itibarıyla tercümelerin Almanya'da yeminli mütercimler tarafından yapılmasını şart koşmaktadır. Hamburg gibi bazı eyaletler ise İngilizce evrakları da kabul edebilmektedir."
-    },
-    {
-      "question": "Hangi sağlık çalışanlarının süreçlerini yürütüyorsunuz?",
-      "answer": "Lisans mezunu ve Almanca eğitimi alan fizyoterapistler, ergoterapistler, lisans hemşireler ve 2017 yılı öncesi lise mezunu hemşirelerin süreçlerini yürütüyoruz."
+      "question": "NRW (Essen) eyaletinde denklik şartları nelerdir?",
+      "answer": "NRW eyaletinde denklik 4-6 ay sürer. 31 Mayıs 2024 kuralı gereğince başvuru esnasında iş sözleşmesi veya iş kanıtı (Zusage) sunulmalıdır. Sirius Denklik Birimimiz iş kanıtı temininde tam destek verir."
     }
   ]
 }
