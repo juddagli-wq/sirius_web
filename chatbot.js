@@ -18,13 +18,23 @@
     }
 
     function createChatbotUI() {
+        // Floating WhatsApp Pop-up Button
+        const waBtn = document.createElement('a');
+        waBtn.className = 'whatsapp-float-btn';
+        waBtn.href = 'https://wa.me/4917661645779?text=Merhaba,%20Sirius%20Global%20Almanya%20s%C3%BCre%C3%A7leri%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.';
+        waBtn.target = '_blank';
+        waBtn.rel = 'noopener noreferrer';
+        waBtn.setAttribute('aria-label', 'WhatsApp İletişim');
+        waBtn.innerHTML = `<i class="fa-brands fa-whatsapp"></i>`;
+        document.body.appendChild(waBtn);
+
         // Floating Trigger Button
         const triggerBtn = document.createElement('button');
         triggerBtn.className = 'sirius-ai-trigger-btn';
         triggerBtn.setAttribute('aria-label', 'Yapay Zeka Canlı Asistanı Aç');
         triggerBtn.innerHTML = `
             <i class="fa-solid fa-robot"></i>
-            <span class="sirius-ai-badge">AI</span>
+            <span class="sirius-ai-badge">AI ASİSTAN</span>
         `;
 
         // Chat Window HTML
@@ -38,7 +48,7 @@
                     </div>
                     <div class="sirius-ai-header-info">
                         <h4>Sirius AI Asistanı</h4>
-                        <span>Canlı & Çevrimiçi</span>
+                        <span>Canlı Yapay Zeka Desteği</span>
                     </div>
                 </div>
                 <button class="sirius-ai-close-btn" aria-label="Kapat"><i class="fa-solid fa-xmark"></i></button>
@@ -46,13 +56,13 @@
             <div class="sirius-ai-chat-messages" id="sirius-ai-messages">
                 <div class="sirius-ai-msg bot">
                     Merhaba! Ben <strong>Sirius AI Asistanı</strong>. 🤖<br>
-                    Almanya'da doktorluk, hemşirelik, fizyoterapi, denklik, ücretler veya vize süreçleri hakkında size nasıl yardımcı olabilirim?
+                    Almanya'da mesleki denklik, B2 dil şartı, ücretler ve Almanya'ya yerleşim hakkında merak ettiğiniz her şeyi bana sorabilirsiniz.
                 </div>
                 <div class="sirius-ai-quick-options">
-                    <button class="sirius-ai-chip" data-query="Ücretler nedir?">💰 Danışmanlık Ücreti</button>
-                    <button class="sirius-ai-chip" data-query="Denklik kaç ay sürer?">⏳ Denklik Süresi (NRW)</button>
-                    <button class="sirius-ai-chip" data-query="Fizyoterapi şartları">🩺 Fizyoterapi & B2</button>
-                    <button class="sirius-ai-chip" data-query="İletişim bilgisi">📞 İletişim & Randevu</button>
+                    <button class="sirius-ai-chip" data-query="İşe yerleştirme ücretli mi?">💰 İşe Yerleştirme Ücretli mi?</button>
+                    <button class="sirius-ai-chip" data-query="NRW denklik süresi kaç ay?">⏳ Denklik Süresi Kaç Ay? (NRW)</button>
+                    <button class="sirius-ai-chip" data-query="Fizyoterapist için hangi dil sertifikası gerekli?">📜 Fizyoterapist B2 Dil Şartı</button>
+                    <button class="sirius-ai-chip" data-query="Süreç adımları ve hizmetleriniz nelerdir?">📋 Süreç Adımları & Birimler</button>
                 </div>
             </div>
             <div class="sirius-ai-chat-input-container">
