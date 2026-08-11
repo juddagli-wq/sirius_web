@@ -46,17 +46,17 @@
             <div class="sirius-ai-chat-messages" id="sirius-ai-messages">
                 <div class="sirius-ai-msg bot">
                     Merhaba! Ben <strong>Sirius AI Asistanı</strong>. 🤖<br>
-                    Almanya'da doktorluk, hemşirelik, fizyoterapi, dil eğitimi veya vize süreçleri hakkında size nasıl yardımcı olabilirim?
+                    Almanya'da doktorluk, hemşirelik, fizyoterapi, denklik, ücretler veya vize süreçleri hakkında size nasıl yardımcı olabilirim?
                 </div>
                 <div class="sirius-ai-quick-options">
-                    <button class="sirius-ai-chip" data-query="Medicare nedir?">🏥 Medicare Nedir?</button>
-                    <button class="sirius-ai-chip" data-query="Hangi dil eğitimi var?">🇩🇪 Dil Akademisi</button>
-                    <button class="sirius-ai-chip" data-query="Konaklama desteği var mı?">🏠 Ev & Konaklama</button>
+                    <button class="sirius-ai-chip" data-query="Ücretler nedir?">💰 Danışmanlık Ücreti</button>
+                    <button class="sirius-ai-chip" data-query="Denklik kaç ay sürer?">⏳ Denklik Süresi (NRW)</button>
+                    <button class="sirius-ai-chip" data-query="Fizyoterapi şartları">🩺 Fizyoterapi & B2</button>
                     <button class="sirius-ai-chip" data-query="İletişim bilgisi">📞 İletişim & Randevu</button>
                 </div>
             </div>
             <div class="sirius-ai-chat-input-container">
-                <input type="text" class="sirius-ai-input" id="sirius-ai-input-field" placeholder="Bir soru sorun... (Örn: Hemşirelik şartları nelerdir?)">
+                <input type="text" class="sirius-ai-input" id="sirius-ai-input-field" placeholder="Bir soru sorun... (Örn: İşe yerleştirme ücretli mi?)">
                 <button class="sirius-ai-send-btn" id="sirius-ai-send-trigger" aria-label="Gönder">
                     <i class="fa-solid fa-paper-plane"></i>
                 </button>
@@ -131,20 +131,44 @@
     function generateAIResponse(query) {
         const q = query.toLowerCase();
 
-        if (q.includes('fizyoterapi') || q.includes('fizyoterapist') || q.includes('physio')) {
-            return `Almanya'da <strong>fizyoterapist</strong> olarak çalışabilmek ve mesleki denklik alabilmek için <strong>B2 düzeyinde ÖSD veya Goethe dil sertifikasının</strong> olması gerekmektedir. 📜<br><br>Sirius Akademi B2 hazırlık eğitimlerimizde adaylarımıza sınav ve denklik sürecinde tam destek sağlıyoruz.<br><br>👉 <a href="sirius-medicare.html#physio" style="color:var(--sirius-teal); font-weight:700;">Fizyoterapi Programı Detayları</a>`;
+        if (q.includes('ücret') || q.includes('fiyat') || q.includes('maliyet') || q.includes('paralı') || q.includes('ücretsiz')) {
+            return `Sirius Global olarak <strong>yalnızca Mesleki Denklik Danışmanlığı ücreti</strong> almaktayız.<br><br>✅ <strong>İşe yerleştirme, mülakat organizasyonları ve iş sözleşmesi aşamasındaki tüm hizmetlerimiz tamamen ÜCRETSİZDİR.</strong><br><br>📌 <em>Not: Tercüme, posta masrafları ve eyalet denklik merkezlerinin harçları (ortalama 150 Euro) adaya aittir.</em>`;
+        }
+
+        if (q.includes('nrw') || q.includes('eyalet') || q.includes('süresi') || q.includes('kaç ay') || q.includes('iş kanıtı') || q.includes('zusage')) {
+            return `Nordrhein-Westfalen (NRW / Essen) eyaletinde <strong>normal denklik süreci ortalama 6 ay</strong> sürmektedir.<br><br>📌 <strong>31 Mayıs 2024 Kuralları:</strong> Denklik başvurusunda iş sözleşmesi veya 3 işverenle görüştüğüne dair yazılı iş kanıtı / 1 kabul beyanı (Zusage) istenmektedir. Denklik Birimimiz iş kanıtı temininde adaylarımıza tam destek vermektedir. Mart 2024 itibarıyla evrak tercümelerinin Almanya'da yapılması zorunludur.`;
+        }
+
+        if (q.includes('birim') || q.includes('ekip') || q.includes('nasıl çalış')) {
+            return `Sirius Global <strong>3 birim halinde</strong> adaylarımıza hizmet vermektedir:<br><br>
+                    1️⃣ <strong>Ana Danışmanlar:</strong> İlk temas, bilgi/belge toparlama ve süreç takibi.<br>
+                    2️⃣ <strong>Denklik Birimi:</strong> Eyalet nezdinde vekaleten resmi denklik yürütme.<br>
+                    3️⃣ <strong>İşveren Servisi:</strong> Ön mülakat, işveren görüşmeleri, vize, karşılama ve konaklama.`;
+        }
+
+        if (q.includes('fizyoterapi') || q.includes('fizyoterapist') || q.includes('ergoterapi') || q.includes('physio')) {
+            return `Almanya'da <strong>fizyoterapist & ergoterapist</strong> olarak çalışabilmek için:<br>
+                    • Lisans diploması veya denkliği<br>
+                    • <strong>B2 düzeyinde Telc, Goethe veya ÖSD</strong> dil sertifikası<br>
+                    • İş sözleşmesi ve vize gereklidir.<br><br> Sirius olarak adaylarımızı B2 sertifikası sonrasında çoğunlukla NRW (Essen) eyaletinde işe yerleştirmekteyiz.<br><br>👉 <a href="sirius-medicare.html#physio" style="color:var(--sirius-teal); font-weight:700;">Fizyoterapi Detayları</a>`;
+        }
+
+        if (q.includes('telegram') || q.includes('grup') || q.includes('topluluk') || q.includes('instagram')) {
+            return `Sosyal medyada aday topluluklarımıza katılabilirsiniz:<br><br>
+                    📱 <a href="https://t.me/almanyadasaglikpersoneli" target="_blank" style="color:var(--sirius-teal); font-weight:700;">5000+ Üyeli Telegram Sağlık Grubu</a><br>
+                    📸 <a href="https://www.instagram.com/sirius_global/" target="_blank" style="color:var(--sirius-teal); font-weight:700;">@sirius_global Instagram Hesabı</a>`;
         }
 
         if (q.includes('medicare') || q.includes('sağlık') || q.includes('doktor') || q.includes('hemşire')) {
-            return `<strong>Sirius Medicare</strong>, Almanya'da çalışmak isteyen doktorlar, hemşireler, fizyoterapistler ve MTR teknikerleri için klinik eşleştirmesi, mesleki denklik ve vize sürecini uçtan uca yönetir.<br><br>👉 <a href="sirius-medicare.html" style="color:var(--sirius-teal); font-weight:700;">Medicare Programlarını İnceleyin</a>`;
+            return `<strong>Sirius Medicare</strong>, lisans mezunu ve Almanca eğitimi alan fizyoterapist, ergoterapist, hemşire (2017 öncesi lise hemşireleri dahil) ve doktorlar için klinik eşleştirmesi, mesleki denklik ve vize sürecini uçtan uca yönetir.<br><br>👉 <a href="sirius-medicare.html" style="color:var(--sirius-teal); font-weight:700;">Medicare Programlarını İnceleyin</a>`;
         }
 
         if (q.includes('dil') || q.includes('almanca') || q.includes('akademi') || q.includes('kurs') || q.includes('fsp')) {
-            return `<strong>Sirius Akademi</strong> ile A1'den C1 Tıp Almancasına (FSP) kadar telc & Goethe sınavlarına hazırlayan interaktif dil eğitimi sunuyoruz. Derslerimiz anadili Almanca olan uzman eğitmenlerle yürütülür.<br><br>👉 <a href="sirius-akademi.html" style="color:var(--sirius-teal); font-weight:700;">Sirius Akademi Detayları</a>`;
+            return `<strong>Sirius Akademi</strong> ile A1'den C1 Tıp Almancasına (FSP) kadar telc & Goethe sınavlarına hazırlayan interaktif dil eğitimi sunuyoruz.<br><br>👉 <a href="sirius-akademi.html" style="color:var(--sirius-teal); font-weight:700;">Sirius Akademi Detayları</a>`;
         }
 
         if (q.includes('ev') || q.includes('konaklama') || q.includes('relokasyon') || q.includes('home') || q.includes('anmeldung')) {
-            return `<strong>Sirius Home</strong> servisimiz ile Almanya'ya indiğinizde eşyalı hazır eviniz teslim edilir, havalimanında karşılanırsınız ve resmi ikamet kaydınız (Anmeldung) tamamlanır.<br><br>👉 <a href="sirius-home.html" style="color:var(--sirius-teal); font-weight:700;">Sirius Home Hizmetleri</a>`;
+            return `<strong>Sirius Home</strong> ile havalimanında karşılama, konaklanacak yer temininde destek, ikametgah kaydı (Anmeldung), banka açılışı ve ilk 3 ay resmi işlemlerde destek sunuyoruz.<br><br>👉 <a href="sirius-home.html" style="color:var(--sirius-teal); font-weight:700;">Sirius Home Hizmetleri</a>`;
         }
 
         if (q.includes('iletişim') || q.includes('telefon') || q.includes('adres') || q.includes('yasemin') || q.includes('randevu')) {
@@ -156,7 +180,7 @@
         }
 
         if (q.includes('denklik') || q.includes('anerkennung') || q.includes('vize')) {
-            return `Eyalet Sağlık Daireleri (Bezirksregierung) nezdinde mesleki denklik (Anerkennung) başvuruları, evrak tercümeleri ve vize takip işlemleri uzman ekibimiz tarafından yürütülmektedir.`;
+            return `Mesleki denklik (Anerkennung) sürecinizi vekaleten yürütüyor; ön onaylı vize, mülakat hazırlığı ve eyalet sağlık dairesi yazışmalarını üstleniyoruz.`;
         }
 
         return `Talebinizle ilgili size en doğru bilgiyi sunabilmemiz için hemen uzman danışmanımız <strong>Yasemin Acar</strong> ile iletişime geçebilirsiniz:<br><br>📞 <strong>+49 176 61645779</strong><br>✉️ <strong>info@siriusglobal.de</strong> veya sitemizdeki <a href="iletisim.html" style="color:var(--sirius-teal); font-weight:700;">İletişim Formunu</a> doldurabilirsiniz.`;

@@ -1,55 +1,77 @@
 {
   "company_info": {
     "name": "Sirius Global GmbH",
-    "location": "Katernberger Str. 107, 45327 Essen, Almanya",
+    "location": "Katernberger Str. 107, 45327 Essen, NRW, Almanya",
     "phone": "+49 2013 2076856",
     "mobile_whatsapp": "+49 176 61645779",
     "email": "info@siriusglobal.de",
     "contact_person": "Yasemin Acar",
     "tax_id": "DE362023214",
-    "description": "Essen merkezli global ağımızla; sağlık sektöründe sürdürülebilir uluslararası personel istihdamı ve Dil Akademisi çözümlerinde güvenilir iş ortağınız."
+    "description": "Almanya Essen (NRW) merkezli 3 ana birim (Ana Danışmanlar, Denklik Birimi, İşveren Servisi) ile sağlık personelinin mesleki denklik ve istihdam süreçlerini yürüten kurumsal danışmanlık firması."
+  },
+  "operational_units": [
+    {
+      "unit": "Ana Danışmanlar Birimi",
+      "duties": "Adaylarla ilk temas, süreç bilgilendirmesi, bilgi ve evrak toplama ve süreci genel takip etme."
+    },
+    {
+      "unit": "Denklik Birimi",
+      "duties": "Eyalet Sağlık Daireleri nezdinde vekaleten resmi denklik işlemlerinin yürütülmesi, evrak yönlendirmesi ve rehberlik."
+    },
+    {
+      "unit": "İşveren Servisi",
+      "duties": "Almanca ön mülakat, işveren mülakat organizasyonu, iş sözleşmesi temini, vize başvurusu, havalimanı karşılama ve konaklama takibi."
+    }
+  ],
+  "pricing_and_fees": {
+    "consulting_fee": "Sirius yalnızca Mesleki Denklik Danışmanlığı için ücret almaktadır.",
+    "placement_fee": "İşe yerleştirme aşamasındaki tüm hizmetler (mülakat, sözleşme vb.) tamamen ÜCRETSİZDİR.",
+    "official_costs": "Tercüme, posta ve denklik merkezlerinin talep ettiği harçlar (ortalama 150 Euro) adaya aittir."
+  },
+  "denklik_rules_nrw": {
+    "eyalet": "Nordrhein-Westfalen (NRW - Essen)",
+    "average_duration": "Ortalama 6 ay",
+    "proof_requirements": "31 Mayıs 2024 itibarıyla denklik başvurusunda iş sözleşmesi veya 3 işverenle görüşüldüğüne dair yazılı iş kanıtı / 1 işverenden kabul beyanı (Zusage) istenmektedir. Denklik birimimiz bu kanıtın temininde yardımcı olmaktadır.",
+    "translation_rule": "Mart 2024 itibarıyla evrak tercümelerinin Almanya'da yapılması şarttır."
   },
   "services": [
     {
       "name": "Sirius Medicare",
-      "description": "Almanya genelinde sağlık kurumları ile dünya genelindeki doktor, hemşire, fizyoterapist ve MTR teknikerlerini buluşturan uluslararası sektörel köprüdür.",
-      "programs": [
-        "Sirius Hemşirelik Mesleki Eğitimi (Ausbildung)",
-        "Sirius Hemşire Yardımcılığı Mesleki Eğitimi",
-        "Sirius Hemşirelik (Diplomalı / Denklik İstihdamı)",
-        "Sirius Fizyoterapi & Ergoterapi",
-        "Sirius Doktor (Hekimlik, FSP & Approbation)"
-      ]
+      "description": "Lisans mezunu ve Almanca eğitimi alan fizyoterapistlerin, ergoterapistlerin ve hemşirelerin (2017 öncesi lise mezunları dahil) denklik ve işe yerleşme süreçleri."
     },
     {
       "name": "Sirius Akademi",
-      "description": "Almanca A1, A2, B1, B2 ve C1 Tıp Almancası (Fachsprachenprüfung - FSP) telc & Goethe sınav odaklı interaktif dil eğitimi."
+      "description": "B2 Telc, Goethe, ÖSD ve C1 FSP dil sertifikası hazırlık eğitimleri."
     },
     {
-      "name": "Sirius Home Relokasyon",
-      "description": "Almanya'ya inişte havalimanı karşılama, eşyalı hazır ev teslimi, ikametgah kaydı (Anmeldung), banka hesabı açılışı ve 7/24 oryantasyon desteği."
-    },
-    {
-      "name": "Sirius Talent",
-      "description": "Alman hastaneleri ve bakım kurumları için sürdürülebilir, etik (Gütesiegel) uluslararası insan kaynağı tedariği."
+      "name": "Sirius Home & Relokasyon",
+      "description": "Havalimanında karşılama, konaklanacak yer temininde destek, ilk 3 ay resmi işlemlerde (Anmeldung, banka vb.) destek ve yönlendirme."
     }
   ],
+  "social_links": {
+    "instagram": "https://www.instagram.com/sirius_global/",
+    "telegram": "https://t.me/almanyadasaglikpersoneli (5000+ üyeli sağlık kanalı)"
+  },
   "faq": [
     {
-      "question": "Almanya'da doktor/hemşire olarak çalışmak için hangi seviyede Almanca gerekiyor?",
-      "answer": "Hemşireler ve teknikerler için B2 genel Almanca; doktorlar ve hekimler için B2 genel Almanca + C1 Tıbbi Almanca (FSP) gerekmektedir. Sirius Akademi bu konuda tam hazırlık sunar."
+      "question": "Almanya'da fizyoterapist, ergoterapist veya hemşire olarak çalışmak için hangi şartlar gereklidir?",
+      "answer": "1) Mesleki denkliğin alınması\n2) B2 Almanca dil sertifikası (Telc, Goethe veya ÖSD)\n3) İşverenle iş sözleşmesi imzalanması\n4) Çalışma vizesinin alınması"
     },
     {
-      "question": "Konaklama ve ev bulma desteği veriyor musunuz?",
-      "answer": "Evet! Sirius Home servisimiz ile Almanya'ya geldiğinizde eşyalı hazır eviniz teslim edilir, havalimanında karşılanırsınız ve resmi işlemleriniz tamamlanır."
+      "question": "NRW eyaletinde denklik süresi ne kadar sürer ve iş kanıtı şartı nedir?",
+      "answer": "NRW eyaletinde normal denklik süreci ortalama 6 ay sürer. 31 Mayıs 2024'ten itibaren denklik başvurusunda iş sözleşmesi veya 3 işverenle görüşüldüğüne dair yazılı iş kanıtı istenmektedir. Sirius Denklik Birimimiz iş kanıtı temininde adaylara tam destek vermektedir."
     },
     {
-      "question": "Danışmanlık almak için kiminle iletişime geçebilirim?",
-      "answer": "İletişim kişimiz Yasemin Acar'a +49 176 61645779 numaralı telefondan veya info@siriusglobal.de adresinden ulaşabilirsiniz."
+      "question": "İşe yerleştirme hizmeti ücretli midir?",
+      "answer": "Hayır! Sirius olarak yalnızca mesleki denklik danışmanlık ücreti almaktayız. İşe yerleştirme ve mülakat organizasyonlarının tamamı ÜCRETSİZ olarak sunulmaktadır."
     },
     {
-      "question": "Almanya'da fizyoterapist olarak çalışmak için hangi düzeyde dil sertifikası gereklidir?",
-      "answer": "Almanya'da fizyoterapist olarak çalışabilmek ve mesleki denklik alabilmek için B2 düzeyinde ÖSD veya Goethe dil sertifikasının olması gerekmektedir. Sirius Akademi B2 hazırlık eğitimlerimizde adaylarımıza bu süreçte tam destek sağlamaktadır."
+      "question": "Evrak tercümeleri nerede yapılmalıdır?",
+      "answer": "NRW eyaleti Mart 2024 itibarıyla tercümelerin Almanya'da yeminli mütercimler tarafından yapılmasını şart koşmaktadır. Hamburg gibi bazı eyaletler ise İngilizce evrakları da kabul edebilmektedir."
+    },
+    {
+      "question": "Hangi sağlık çalışanlarının süreçlerini yürütüyorsunuz?",
+      "answer": "Lisans mezunu ve Almanca eğitimi alan fizyoterapistler, ergoterapistler, lisans hemşireler ve 2017 yılı öncesi lise mezunu hemşirelerin süreçlerini yürütüyoruz."
     }
   ]
 }
