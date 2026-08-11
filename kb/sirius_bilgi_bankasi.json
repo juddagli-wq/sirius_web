@@ -1,0 +1,51 @@
+{
+  "company_info": {
+    "name": "Sirius Global GmbH",
+    "location": "Katernberger Str. 107, 45327 Essen, Almanya",
+    "phone": "+49 2013 2076856",
+    "mobile_whatsapp": "+49 176 61645779",
+    "email": "info@siriusglobal.de",
+    "contact_person": "Yasemin Acar",
+    "tax_id": "DE362023214",
+    "description": "Essen merkezli global ağımızla; sağlık sektöründe sürdürülebilir uluslararası personel istihdamı ve Dil Akademisi çözümlerinde güvenilir iş ortağınız."
+  },
+  "services": [
+    {
+      "name": "Sirius Medicare",
+      "description": "Almanya genelinde sağlık kurumları ile dünya genelindeki doktor, hemşire, fizyoterapist ve MTR teknikerlerini buluşturan uluslararası sektörel köprüdür.",
+      "programs": [
+        "Sirius Hemşirelik Mesleki Eğitimi (Ausbildung)",
+        "Sirius Hemşire Yardımcılığı Mesleki Eğitimi",
+        "Sirius Hemşirelik (Diplomalı / Denklik İstihdamı)",
+        "Sirius Fizyoterapi & Ergoterapi",
+        "Sirius Doktor (Hekimlik, FSP & Approbation)"
+      ]
+    },
+    {
+      "name": "Sirius Akademi",
+      "description": "Almanca A1, A2, B1, B2 ve C1 Tıp Almancası (Fachsprachenprüfung - FSP) telc & Goethe sınav odaklı interaktif dil eğitimi."
+    },
+    {
+      "name": "Sirius Home Relokasyon",
+      "description": "Almanya'ya inişte havalimanı karşılama, eşyalı hazır ev teslimi, ikametgah kaydı (Anmeldung), banka hesabı açılışı ve 7/24 oryantasyon desteği."
+    },
+    {
+      "name": "Sirius Talent",
+      "description": "Alman hastaneleri ve bakım kurumları için sürdürülebilir, etik (Gütesiegel) uluslararası insan kaynağı tedariği."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Almanya'da doktor/hemşire olarak çalışmak için hangi seviyede Almanca gerekiyor?",
+      "answer": "Hemşireler ve teknikerler için B2 genel Almanca; doktorlar ve hekimler için B2 genel Almanca + C1 Tıbbi Almanca (FSP) gerekmektedir. Sirius Akademi bu konuda tam hazırlık sunar."
+    },
+    {
+      "question": "Konaklama ve ev bulma desteği veriyor musunuz?",
+      "answer": "Evet! Sirius Home servisimiz ile Almanya'ya geldiğinizde eşyalı hazır eviniz teslim edilir, havalimanında karşılanırsınız ve resmi işlemleriniz tamamlanır."
+    },
+    {
+      "question": "Danışmanlık almak için kiminle iletişime geçebilirim?",
+      "answer": "İletişim kişimiz Yasemin Acar'a +49 176 61645779 numaralı telefondan veya info@siriusglobal.de adresinden ulaşabilirsiniz."
+    }
+  ]
+}
