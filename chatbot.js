@@ -21,7 +21,7 @@
         // Floating WhatsApp Pop-up Button
         const waBtn = document.createElement('a');
         waBtn.className = 'whatsapp-float-btn';
-        waBtn.href = 'https://wa.me/4917661645779?text=Merhaba,%20Sirius%20Global%20Almanya%20s%C3%BCre%C3%A7leri%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.';
+        waBtn.href = 'https://wa.me/4917661645770?text=Merhaba,%20Sirius%20Global%20Almanya%20s%C3%BCre%C3%A7leri%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.';
         waBtn.target = '_blank';
         waBtn.rel = 'noopener noreferrer';
         waBtn.setAttribute('aria-label', 'WhatsApp İletişim');
@@ -191,7 +191,7 @@
         if (q.includes('iletişim') || q.includes('telefon') || q.includes('adres') || q.includes('yasemin') || q.includes('randevu')) {
             return `<strong>Essen Genel Merkez İletişim:</strong><br>
                     👤 İlgili Kişi: Yasemin Acar<br>
-                    📞 Tel: <a href="tel:+4917661645779" style="color:var(--sirius-teal);">+49 176 61645779</a><br>
+                    📞 Tel: <a href="tel:+4917661645770" style="color:var(--sirius-teal);">+49 176 61645770</a><br>
                     ✉️ E-posta: <a href="mailto:info@siriusglobal.de" style="color:var(--sirius-teal);">info@siriusglobal.de</a><br>
                     📍 Adres: Katernberger Str. 107, 45327 Essen, Almanya`;
         }
@@ -205,7 +205,7 @@
                     📜 <strong>Dil & Belgeler:</strong> B2 Telc, Goethe veya ÖSD sertifikası, sağlık raporu (Gesundheitliche Eignung) ve adli sicil kaydı (Führungszeugnis) zorunludur.`;
         }
 
-        return `Talebinizle ilgili size en doğru bilgiyi sunabilmemiz için hemen uzman danışmanımız <strong>Yasemin Acar</strong> ile iletişime geçebilirsiniz:<br><br>📞 <strong>+49 176 61645779</strong><br>✉️ <strong>info@siriusglobal.de</strong> veya sitemizdeki <a href="iletisim.html" style="color:var(--sirius-teal); font-weight:700;">İletişim Formunu</a> doldurabilirsiniz.`;
+        return `Talebinizle ilgili size en doğru bilgiyi sunabilmemiz için hemen uzman danışmanımız <strong>Yasemin Acar</strong> ile iletişime geçebilirsiniz:<br><br>📞 <strong>+49 176 61645770</strong><br>✉️ <strong>info@siriusglobal.de</strong> veya sitemizdeki <a href="iletisim.html" style="color:var(--sirius-teal); font-weight:700;">İletişim Formunu</a> doldurabilirsiniz.`;
     }
 
     document.addEventListener('DOMContentLoaded', () => {
