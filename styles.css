@@ -1177,25 +1177,37 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-social-icon {
-    width: 38px;
-    height: 38px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.18);
     color: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-decoration: none;
     transition: all 0.25s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+.footer-social-icon.linkedin {
+    background: #0A66C2;
+}
+
+.footer-social-icon.instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.footer-social-icon.tiktok {
+    background: #000000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .footer-social-icon:hover {
-    background: var(--sirius-teal);
-    border-color: var(--sirius-teal);
+    transform: translateY(-4px) scale(1.08);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
     color: #FFFFFF;
-    transform: translateY(-3px);
 }
 
 .footer-bottom {
