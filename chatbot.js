@@ -131,6 +131,10 @@
     function generateAIResponse(query) {
         const q = query.toLowerCase();
 
+        if (q.includes('fizyoterapi') || q.includes('fizyoterapist') || q.includes('physio')) {
+            return `Almanya'da <strong>fizyoterapist</strong> olarak çalışabilmek ve mesleki denklik alabilmek için <strong>B2 düzeyinde ÖSD veya Goethe dil sertifikasının</strong> olması gerekmektedir. 📜<br><br>Sirius Akademi B2 hazırlık eğitimlerimizde adaylarımıza sınav ve denklik sürecinde tam destek sağlıyoruz.<br><br>👉 <a href="sirius-medicare.html#physio" style="color:var(--sirius-teal); font-weight:700;">Fizyoterapi Programı Detayları</a>`;
+        }
+
         if (q.includes('medicare') || q.includes('sağlık') || q.includes('doktor') || q.includes('hemşire')) {
             return `<strong>Sirius Medicare</strong>, Almanya'da çalışmak isteyen doktorlar, hemşireler, fizyoterapistler ve MTR teknikerleri için klinik eşleştirmesi, mesleki denklik ve vize sürecini uçtan uca yönetir.<br><br>👉 <a href="sirius-medicare.html" style="color:var(--sirius-teal); font-weight:700;">Medicare Programlarını İnceleyin</a>`;
         }
