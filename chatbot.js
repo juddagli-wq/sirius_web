@@ -163,11 +163,18 @@
                     3️⃣ <strong>İşveren Servisi:</strong> Ön mülakat, işveren görüşmeleri, vize, karşılama ve konaklama.`;
         }
 
-        if (q.includes('fizyoterapi') || q.includes('fizyoterapist') || q.includes('ergoterapi') || q.includes('physio')) {
-            return `Almanya'da <strong>fizyoterapist & ergoterapist</strong> olarak çalışabilmek için:<br>
+        if (q.includes('fizyoterapi') || q.includes('fizyoterapist') || q.includes('physio')) {
+            return `Almanya'da <strong>fizyoterapist</strong> olarak çalışabilmek için:<br>
                     • Lisans diploması veya denkliği<br>
                     • <strong>B2 düzeyinde Telc, Goethe veya ÖSD</strong> dil sertifikası<br>
-                    • İş sözleşmesi ve vize gereklidir.<br><br> Sirius olarak adaylarımızı B2 sertifikası sonrasında çoğunlukla NRW (Essen) eyaletinde işe yerleştirmekteyiz.<br><br>👉 <a href="sirius-medicare.html#physio" style="color:var(--sirius-teal); font-weight:700;">Fizyoterapi Detayları</a>`;
+                    • İş sözleşmesi ve vize gereklidir.<br><br> Sirius olarak adaylarımızı B2 sertifikası sonrasında çoğunlukla NRW (Essen) eyaletinde işe yerleştirmekteyiz.<br><br>👉 <a href="sirius-fizyoterapi.html" style="color:var(--sirius-teal); font-weight:700;">Fizyoterapi Detaylı Bilgi & Başvuru</a>`;
+        }
+
+        if (q.includes('ergoterapi') || q.includes('ergoterapist')) {
+            return `Almanya'da <strong>ergoterapist (Ergotherapeut/in)</strong> olarak çalışabilmek için:<br>
+                    • Lisans diploması ve denkliği<br>
+                    • B2 seviyesinde dil sertifikası<br>
+                    • Mesleki denklik başvurusunda NRW iş kanıtı kabul yazısı.<br><br>👉 <a href="sirius-ergoterapi.html" style="color:var(--sirius-teal); font-weight:700;">Ergoterapi Detaylı Bilgi & Başvuru</a>`;
         }
 
         if (q.includes('telegram') || q.includes('grup') || q.includes('topluluk') || q.includes('instagram')) {
