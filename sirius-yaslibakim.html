@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Sirius Yaşlı Bakım | Almanya Yaşlı Bakım Kariyeri</title>
+    <meta name="description" content="Sirius Medicare, Almanya'da çalışmak isteyen doktorlar, hekimler, hemşireler ve sağlık uzmanları için klinik yerleşimi, C1 FSP dil hazırlığı ve resmi denklik (Anerkennung) hizmeti sunar.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css?v=2.4.0">
+</head>
+<body>
+
+    <!-- TOP UTILITY BAR -->
+    <div class="top-bar" role="region" aria-label="Üst İletişim Çubuğu">
+        <div class="container top-bar-inner">
+            <div class="top-contact-info">
+                <a href="https://maps.google.com" target="_blank" rel="noopener" class="top-contact-item" aria-label="Adres: Katernberger Str. 107, 45327 Essen, Almanya">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Katernberger Str. 107, 45327 Essen, Almanya
+                </a>
+                <a href="tel:+4920132076856" class="top-contact-item" aria-label="Telefon: +49 2013 2076856">
+                    <i class="fa-solid fa-phone" aria-hidden="true"></i> +49 2013 2076856
+                </a>
+                <a href="mailto:info@siriusglobal.de" class="top-contact-item" aria-label="E-posta: info@siriusglobal.de">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i> info@siriusglobal.de
+                </a>
+                <div class="top-social-links">
+                    <a href="https://www.linkedin.com/company/sirius-global-gmbh/" target="_blank" rel="noopener noreferrer" class="top-social-icon linkedin" aria-label="Sirius Global LinkedIn Sayfası">
+                        <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/sirius_global" target="_blank" rel="noopener noreferrer" class="top-social-icon instagram" aria-label="Sirius Global Instagram Sayfası">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@sirius.global" target="_blank" rel="noopener noreferrer" class="top-social-icon tiktok" aria-label="Sirius Global TikTok Sayfası">
+                        <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="top-actions">
+                <div class="perspective-toggle" role="group" aria-label="Görünüm Seçimi">
+                    <button id="btn-perspective-candidate" class="perspective-btn active" type="button">
+                        <i class="fa-solid fa-user-doctor" aria-hidden="true"></i> Adaylar İçin
+                    </button>
+                    <button id="btn-perspective-employer" class="perspective-btn" type="button">
+                        <i class="fa-solid fa-building-hospital" aria-hidden="true"></i> İşverenler İçin
+                    </button>
+                </div>
+
+                <div class="lang-selector-dropdown" role="group" aria-label="Dil Seçimi">
+                    <button class="lang-dropdown-btn" id="current-lang-label" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Dil Seçin">
+                        <span class="flag-icon">🇹🇷</span> TR <i class="fa-solid fa-chevron-down" style="font-size: 0.72rem; margin-left: 2px;"></i>
+                    </button>
+                    <div class="lang-dropdown-menu" role="menu">
+                        <button class="lang-option-btn active" data-lang="tr" type="button" role="menuitem"><span class="flag-icon">🇹🇷</span> Türkçe (TR)</button>
+                        <button class="lang-option-btn" data-lang="de" type="button" role="menuitem"><span class="flag-icon">🇩🇪</span> Deutsch (DE)</button>
+                        <button class="lang-option-btn" data-lang="en" type="button" role="menuitem"><span class="flag-icon">🇬🇧</span> English (EN)</button>
+                        <button class="lang-option-btn" data-lang="fr" type="button" role="menuitem"><span class="flag-icon">🇫🇷</span> Français (FR)</button>
+                        <button class="lang-option-btn" data-lang="ar" type="button" role="menuitem"><span class="flag-icon">🇸🇦</span> العربية (AR)</button>
+                        <button class="lang-option-btn" data-lang="fa" type="button" role="menuitem"><span class="flag-icon">🇮🇷</span> فارسی (FA)</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER & NAVBAR -->
+    <header class="header-nav" role="banner">
+        <div class="container navbar-inner">
+            <a href="index.html" class="brand-logo" aria-label="Sirius Global Ana Sayfasına Git">
+                <img src="assets/sirius-global-logo-yeni.v2.png" alt="Sirius Global Logo" class="brand-logo-img">
+            </a>
+
+            <nav role="navigation" aria-label="Ana Menü">
+                <ul class="nav-menu" style="display: flex; gap: 18px; list-style: none;">
+                    <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
+                    <li><a href="sirius-doktorluk.html" class="nav-link">Doktorluk</a></li>
+                    <li><a href="sirius-hemsirelik.html" class="nav-link">Hemşirelik</a></li>
+                    <li><a href="sirius-fizyoterapi.html" class="nav-link">Fizyoterapi</a></li>
+                    <li><a href="sirius-ergoterapi.html" class="nav-link">Ergoterapi</a></li>
+                    <li><a href="sirius-yaslibakim.html" class="nav-link active" style="color: var(--brand-orange); font-weight: 700;">Yaşlı Bakım</a></li>
+                    <li><a href="sirius-akademi.html" class="nav-link">Eğitim & Dil Okulları</a></li>
+                    <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
+                </ul>
+            </nav>
+
+            <div style="display: flex; gap: 12px; align-items: center;">
+                <button class="btn btn-orange" type="button" onclick="openModal('candidate', 'Medicare')" aria-label="Medicare Başvurusu Yap">Yaşlı Bakım Başvurusu</button>
+                <button class="mobile-menu-toggle" id="mobile-toggle" type="button" aria-label="Mobil Menüyü Aç">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content" role="main">
+        <!-- PAGE HERO -->
+        <section class="hero-section" style="padding: 75px 0 95px;" aria-label="Sirius Medicare Tanıtımı">
+            <div class="container hero-grid">
+                <div>
+                    <div class="hero-badge"><i class="fa-solid fa-notes-medical" aria-hidden="true"></i> SİRİUS YAŞLI BAKIM - KARİYERİ</div>
+                    <h1 class="hero-title">Sağlık Alanında Profesyoneller İçin Almanya'da <span class="highlight">Yeni Bir Kariyer, Muhteşem Gelecek</span></h1>
+                    <p class="hero-description" style="font-size: 1.05rem; line-height: 1.75; margin-bottom: 20px;">
+                        <strong>Sirius Medicare</strong>, Almanya genelinde var olan yetişmiş insan kaynağı ihtiyacının karşılanması amacıyla sağlık kurumları ile dünya genelindeki sağlık uzmanlarını buluşturan <em>"uluslararası sektörel bir köprü"</em>dür.
+                    </p>
+                    <p class="hero-description" style="font-size: 0.98rem; color: var(--text-secondary); margin-bottom: 28px;">
+                        Sağlık alanında uzmanlaşmış güvenilir partneriniz olarak; halihazırda sağlık sektöründe kariyere sahip olan veya kariyerine sağlık alanında yeni bir başlangıç yapmak isteyen tüm adaylar için nitelikli Almanya istihdam fırsatları sunuyoruz.
+                    </p>
+                    <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+                        <button class="btn btn-orange" type="button" onclick="openModal('candidate', 'Medicare Başvurusu')" aria-label="Almanya Sağlık Başvurusu Yapın">
+                            <i class="fa-solid fa-stethoscope" aria-hidden="true"></i> Başvuru Yapın
+                        </button>
+                        <a href="#programlar" class="btn btn-outline" aria-label="Programları İnceleyin">
+                            Programları İnceleyin <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=1200&q=80" alt="Sirius Medicare Almanya Sağlık Hekimleri ve Hemşireleri Görseli" style="width: 100%; border-radius: 24px; box-shadow: var(--shadow-lg); border: 1px solid var(--border-color); object-fit: cover;">
+                </div>
+            </div>
+        </section>
+
+        <!-- ALMANYA KARİYERİNİZE PROFESYONEL BİR ADIM ATIN -->
+        <section class="about-medicare-section" style="padding: 70px 0; background: var(--bg-light); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);" aria-label="Almanya Kariyer Adımları">
+            <div class="container">
+                <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                    <div class="section-tag orange" style="display: inline-block; margin-bottom: 12px;">
+                        <i class="fa-solid fa-user-doctor" aria-hidden="true"></i> UZMAN DANIŞMANLIK & KARİYER PLANLAMA
+                    </div>
+                    <h2 class="section-title" style="font-size: 2.2rem; margin-bottom: 20px;">Almanya Kariyerinize <span>Profesyonel Bir Adım Atın</span></h2>
+                    <p style="font-size: 1.1rem; color: var(--text-primary); font-weight: 600; margin-bottom: 24px;">
+                        Siz de Almanya'da kendinize yeni ve güçlü bir yol çizmek mi istiyorsunuz?
+                    </p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; margin-top: 40px;">
+                    <div style="background: var(--bg-white); border: 1px solid var(--border-color); border-radius: 20px; padding: 32px; box-shadow: var(--shadow-sm);">
+                        <div style="width: 52px; height: 52px; border-radius: 14px; background: rgba(0, 168, 232, 0.1); color: var(--brand-orange); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 20px;">
+                            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                        </div>
+                        <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--text-primary); margin-bottom: 12px;">Sağlık Diploması Yeterliliği</h3>
+                        <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">
+                            Ülkenizde tıp, hemşirelik, fizyoterapi veya sağlık teknikerliği alanında başarıyla tamamlanmış bir diplomanız mı var?
+                        </p>
+                    </div>
+
+                    <div style="background: var(--bg-white); border: 1px solid var(--border-color); border-radius: 20px; padding: 32px; box-shadow: var(--shadow-sm);">
+                        <div style="width: 52px; height: 52px; border-radius: 14px; background: rgba(0, 168, 232, 0.1); color: var(--brand-orange); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 20px;">
+                            <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+                        </div>
+                        <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--text-primary); margin-bottom: 12px;">Sektörel Mesleki Tecrübe</h3>
+                        <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">
+                            Sağlık alanındaki eğitiminizin yanında klinik veya saha deneyiminiz de bulunuyor mu?
+                        </p>
+                    </div>
+
+                    <div style="background: var(--bg-white); border: 1px solid var(--border-color); border-radius: 20px; padding: 32px; box-shadow: var(--shadow-sm);">
+                        <div style="width: 52px; height: 52px; border-radius: 14px; background: rgba(0, 168, 232, 0.1); color: var(--brand-orange); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 20px;">
+                            <i class="fa-solid fa-handshake-angle" aria-hidden="true"></i>
+                        </div>
+                        <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--text-primary); margin-bottom: 12px;">Uzman Danışman Desteği</h3>
+                        <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">
+                            Sirius Medicare uzman danışmanları mesleki tecrübenize ve kariyer hedeflerinize en uygun kurumsal işi bulmanızda yanınızda.
+                        </p>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 40px;">
+                    <p style="font-size: 1rem; color: var(--text-secondary); margin-bottom: 20px;">
+                        Bunun için yapmanız gereken tek şey sizin mesleki yeterliliklerinize uygun programı seçmek ve başvurunuzu tamamlamaktır.
+                    </p>
+                    <button class="btn btn-orange" type="button" onclick="openModal('candidate', 'Kariyer Danışmanlığı')" aria-label="Danışmanlık Randevusu Alın">
+                        <i class="fa-solid fa-calendar-check" aria-hidden="true"></i> Danışmanlık Randevusu Alın
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROGRAMLAR VE ALANLAR -->
+        <section id="programlar" class="pillars-section" style="padding: 90px 0;" aria-label="Sirius Medicare Programları ve Sağlık Alanları">
+            <div class="container">
+                <div style="text-align: center; max-width: 800px; margin: 0 auto 50px;">
+                    <div class="section-tag orange" style="display: inline-block; margin-bottom: 12px;">PROGRAMLAR VE ALANLAR</div>
+                    <h2 class="section-title">Niteliklerinize Uygun <span>Almanya Programını Seçin</span></h2>
+                    <p class="section-subtitle">
+                        Almanya Eyalet Sağlık Daireleri ve Hastaneler Birliği standartlarında branş bazlı profesyonel hizmet sunuyoruz.
+                    </p>
+                </div>
+
+                <div class="pillars-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px;">
+                    <!-- YAŞLI BAKIM -->
+                    <div class="pillar-card" style="background: var(--bg-white); border: 1px solid var(--border-color); border-radius: 24px; padding: 36px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div class="pillar-icon-box"><i class="fa-solid fa-hands-holding-circle" aria-hidden="true"></i></div>
+                            <h3 class="pillar-title" style="font-size: 1.35rem; margin-bottom: 12px;">Yaşlı Bakım Uzmanlığı</h3>
+                            <p class="pillar-desc" style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 20px;">
+                                Almanya'da artan yaşlı nüfus nedeniyle yaşlı bakım uzmanlarına duyulan ihtiyaç her geçen gün artmaktadır. Yaşlı bakım alanında kariyer yapmak isteyen adaylara güvenli istihdam sağlıyoruz.
+                            </p>
+                        </div>
+                        <button class="btn btn-outline" style="width: 100%; margin-top: 16px;" type="button" onclick="openModal('candidate', 'Yaşlı Bakım Uzmanlığı')" aria-label="Yaşlı Bakım Başvurusu">
+                            Yaşlı Bakım İstihdam Başvurusu
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PHYSIOTHERAPY & DETAILED SHOWCASE -->
+        <section class="physio-showcase-section" style="padding: 70px 0 90px; background: var(--bg-light); border-top: 1px solid var(--border-color);" aria-label="Almanya Sağlık Kariyer Detayları">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; align-items: center;">
+                    <div>
+                        <div class="section-tag orange" style="display: inline-block; margin-bottom: 12px;">
+                            <i class="fa-solid fa-heart-pulse" aria-hidden="true"></i> UÇTAN UÇA DESTEK & REHBERLİK
+                        </div>
+                        <h2 class="section-title" style="font-size: 2.1rem; margin-bottom: 16px;">Süreç Nasıl <span>İşliyor?</span></h2>
+                        <p style="font-size: 1rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 24px;">
+                            Sirius Medicare ile Almanya sağlık sektörüne ilk adımı attığınız andan klinik görevinize başlayana kadar tüm resmi iş süreçleri uzman ekibimiz tarafından yürütülür.
+                        </p>
+                        <ul style="list-style: none; padding: 0; margin-bottom: 28px; display: flex; flex-direction: column; gap: 14px; font-size: 0.95rem; font-weight: 600; color: var(--text-primary);">
+                            <li><i class="fa-solid fa-circle-check" style="color: var(--brand-orange); margin-right: 10px;"></i> B2 Genel & Tıbbi Almanca Dil Desteği (C1 FSP Desteği)</li>
+                            <li><i class="fa-solid fa-circle-check" style="color: var(--brand-orange); margin-right: 10px;"></i> Eyalet Sağlık Daireleri (Bezirksregierung) Mesleki Denklik İşlemleri</li>
+                            <li><i class="fa-solid fa-circle-check" style="color: var(--brand-orange); margin-right: 10px;"></i> Almanya Klinikleri ve Hastaneleri ile Doğrudan İş Sözleşmesi</li>
+                            <li><i class="fa-solid fa-circle-check" style="color: var(--brand-orange); margin-right: 10px;"></i> Vize, Karşılama ve Sirius Home Konaklama Rehberliği</li>
+                        </ul>
+                        <button class="btn btn-orange" type="button" onclick="openModal('candidate', 'Genel Sağlık Danışmanlığı')" aria-label="Ücretsiz Danışmanlık Alın">
+                            <i class="fa-solid fa-headset" aria-hidden="true"></i> Ücretsiz Danışmanlık Alın
+                        </button>
+                    </div>
+                    <div>
+                        <img src="assets/main_2.webp" alt="Almanya Sirius Sağlık Kariyeri Görseli" style="width: 100%; border-radius: 24px; box-shadow: var(--shadow-lg); border: 1px solid var(--border-color); object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" aria-label="Sirius Global Ana Sayfa Footer Link">
+                        <img src="assets/sirius-global-logo-yeni.v2.png" alt="Sirius Global Logo" class="footer-logo-img">
+                    </a>
+                    <p class="footer-brand-desc">
+                        Sirius Global, Almanya iş piyasasında var olan nitelikli insan kaynağı ihtiyacını uluslararası nitelikli uzmanlarla karşılayan uluslararası güvenilir bir köprüdür.
+                    </p>
+                    <div class="footer-social-links">
+                        <a href="https://www.linkedin.com/company/sirius-global-gmbh/" target="_blank" rel="noopener noreferrer" class="footer-social-icon linkedin" aria-label="Sirius Global LinkedIn Sayfası">
+                            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.instagram.com/sirius_global" target="_blank" rel="noopener noreferrer" class="footer-social-icon instagram" aria-label="Sirius Global Instagram Sayfası">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@sirius.global" target="_blank" rel="noopener noreferrer" class="footer-social-icon tiktok" aria-label="Sirius Global TikTok Sayfası">
+                            <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="footer-title" style="font-size: 1.1rem; color: var(--brand-orange); margin-bottom: 16px;">Hizmetlerimiz</h3>
+                    <ul class="footer-links">
+                        <li><a href="sirius-doktorluk.html">Sirius Doktorluk</a></li>
+                        <li><a href="sirius-hemsirelik.html">Sirius Hemşirelik</a></li>
+                        <li><a href="sirius-fizyoterapi.html">Sirius Fizyoterapi</a></li>
+                        <li><a href="sirius-ergoterapi.html">Sirius Ergoterapi</a></li>
+                        <li><a href="sirius-yaslibakim.html">Yaşlı Bakım</a></li>
+                        <li><a href="sirius-akademi.html">Sirius Akademi</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title" style="font-size: 1.1rem; color: var(--brand-orange); margin-bottom: 16px;">Mevzuat & Yasal (EU/DE)</h3>
+                    <ul class="footer-links">
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="legal-notice.html">Legal Notice</a></li>
+                        <li><a href="impressum.html">Künye (Impressum § 5 DDG)</a></li>
+                        <li><a href="datenschutz.html">Gizlilik Politikası (DSGVO)</a></li>
+                        <li><a href="agb.html">Şartlar & Koşullar (AGB)</a></li>
+                        <li><a href="#" id="footer-cookie-trigger">Çerez Tercihleri (Cookies)</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title" style="font-size: 1.1rem; color: var(--brand-orange); margin-bottom: 16px;">Almanya Merkez</h3>
+                    <p style="margin-bottom: 8px;"><i class="fa-solid fa-location-dot" style="color: var(--brand-orange);" aria-hidden="true"></i> Katernberger Str. 107, 45327 Essen, Almanya</p>
+                    <p style="margin-bottom: 8px;"><i class="fa-solid fa-phone" style="color: var(--brand-orange);" aria-hidden="true"></i> +49 2013 2076856</p>
+                </div>
+            </div>
+            <div class="footer-bottom" style="display: flex; flex-direction: column; gap: 12px; align-items: flex-start;">
+                <div>© 2026 Copyright © Sirius Global GmbH. Tüm hakları saklıdır.</div>
+                <div class="ai-image-notice" style="font-size: 0.76rem; color: #94A3B8; max-width: 820px; line-height: 1.5; text-align: left;">
+                    <strong>Yapay Zekâ ile Oluşturulan Görsellere İlişkin Bilgilendirme:</strong> Web sitemizde, bilgilendirme ve tasarım amaçlarıyla kısmen yapay zekâ tarafından oluşturulmuş veya dijital olarak hazırlanmış görseller kullanılmaktadır. Bu görseller kurgusal kişi ve durumları içerebilir ve gerçek çalışanları, adayları veya müşterileri temsil etmeyebilir.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js?v=2.4.0"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html>
