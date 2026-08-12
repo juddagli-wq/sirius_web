@@ -123,7 +123,7 @@
                     </div>
                 </div>
                 <div>
-                    <img src="assets/images/plates.webp" alt="Almanya Fizyoterapist Klinik ve Rehabilitasyon Çalışması" style="width: 100%; border-radius: 24px; box-shadow: var(--shadow-lg); border: 1px solid var(--border-color); object-fit: cover;">
+                    <img src="assets/images/fizyoterapist/fizyoterapist.webp" alt="Almanya Fizyoterapist Klinik ve Rehabilitasyon Çalışması" style="width: 100%; border-radius: 24px; box-shadow: var(--shadow-lg); border: 1px solid var(--border-color); object-fit: cover;">
                 </div>
             </div>
         </section>
@@ -183,99 +183,92 @@
             </div>
         </section>
 
-        <!-- ALMANYA'YA GELİŞ SÜRECİ & FİZYOTERAPİST HİKAYELERİ -->
-        <section style="padding: 85px 0; background: var(--bg-light); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);" aria-label="Almanya'ya Geliş Yol Haritası">
+        <!-- ALMANYA'YA GELİŞ SÜRECİ CAROUSEL -->
+        <section style="padding: 85px 0; background: var(--bg-light); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);" aria-label="Almanya'ya Geliş Yol Haritası Carousel">
             <div class="container">
-                <div style="text-align: center; max-width: 850px; margin: 0 auto 55px;">
+                <div style="text-align: center; max-width: 850px; margin: 0 auto 50px;">
                     <div class="section-tag orange" style="display: inline-block; margin-bottom: 12px;"><i class="fa-solid fa-route"></i> GERÇEK ADAY DENEYİMLERİ & YOL HARİTASI</div>
                     <h2 class="section-title">Fizyoterapist Adaylarımızın <span>Almanya'ya Geliş Süreci</span></h2>
                     <p class="section-subtitle">
-                        İlk evrak toparlamadan Almanya'da görev başlangıcına kadar adım adım fizyoterapistlerimizin başarı hikayeleri.
+                        Evrak hazırlığından tam devlet denkliğine kadar 6 adımda Almanya kariyer yolculuğunuz.
                     </p>
                 </div>
 
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px;">
+                <div class="steps-carousel-container">
+                    <button class="carousel-nav-btn prev" id="physio-carousel-prev" aria-label="Önceki Adım"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="carousel-nav-btn next" id="physio-carousel-next" aria-label="Sonraki Adım"><i class="fa-solid fa-chevron-right"></i></button>
                     
-                    <!-- ADIM 1 -->
-                    <div style="background: var(--bg-white); border: 1px solid var(--border-color); border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-                        <div style="height: 220px; overflow: hidden; position: relative;">
-                            <img src="assets/images/fizyoterapist/tutku_fizyo_denklik.webp" alt="Fizyoterapist Tutku Hanım Denklik Başvurusu" style="width: 100%; height: 100%; object-fit: cover;">
-                            <div style="position: absolute; top: 12px; left: 12px; background: var(--sirius-teal); color: #FFF; font-weight: 800; font-size: 0.78rem; padding: 4px 10px; border-radius: 99px;">1. ADIM</div>
-                        </div>
-                        <div style="padding: 20px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-                            <div>
-                                <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 8px;">Denklik Dosyası Hazırlığı</h3>
-                                <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.55;">
-                                    Lisans diploma ve transkriptler toplanır. Denklik birimimiz dosyayı hazırlayarak eyalet dairelerine vekaleten sunar.
-                                </p>
+                    <div class="steps-carousel-track" id="physio-carousel-track">
+                        
+                        <!-- ADIM 1 -->
+                        <div class="step-card-slide">
+                            <div class="step-card-img-wrapper">
+                                <img src="assets/images/fizyoterapist/tutku_fizyo_denklik.webp" alt="1. Adım - Denklik Dosyası Hazırlığı">
+                                <span class="step-card-badge">1. ADIM</span>
+                            </div>
+                            <div class="step-card-content">
+                                <h3 class="step-card-title">1. Denklik Dosyası Hazırlığı</h3>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- ADIM 2 -->
-                    <div style="background: var(--bg-white); border: 1px solid var(--border-color); border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-                        <div style="height: 220px; overflow: hidden; position: relative;">
-                            <img src="assets/images/fizyoterapist/ummuhan_fizyo_is_sozlemesi.webp" alt="Fizyoterapist Ümmühan Hanım İş Sözleşmesi İmza Süreci" style="width: 100%; height: 100%; object-fit: cover;">
-                            <div style="position: absolute; top: 12px; left: 12px; background: var(--brand-orange); color: #FFF; font-weight: 800; font-size: 0.78rem; padding: 4px 10px; border-radius: 99px;">2. ADIM</div>
-                        </div>
-                        <div style="padding: 20px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-                            <div>
-                                <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 8px;">Klinik Mülakatı & Sözleşme</h3>
-                                <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.55;">
-                                    Almanca ön mülakat sonrası hastane ve rehabilitasyon klinikleriyle online mülakat gerçekleştirilir, sözleşme imzalanır.
-                                </p>
+                        <!-- ADIM 2 -->
+                        <div class="step-card-slide">
+                            <div class="step-card-img-wrapper">
+                                <img src="assets/images/plates.webp" alt="2. Adım - Dil Sertifikasının Alınması">
+                                <span class="step-card-badge" style="background: var(--brand-orange);">2. ADIM</span>
+                            </div>
+                            <div class="step-card-content">
+                                <h3 class="step-card-title">2. Dil Sertifikasının Alınması (B2)</h3>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- ADIM 3 -->
-                    <div style="background: var(--bg-white); border: 1px solid var(--border-color); border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-                        <div style="height: 220px; overflow: hidden; position: relative;">
-                            <img src="assets/images/fizyoterapist/ilayda_dizyo_vizesini_aldi.webp" alt="Fizyoterapist İlayda Hanım Vizesini Aldı" style="width: 100%; height: 100%; object-fit: cover;">
-                            <div style="position: absolute; top: 12px; left: 12px; background: var(--sirius-teal); color: #FFF; font-weight: 800; font-size: 0.78rem; padding: 4px 10px; border-radius: 99px;">3. ADIM</div>
-                        </div>
-                        <div style="padding: 20px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-                            <div>
-                                <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 8px;">Ön Onaylı Vize Onayı</h3>
-                                <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.55;">
-                                    B2 sertifikası ve iş sözleşmesi (Zusage) ile Alman konsolosluğu üzerinden hızlı çalışma vizesi onayı alınır.
-                                </p>
+                        <!-- ADIM 3 -->
+                        <div class="step-card-slide">
+                            <div class="step-card-img-wrapper">
+                                <img src="assets/images/fizyoterapist/ummuhan_fizyo_is_sozlemesi.webp" alt="3. Adım - İşverenle Mülakat ve İş Sözleşmesi">
+                                <span class="step-card-badge">3. ADIM</span>
+                            </div>
+                            <div class="step-card-content">
+                                <h3 class="step-card-title">3. İşverenle Mülakat & Sözleşme İmzası</h3>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- ADIM 4 -->
-                    <div style="background: var(--bg-white); border: 1px solid var(--border-color); border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-                        <div style="height: 220px; overflow: hidden; position: relative;">
-                            <img src="assets/images/fizyoterapist/ibrahim-fizyo-karsilama.webp" alt="Fizyoterapist İbrahim Bey Karşılama ve Relokasyon" style="width: 100%; height: 100%; object-fit: cover;">
-                            <div style="position: absolute; top: 12px; left: 12px; background: var(--brand-orange); color: #FFF; font-weight: 800; font-size: 0.78rem; padding: 4px 10px; border-radius: 99px;">4. ADIM</div>
-                        </div>
-                        <div style="padding: 20px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-                            <div>
-                                <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 8px;">Karşılama & Eşyalı Ev</h3>
-                                <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.55;">
-                                    Sirius Home ekibimiz adayı havalimanında karşılar, eşyalı hazır evine yerleştirir ve ikametgah kaydını (Anmeldung) yapar.
-                                </p>
+                        <!-- ADIM 4 -->
+                        <div class="step-card-slide">
+                            <div class="step-card-img-wrapper">
+                                <img src="assets/images/fizyoterapist/ilayda_dizyo_vizesini_aldi.webp" alt="4. Adım - Vize Alım Süreci">
+                                <span class="step-card-badge" style="background: var(--brand-orange);">4. ADIM</span>
+                            </div>
+                            <div class="step-card-content">
+                                <h3 class="step-card-title">4. Vize Alım Süreci</h3>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- ADIM 5 -->
-                    <div style="background: var(--bg-white); border: 1px solid var(--border-color); border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-                        <div style="height: 220px; overflow: hidden; position: relative;">
-                            <img src="assets/images/fizyoterapist/zeynep_fiyo-urkunde.webp" alt="Fizyoterapist Zeynep Hanım Tam Devlet Denkliği Urkunde Belgesi" style="width: 100%; height: 100%; object-fit: cover;">
-                            <div style="position: absolute; top: 12px; left: 12px; background: var(--sirius-teal); color: #FFF; font-weight: 800; font-size: 0.78rem; padding: 4px 10px; border-radius: 99px;">5. ADIM</div>
-                        </div>
-                        <div style="padding: 20px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-                            <div>
-                                <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 8px;">Tam Denklik (Urkunde) & Görev</h3>
-                                <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.55;">
-                                    Staj veya sınav sürecinin tamamlanmasıyla tam devlet denkliği (Urkunde) alınarak fizyoterapist olarak göreve başlanır.
-                                </p>
+                        <!-- ADIM 5 -->
+                        <div class="step-card-slide">
+                            <div class="step-card-img-wrapper">
+                                <img src="assets/images/fizyoterapist/ibrahim-fizyo-karsilama.webp" alt="5. Adım - Konaklama Desteği & Havaalanında Karşılama">
+                                <span class="step-card-badge">5. ADIM</span>
+                            </div>
+                            <div class="step-card-content">
+                                <h3 class="step-card-title">5. Konaklama Desteği & Havalimanı Karşılama</h3>
                             </div>
                         </div>
+
+                        <!-- ADIM 6 -->
+                        <div class="step-card-slide">
+                            <div class="step-card-img-wrapper">
+                                <img src="assets/images/fizyoterapist/zeynep_fiyo-urkunde.webp" alt="6. Adım - Anerkennung Süreci ve Urkunde Alımı">
+                                <span class="step-card-badge" style="background: var(--brand-orange);">6. ADIM</span>
+                            </div>
+                            <div class="step-card-content">
+                                <h3 class="step-card-title">6. Anerkennung Süreci & Urkunde Alımı</h3>
+                            </div>
+                        </div>
+
                     </div>
 
+                    <div class="carousel-dots" id="physio-carousel-dots"></div>
                 </div>
             </div>
         </section>
@@ -390,5 +383,74 @@
 
     <script src="main.js?v=2.4.0"></script>
     <script src="chatbot.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const track = document.getElementById('physio-carousel-track');
+            const prevBtn = document.getElementById('physio-carousel-prev');
+            const nextBtn = document.getElementById('physio-carousel-next');
+            const dotsContainer = document.getElementById('physio-carousel-dots');
+            
+            if (!track) return;
+
+            const slides = track.querySelectorAll('.step-card-slide');
+            const totalSlides = slides.length;
+            let currentIndex = 0;
+
+            function createDots() {
+                dotsContainer.innerHTML = '';
+                for (let i = 0; i < totalSlides; i++) {
+                    const dot = document.createElement('div');
+                    dot.className = `carousel-dot ${i === currentIndex ? 'active' : ''}`;
+                    dot.addEventListener('click', () => goToSlide(i));
+                    dotsContainer.appendChild(dot);
+                }
+            }
+
+            function updateCarousel() {
+                if (currentIndex >= totalSlides) currentIndex = totalSlides - 1;
+                if (currentIndex < 0) currentIndex = 0;
+                
+                const slideWidth = track.parentElement.offsetWidth - 20; // container width minus padding
+                track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+
+                // Update dots
+                const dots = dotsContainer.querySelectorAll('.carousel-dot');
+                dots.forEach((dot, idx) => {
+                    dot.classList.toggle('active', idx === currentIndex);
+                });
+            }
+
+            function goToSlide(index) {
+                currentIndex = index;
+                updateCarousel();
+            }
+
+            prevBtn?.addEventListener('click', () => {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                } else {
+                    currentIndex = totalSlides - 1;
+                }
+                updateCarousel();
+            });
+
+            nextBtn?.addEventListener('click', () => {
+                if (currentIndex < totalSlides - 1) {
+                    currentIndex++;
+                } else {
+                    currentIndex = 0;
+                }
+                updateCarousel();
+            });
+
+            window.addEventListener('resize', () => {
+                createDots();
+                updateCarousel();
+            });
+
+            createDots();
+            updateCarousel();
+        });
+    </script>
 </body>
 </html>
