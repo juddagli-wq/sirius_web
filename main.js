@@ -1439,10 +1439,41 @@ function initModalControls() {
             e.preventDefault();
             const nameInput = document.getElementById('form-name');
             const name = nameInput ? nameInput.value : 'Aday';
-            
-            closeModal();
-            showToast(`Vielen Dank / Teşekkürler ${name}! Ihre Anfrage wurde erfolgreich übermittelt.`);
-            appForm.reset();
+            const btn = appForm.querySelector('button[type="submit"]');
+            const oldText = btn.innerHTML;
+            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Gönderiliyor...';
+            btn.disabled = true;
+
+            const formData = {
+                "Ad Soyad": name,
+                "E-posta": document.getElementById('form-email') ? document.getElementById('form-email').value : '',
+                "Telefon": document.getElementById('form-phone') ? document.getElementById('form-phone').value : '',
+                "Uzmanlık": document.getElementById('form-profession') ? document.getElementById('form-profession').value : '',
+                "Almanca Seviyesi": document.getElementById('form-german') ? document.getElementById('form-german').value : ''
+            };
+
+            fetch("https://formsubmit.co/ajax/info@siriusglobal.de", {
+                method: "POST",
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                closeModal();
+                showToast(`Teşekkürler ${name}! Başvurunuz başarıyla iletildi.`);
+                appForm.reset();
+                btn.innerHTML = oldText;
+                btn.disabled = false;
+            })
+            .catch(error => {
+                console.error(error);
+                showToast("Gönderim sırasında bir hata oluştu. Lütfen daha sonra tekrar deneyin.");
+                btn.innerHTML = oldText;
+                btn.disabled = false;
+            });
         });
     }
 }
