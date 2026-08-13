@@ -17,7 +17,7 @@
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <link rel="stylesheet" href="styles.css?v=1786619339">
+    <link rel="stylesheet" href="styles.css?v=1786619462">
 </head>
 <body>
 
@@ -758,12 +758,13 @@
 
                 <div class="form-group">
                     <label class="form-label" for="file-cv-upload">Özgeçmiş / CV (İsteğe Bağlı)</label>
-                    <div class="file-upload-box">
-                        <input type="file" id="file-cv-upload" style="display: none;" accept=".pdf,.doc,.docx">
+                    <label class="file-upload-box" for="file-cv-upload" style="display: block; cursor: pointer; text-align: center;">
+                        <input type="file" id="file-cv-upload" name="attachment" style="display: none;" accept=".pdf,.doc,.docx">
                         <i class="fa-solid fa-cloud-arrow-up" style="font-size: 1.8rem; color: var(--brand-orange); margin-bottom: 8px;" aria-hidden="true"></i>
                         <div style="font-size: 0.9rem; color: var(--text-primary); font-weight: 600;">CV Dosyanızı Buraya Sürükleyin veya Seçin</div>
                         <div style="font-size: 0.78rem; color: var(--text-secondary);">PDF, DOC, DOCX (Max 10MB)</div>
-                    </div>
+                    </label>
+                    <div id="file-name-display" style="font-size: 0.85rem; color: var(--brand-orange); margin-top: 8px; text-align: center;"></div>
                 </div>
 
                 <button type="submit" class="btn btn-orange" style="width: 100%; margin-top: 10px;" aria-label="Formu Gönder">
@@ -836,8 +837,8 @@
         </div>
     </footer>
 
-    <script src="main.js?v=1786619339"></script>
-    <script src="chatbot.js?v=1786619339"></script>
+    <script src="main.js?v=1786619462"></script>
+    <script src="chatbot.js?v=1786619462"></script>
     <!-- NURSING AD VIDEO POPUP -->
     <div id="video-popup-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(0,0,0,0.85); z-index: 99999; justify-content: center; align-items: center; padding: 20px; box-sizing: border-box;">
         <div style="position: relative; width: 100%; max-width: 850px; background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5); display: flex; flex-direction: row; flex-wrap: wrap; max-height: 90vh;">

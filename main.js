@@ -1434,6 +1434,19 @@ function initModalControls() {
         });
     }
 
+    const cvInput = document.getElementById('file-cv-upload');
+    const fileNameDisplay = document.getElementById('file-name-display');
+    
+    if (cvInput && fileNameDisplay) {
+        cvInput.addEventListener('change', function() {
+            if (this.files && this.files[0]) {
+                fileNameDisplay.textContent = 'Seçilen Dosya: ' + this.files[0].name;
+            } else {
+                fileNameDisplay.textContent = '';
+            }
+        });
+    }
+
     if (appForm) {
         appForm.addEventListener('submit', function(e) {
             e.preventDefault();
@@ -1444,27 +1457,30 @@ function initModalControls() {
             btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Gönderiliyor...';
             btn.disabled = true;
 
-            const formData = {
-                "Ad Soyad": name,
-                "E-posta": document.getElementById('form-email') ? document.getElementById('form-email').value : '',
-                "Telefon": document.getElementById('form-phone') ? document.getElementById('form-phone').value : '',
-                "Uzmanlık": document.getElementById('form-profession') ? document.getElementById('form-profession').value : '',
-                "Almanca Seviyesi": document.getElementById('form-german') ? document.getElementById('form-german').value : ''
-            };
+            const formData = new FormData();
+            formData.append("Ad Soyad", name);
+            formData.append("E-posta", document.getElementById('form-email') ? document.getElementById('form-email').value : '');
+            formData.append("Telefon", document.getElementById('form-phone') ? document.getElementById('form-phone').value : '');
+            formData.append("Uzmanlık", document.getElementById('form-profession') ? document.getElementById('form-profession').value : '');
+            formData.append("Almanca Seviyesi", document.getElementById('form-german') ? document.getElementById('form-german').value : '');
+            
+            if (cvInput && cvInput.files && cvInput.files[0]) {
+                formData.append("attachment", cvInput.files[0]);
+            }
 
             fetch("https://formsubmit.co/ajax/info@siriusglobal.de", {
                 method: "POST",
                 headers: { 
-                    'Content-Type': 'application/json',
                     'Accept': 'application/json'
                 },
-                body: JSON.stringify(formData)
+                body: formData
             })
             .then(response => response.json())
             .then(data => {
                 closeModal();
                 showToast(`Teşekkürler ${name}! Başvurunuz başarıyla iletildi.`);
                 appForm.reset();
+                if(fileNameDisplay) fileNameDisplay.textContent = '';
                 btn.innerHTML = oldText;
                 btn.disabled = false;
             })
