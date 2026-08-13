@@ -41,10 +41,12 @@ const translations = {
         
         // Mega Panel 1 - Talents
         mega_t_col1_title: "Almanya'da Çalışmak",
-        mega_t_col1_1: "Sağlık Hizmeti (Doktor & Hemşire)",
-        mega_t_col1_2: "Eğitim & Dil Okulları",
-        mega_t_col1_3: "Fizyoterapi & Ergoterapi",
-        mega_t_col1_4: "Huzurevleri & Yaşlı Bakım",
+        mega_t_col1_1: "Doktorluk",
+        mega_t_col1_2: "Hemşirelik",
+        mega_t_col1_3: "Fizyoterapist",
+        mega_t_col1_4: "Ergoterapist",
+        mega_t_col1_5: "Yaşlı Bakım",
+        mega_t_col1_6: "Eğitim & Dil Okulları",
         mega_t_col2_title: "Hizmetler ve Bilgiler",
         mega_t_col2_1: "Sirius Global Programı",
         mega_t_col2_2: "Almanca Dil Okullarımız",
@@ -295,10 +297,12 @@ const translations = {
         
         // Mega Panel 1 - Talents
         mega_t_col1_title: "Working in Germany",
-        mega_t_col1_1: "Healthcare (Doctors & Nurses)",
-        mega_t_col1_2: "Education & Language Schools",
-        mega_t_col1_3: "Physiotherapy & Occupational Therapy",
-        mega_t_col1_4: "Elderly Care & Nursing Homes",
+        mega_t_col1_1: "Doctors",
+        mega_t_col1_2: "Nursing",
+        mega_t_col1_3: "Physiotherapy",
+        mega_t_col1_4: "Occupational Therapy",
+        mega_t_col1_5: "Elderly Care",
+        mega_t_col1_6: "Education & Language Schools",
         mega_t_col2_title: "Services & Information",
         mega_t_col2_1: "The Sirius Global Program",
         mega_t_col2_2: "Our German Language Schools",
@@ -853,6 +857,11 @@ function switchLanguage(lang, notify = true) {
         if (href === 'index.html') link.textContent = dict.nav_home;
         if (href === 'hakkimizda.html') link.textContent = dict.nav_about;
         if (href === 'sirius-medicare.html') link.textContent = dict.nav_medicare;
+        if (href === 'sirius-doktorluk.html') link.textContent = dict.mega_t_col1_1;
+        if (href === 'sirius-hemsirelik.html') link.textContent = dict.mega_t_col1_2;
+        if (href === 'sirius-fizyoterapi.html') link.textContent = dict.mega_t_col1_3;
+        if (href === 'sirius-ergoterapi.html') link.textContent = dict.mega_t_col1_4;
+        if (href === 'sirius-yaslibakim.html') link.textContent = dict.mega_t_col1_5;
         if (href === 'sirius-akademi.html') link.textContent = dict.nav_academy;
         if (href === 'sirius-talent.html') link.textContent = dict.nav_employers;
         if (href === 'kariyer-firsatlari.html') link.textContent = dict.nav_jobs;
@@ -882,6 +891,8 @@ function switchLanguage(lang, notify = true) {
             if (items[1]) items[1].textContent = dict.mega_t_col1_2;
             if (items[2]) items[2].textContent = dict.mega_t_col1_3;
             if (items[3]) items[3].textContent = dict.mega_t_col1_4;
+            if (items[4]) items[4].textContent = dict.mega_t_col1_5;
+            if (items[5]) items[5].textContent = dict.mega_t_col1_6;
         }
         // Column 2 links
         if (links[1]) {
