@@ -17,7 +17,7 @@
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <link rel="stylesheet" href="styles.css?v=1786619462">
+    <link rel="stylesheet" href="styles.css?v=1786619705">
 </head>
 <body>
 
@@ -837,32 +837,34 @@
         </div>
     </footer>
 
-    <script src="main.js?v=1786619462"></script>
-    <script src="chatbot.js?v=1786619462"></script>
+    <script src="main.js?v=1786619705"></script>
+    <script src="chatbot.js?v=1786619705"></script>
     <!-- NURSING AD VIDEO POPUP -->
-    <div id="video-popup-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(0,0,0,0.85); z-index: 99999; justify-content: center; align-items: center; padding: 20px; box-sizing: border-box;">
-        <div style="position: relative; width: 100%; max-width: 850px; background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5); display: flex; flex-direction: row; flex-wrap: wrap; max-height: 90vh;">
-            <button id="close-video-popup" aria-label="Kapat" style="position: absolute; top: 12px; right: 12px; background: rgba(0,0,0,0.7); color: #fff; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 18px; cursor: pointer; z-index: 20; display: flex; justify-content: center; align-items: center; transition: background 0.3s;"><i class="fa-solid fa-xmark"></i></button>
+    <div id="video-popup-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(0,0,0,0.9); z-index: 99999; justify-content: center; align-items: center; padding: 20px; box-sizing: border-box;">
+        <div style="position: relative; width: 100%; max-width: 900px; background: #000; border-radius: 16px; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.8); display: flex; flex-direction: row; flex-wrap: wrap; align-items: stretch; max-height: 90vh;">
+            <button id="close-video-popup" aria-label="Kapat" style="position: absolute; top: 12px; right: 12px; background: rgba(0,0,0,0.7); color: #fff; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; width: 36px; height: 36px; font-size: 18px; cursor: pointer; z-index: 20; display: flex; justify-content: center; align-items: center; transition: background 0.3s;"><i class="fa-solid fa-xmark"></i></button>
             
-            <!-- Sol Taraf: Kapak Görseli -->
-            <div style="flex: 1 1 350px; background: #f0f0f0; display: flex; align-items: center; justify-content: center; overflow: hidden;">
-                <img src="assets/images/ana%20sayfa%20ilan/sirius_global_koln_recruitment_720x1200_OTA_final.png" alt="Köln Hemşire İlanı" style="width: 100%; height: 100%; object-fit: cover;">
+            <!-- Sol Taraf: Kapak Görseli ve Buton -->
+            <div style="position: relative; flex: 1 1 300px; display: flex; align-items: center; justify-content: center; background: #000;">
+                <img src="assets/images/ana%20sayfa%20ilan/sirius_global_koln_recruitment_720x1200_OTA_final.png" alt="Köln Hemşire İlanı" style="width: 100%; height: 100%; max-height: 90vh; object-fit: contain;">
+                
+                <!-- Görselin En Üstündeki Turuncu Buton -->
+                <div style="position: absolute; top: 32px; left: 0; width: 100%; display: flex; justify-content: center; z-index: 15;">
+                    <button type="button" class="btn btn-orange" onclick="document.getElementById('video-popup-modal').style.display='none'; document.getElementById('nursing-popup-video').pause(); openModal('candidate');" style="padding: 12px 32px; font-size: 1.1rem; border-radius: 50px; cursor: pointer; box-shadow: 0 10px 25px rgba(239, 108, 0, 0.6); border: 2px solid #fff; font-weight: bold;">
+                        <i class="fa-solid fa-user-nurse"></i> Hemen Başvur
+                    </button>
+                </div>
             </div>
 
-            <!-- Sağ Taraf: Video ve Başvuru İçeriği -->
-            <div style="flex: 1 1 350px; display: flex; flex-direction: column; overflow-y: auto;">
+            <!-- Sağ Taraf: Video -->
+            <div style="flex: 1 1 300px; display: flex; align-items: center; justify-content: center; background: #000;">
                 <video id="nursing-popup-video" 
                     src="assets/images/ana%20sayfa%20ilan/hemsire%20ilani.mp4" 
                     controls 
                     playsinline 
                     autoplay
-                    style="width: 100%; max-height: 60vh; object-fit: cover; display: block; background: #000;">
+                    style="width: 100%; height: 100%; max-height: 90vh; object-fit: contain; display: block;">
                 </video>
-                <div style="padding: 24px; text-align: center; background: #fff; display: flex; flex-direction: column; justify-content: center; flex-grow: 1;">
-                    <h3 style="margin: 0 0 12px 0; font-size: 1.25rem; font-weight: 700; color: var(--text-primary);">Köln Hastaneleri Sizi Bekliyor!</h3>
-                    <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 20px;">Sınırlı kontenjan ile Almanya'da hemen işe başlayın.</p>
-                    <button type="button" class="btn btn-blue" onclick="document.getElementById('video-popup-modal').style.display='none'; document.getElementById('nursing-popup-video').pause(); openModal('candidate');" style="width: 100%; padding: 14px; font-size: 1rem; border-radius: 12px; cursor: pointer; border: none;"><i class="fa-solid fa-user-nurse"></i> Hemen Başvur</button>
-                </div>
             </div>
         </div>
     </div>
