@@ -18,15 +18,7 @@
     }
 
     function createChatbotUI() {
-        // Floating WhatsApp Pop-up Button
-        const waBtn = document.createElement('a');
-        waBtn.className = 'whatsapp-float-btn';
-        waBtn.href = 'https://wa.me/4917661645770?text=Merhaba,%20Sirius%20Global%20Almanya%20s%C3%BCre%C3%A7leri%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.';
-        waBtn.target = '_blank';
-        waBtn.rel = 'noopener noreferrer';
-        waBtn.setAttribute('aria-label', 'WhatsApp İletişim');
-        waBtn.innerHTML = `<i class="fa-brands fa-whatsapp"></i>`;
-        document.body.appendChild(waBtn);
+
 
         // Floating Trigger Button
         const triggerBtn = document.createElement('button');
