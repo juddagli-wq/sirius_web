@@ -1679,3 +1679,12 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 1.15rem;
     }
 }
+
+/* LOGIN MODAL STYLES */
+#close-login-modal:hover {
+    color: #0F172A !important;
+}
+.google-login-btn:hover {
+    background-color: #F8FAFC !important;
+    border-color: #CBD5E1 !important;
+}

@@ -894,14 +894,9 @@ function switchLanguage(lang, notify = true) {
             if (items[4]) items[4].textContent = dict.mega_t_col1_5;
             if (items[5]) items[5].textContent = dict.mega_t_col1_6;
         }
-        // Column 2 links
+        // Column 2 links (Custom structure, removed dynamic translation for now)
         if (links[1]) {
-            const items = links[1].querySelectorAll('a');
-            if (items[0]) items[0].textContent = dict.mega_t_col2_1;
-            if (items[1]) items[1].textContent = dict.mega_t_col2_2;
-            if (items[2]) items[2].textContent = dict.mega_t_col2_3;
-            if (items[3]) items[3].textContent = dict.mega_t_col2_4;
-            if (items[4]) items[4].textContent = dict.mega_t_col2_5;
+            // No overwrite for new nested structure
         }
         // Column 3 description & button
         const col3Desc = megaPanelTalents.querySelectorAll('.mega-panel-inner > div')[2];
@@ -1434,6 +1429,15 @@ function initModalControls() {
         });
     }
 
+    const loginModal = document.getElementById('login-modal');
+    const closeLoginBtn = document.getElementById('close-login-modal');
+    if (loginModal && closeLoginBtn) {
+        closeLoginBtn.addEventListener('click', closeLoginModal);
+        loginModal.addEventListener('click', (e) => {
+            if (e.target === loginModal) closeLoginModal();
+        });
+    }
+
     const cvInput = document.getElementById('file-cv-upload');
     const fileNameDisplay = document.getElementById('file-name-display');
     
@@ -1515,6 +1519,21 @@ function openModal(type = 'candidate', role = '') {
 function closeModal() {
     const modalOverlay = document.getElementById('contact-modal');
     if (modalOverlay) modalOverlay.classList.remove('active');
+}
+
+function openLoginModal() {
+    const loginModal = document.getElementById('login-modal');
+    if (loginModal) loginModal.style.display = 'flex';
+}
+
+function closeLoginModal() {
+    const loginModal = document.getElementById('login-modal');
+    if (loginModal) loginModal.style.display = 'none';
+}
+
+function showLoginComingSoon() {
+    closeLoginModal();
+    showToast("İşveren portalımız altyapı çalışmaları nedeniyle çok yakında aktif olacaktır. İlginiz için teşekkürler.");
 }
 
 function showToast(message) {

@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css?v=1786693949">
+    <link rel="stylesheet" href="styles.css?v=1786696145">
 </head>
 <body>
 
@@ -82,6 +82,7 @@
             </nav>
 
             <div style="display: flex; gap: 12px; align-items: center;">
+                <button class="btn btn-outline" style="border-radius: 50px; padding: 10px 20px; font-weight: 600;" type="button" onclick="openLoginModal()" aria-label="İşveren Portalına Giriş Yap"><i class="fa-solid fa-right-to-bracket" style="margin-right: 6px;"></i> Giriş Yap</button>
                 <button class="btn btn-orange" type="button" onclick="openModal('employer')" aria-label="İşveren Talebi Oluşturun">İşveren Talebi</button>
                 <button class="mobile-menu-toggle" id="mobile-toggle" type="button" aria-label="Mobil Menüyü Aç">
                     <i class="fa-solid fa-bars" aria-hidden="true"></i>
@@ -189,6 +190,49 @@
         </div>
     </footer>
 
-    <script src="main.js?v=1786693949"></script>
+    <!-- LOGIN MODAL -->
+    <div id="login-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(0,0,0,0.6); z-index: 100000; justify-content: center; align-items: center; backdrop-filter: blur(5px);">
+        <div style="position: relative; width: 90%; max-width: 400px; background: #fff; border-radius: 20px; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); padding: 32px; font-family: 'Inter', sans-serif;">
+            <button id="close-login-modal" aria-label="Kapat" style="position: absolute; top: 16px; right: 16px; background: transparent; color: #64748B; border: none; font-size: 20px; cursor: pointer; transition: color 0.2s;"><i class="fa-solid fa-xmark"></i></button>
+            
+            <div style="text-align: center; margin-bottom: 24px;">
+                <img src="assets/sirius-global-logo-yeni.v2.png" alt="Sirius Global" style="height: 36px; margin-bottom: 16px;">
+                <h3 style="font-size: 1.25rem; font-weight: 700; color: #0F172A; margin: 0 0 8px 0;">İşveren Portalına Giriş</h3>
+                <p style="font-size: 0.9rem; color: #64748B; margin: 0;">Hesabınıza erişmek için giriş yapın.</p>
+            </div>
+
+            <button type="button" class="google-login-btn" onclick="showLoginComingSoon()" style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 12px; background: #fff; border: 1px solid #E2E8F0; border-radius: 12px; padding: 12px; font-size: 0.95rem; font-weight: 500; color: #334155; cursor: pointer; box-shadow: 0 1px 3px rgba(0,0,0,0.05); transition: all 0.2s; margin-bottom: 20px;">
+                <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" style="width: 20px; height: 20px;">
+                Google ile Giriş Yap
+            </button>
+
+            <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                <hr style="flex-grow: 1; border: none; border-top: 1px solid #E2E8F0;">
+                <span style="font-size: 0.8rem; color: #94A3B8; margin: 0 12px;">VEYA E-POSTA İLE</span>
+                <hr style="flex-grow: 1; border: none; border-top: 1px solid #E2E8F0;">
+            </div>
+
+            <div class="form-group" style="margin-bottom: 16px; text-align: left;">
+                <label style="display: block; font-size: 0.85rem; font-weight: 500; color: #475569; margin-bottom: 6px;">İş E-posta Adresi</label>
+                <input type="email" placeholder="ornek@sirket.com" style="width: 100%; box-sizing: border-box; padding: 12px; border: 1px solid #CBD5E1; border-radius: 10px; font-size: 0.95rem; outline: none; transition: border-color 0.2s;">
+            </div>
+
+            <div class="form-group" style="margin-bottom: 24px; text-align: left;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                    <label style="font-size: 0.85rem; font-weight: 500; color: #475569;">Şifre</label>
+                    <a href="#" style="font-size: 0.8rem; color: var(--brand-orange); text-decoration: none; font-weight: 500;">Şifremi Unuttum</a>
+                </div>
+                <input type="password" placeholder="••••••••" style="width: 100%; box-sizing: border-box; padding: 12px; border: 1px solid #CBD5E1; border-radius: 10px; font-size: 0.95rem; outline: none; transition: border-color 0.2s;">
+            </div>
+
+            <button type="button" class="btn btn-blue" onclick="showLoginComingSoon()" style="width: 100%; padding: 12px; border-radius: 10px; font-weight: 600;">Giriş Yap</button>
+            
+            <p style="text-align: center; font-size: 0.85rem; color: #64748B; margin: 20px 0 0 0;">
+                Henüz hesabınız yok mu? <a href="#" onclick="openModal('employer'); document.getElementById('login-modal').style.display='none';" style="color: var(--brand-blue); text-decoration: none; font-weight: 600;">Talep Oluşturun</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="main.js?v=1786696145"></script>
 </body>
 </html>
