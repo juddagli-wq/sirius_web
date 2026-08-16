@@ -17,7 +17,7 @@
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <link rel="stylesheet" href="styles.css?v=1786696602">
+    <link rel="stylesheet" href="styles.css?v=1786838815">
 </head>
 <body>
 
@@ -108,24 +108,32 @@
 
                                 <div>
                                     <h2 class="mega-column-title">Hizmetler ve Bilgiler</h2>
-                                    <ul class="mega-links-list">
-                                        <li><a href="#">Denklik Başvurusu - Bescheid</a></li>
-                                        <li><a href="#">İşveren Bulma</a></li>
-                                        <li><a href="#">Vize</a></li>
-                                        <li><a href="#" style="pointer-events: none; cursor: default;">Onboarding</a>
-                                            <ul style="font-size: 0.85rem; padding-left: 12px; margin-top: 4px; color: var(--text-secondary); list-style-type: disc;">
-                                                <li>Oryantasyon</li>
-                                                <li>Resmi Dairelerde Başvuru</li>
-                                                <li>Havalimanı Karşılama</li>
-                                                <li>Konaklama</li>
+                                    <ul class="mega-links-list mega-accordion-list">
+                                        <li><a href="denklik-basvurusu.html">Denklik Başvurusu - Bescheid</a></li>
+                                        <li><a href="isveren-bulma.html">İşveren Bulma</a></li>
+                                        <li><a href="vize.html">Vize</a></li>
+                                        <li style="position: relative;">
+                                            <div style="display: flex; align-items: center; justify-content: space-between;">
+                                                <a href="onboarding.html" style="flex-grow: 1;">Onboarding</a>
+                                                <button class="accordion-toggle-btn" onclick="toggleSubmenu(event, 'sub-onboarding')" aria-label="Alt Menüyü Aç"><i class="fa-solid fa-plus"></i></button>
+                                            </div>
+                                            <ul id="sub-onboarding" style="display: none; font-size: 0.85rem; padding-left: 12px; margin-top: 4px; color: var(--text-secondary); list-style-type: none;">
+                                                <li><a href="oryantasyon.html" style="padding: 6px 0; font-weight: 500; font-size: 0.9rem;">Oryantasyon</a></li>
+                                                <li><a href="resmi-daireler.html" style="padding: 6px 0; font-weight: 500; font-size: 0.9rem;">Resmi Dairelerde Başvuru</a></li>
+                                                <li><a href="havalimani-karsilama.html" style="padding: 6px 0; font-weight: 500; font-size: 0.9rem;">Havalimanı Karşılama</a></li>
+                                                <li><a href="konaklama.html" style="padding: 6px 0; font-weight: 500; font-size: 0.9rem;">Konaklama</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="#" style="pointer-events: none; cursor: default;">Denklik Tamamlama</a>
-                                            <ul style="font-size: 0.85rem; padding-left: 12px; margin-top: 4px; color: var(--text-secondary); list-style-type: disc;">
-                                                <li>Okulun Ayarlanması</li>
-                                                <li>Teşvik Başvurusu</li>
-                                                <li>Sınava Yönlendirme</li>
-                                                <li>Urkunde Alınması</li>
+                                        <li style="position: relative;">
+                                            <div style="display: flex; align-items: center; justify-content: space-between;">
+                                                <a href="denklik-tamamlama.html" style="flex-grow: 1;">Denklik Tamamlama</a>
+                                                <button class="accordion-toggle-btn" onclick="toggleSubmenu(event, 'sub-denklik')" aria-label="Alt Menüyü Aç"><i class="fa-solid fa-plus"></i></button>
+                                            </div>
+                                            <ul id="sub-denklik" style="display: none; font-size: 0.85rem; padding-left: 12px; margin-top: 4px; color: var(--text-secondary); list-style-type: none;">
+                                                <li><a href="okul-ayarlanmasi.html" style="padding: 6px 0; font-weight: 500; font-size: 0.9rem;">Okulun Ayarlanması</a></li>
+                                                <li><a href="tesvik-basvurusu.html" style="padding: 6px 0; font-weight: 500; font-size: 0.9rem;">Teşvik Başvurusu</a></li>
+                                                <li><a href="sinava-yonlendirme.html" style="padding: 6px 0; font-weight: 500; font-size: 0.9rem;">Sınava Yönlendirme</a></li>
+                                                <li><a href="urkunde-alinmasi.html" style="padding: 6px 0; font-weight: 500; font-size: 0.9rem;">Urkunde Alınması</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -851,8 +859,8 @@
         </div>
     </footer>
 
-    <script src="main.js?v=1786696602"></script>
-    <script src="chatbot.js?v=1786696602"></script>
+    <script src="main.js?v=1786838815"></script>
+    <script src="chatbot.js?v=1786838815"></script>
     <!-- NURSING AD VIDEO POPUP -->
     <div id="video-popup-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(0,0,0,0.9); z-index: 99999; justify-content: center; align-items: center; padding: 20px; box-sizing: border-box;">
         <div style="position: relative; width: 100%; max-width: 900px; background: #000; border-radius: 16px; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.8); display: flex; flex-direction: row; flex-wrap: wrap; align-items: stretch; max-height: 90vh;">

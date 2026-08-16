@@ -1536,6 +1536,22 @@ function showLoginComingSoon() {
     showToast("İşveren portalımız altyapı çalışmaları nedeniyle çok yakında aktif olacaktır. İlginiz için teşekkürler.");
 }
 
+function toggleSubmenu(event, submenuId) {
+    event.preventDefault();
+    event.stopPropagation();
+    const submenu = document.getElementById(submenuId);
+    const btn = event.currentTarget;
+    if (submenu) {
+        if (submenu.style.display === 'none') {
+            submenu.style.display = 'block';
+            btn.classList.add('open');
+        } else {
+            submenu.style.display = 'none';
+            btn.classList.remove('open');
+        }
+    }
+}
+
 function showToast(message) {
     let toast = document.getElementById('sirius-toast');
     if (!toast) {

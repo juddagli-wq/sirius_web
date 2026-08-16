@@ -1688,3 +1688,30 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #F8FAFC !important;
     border-color: #CBD5E1 !important;
 }
+
+/* MEGA MENU ACCORDION */
+.accordion-toggle-btn {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.accordion-toggle-btn:hover {
+    background: var(--bg-alt);
+    color: var(--brand-orange);
+    border-color: var(--brand-orange);
+}
+.accordion-toggle-btn i {
+    font-size: 0.75rem;
+    transition: transform 0.3s ease;
+}
+.accordion-toggle-btn.open i {
+    transform: rotate(45deg);
+}
