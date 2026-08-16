@@ -180,7 +180,7 @@
         }
 
         if (q.includes('dil') || q.includes('almanca') || q.includes('akademi') || q.includes('kurs') || q.includes('fsp')) {
-            return `<strong>Sirius Akademi</strong> ile A1'den C1 Tıp Almancasına (FSP) kadar telc & Goethe sınavlarına hazırlayan interaktif dil eğitimi sunuyoruz.<br><br>👉 <a href="sirius-akademi.html" style="color:var(--sirius-teal); font-weight:700;">Sirius Akademi Detayları</a>`;
+            return `<strong>Sirius Akademi</strong> ile A1'den C1 Tıp Almancasına (FSP) kadar telc & Goethe sınavlarına hazırlayan interaktif dil eğitimi sunuyoruz.<br><br>👉 <a href="iletisim.html" style="color:var(--sirius-teal); font-weight:700;">İletişime Geçin</a>`;
         }
 
         if (q.includes('ev') || q.includes('konaklama') || q.includes('relokasyon') || q.includes('home') || q.includes('anmeldung')) {

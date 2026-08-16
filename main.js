@@ -935,21 +935,13 @@ function switchLanguage(lang, notify = true) {
         if (cols[0]) cols[0].textContent = dict.mega_e_col1_title;
         if (cols[1]) cols[1].textContent = dict.mega_e_col2_title;
         if (cols[2]) cols[2].textContent = dict.mega_e_col3_title;
-        // Column 1 links
+        // Column 1 links (Custom structure, removed dynamic translation for now)
         if (links[0]) {
-            const items = links[0].querySelectorAll('a');
-            if (items[0]) items[0].textContent = dict.mega_e_col1_1;
-            if (items[1]) items[1].textContent = dict.mega_e_col1_2;
-            if (items[2]) items[2].textContent = dict.mega_e_col1_3;
-            if (items[3]) items[3].textContent = dict.mega_e_col1_4;
+            // No overwrite for new custom list
         }
-        // Column 2 links
+        // Column 2 links (Custom structure, removed dynamic translation for now)
         if (links[1]) {
-            const items = links[1].querySelectorAll('a');
-            if (items[0]) items[0].textContent = dict.mega_e_col2_1;
-            if (items[1]) items[1].textContent = dict.mega_e_col2_2;
-            if (items[2]) items[2].textContent = dict.mega_e_col2_3;
-            if (items[3]) items[3].textContent = dict.mega_e_col2_4;
+            // No overwrite for new custom list
         }
         // Column 3 description & button
         const col3Desc = megaPanelEmployers.querySelectorAll('.mega-panel-inner > div')[2];
