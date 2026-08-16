@@ -145,7 +145,7 @@
         }
 
         if (q.includes('nrw') || q.includes('eyalet') || q.includes('süresi') || q.includes('kaç ay') || q.includes('iş kanıtı') || q.includes('zusage')) {
-            return `Nordrhein-Westfalen (NRW / Essen) eyaletinde <strong>normal denklik süreci ortalama 6 ay</strong> sürmektedir.<br><br>📌 <strong>31 Mayıs 2024 Kuralları:</strong> Denklik başvurusunda iş sözleşmesi veya 3 işverenle görüştüğüne dair yazılı iş kanıtı / 1 kabul beyanı (Zusage) istenmektedir. Denklik Birimimiz iş kanıtı temininde adaylarımıza tam destek vermektedir. Mart 2024 itibarıyla evrak tercümelerinin Almanya'da yapılması zorunludur.`;
+            return `Nordrhein-Westfalen (NRW / Essen) eyaletinde <strong>normal denklik süreci ortalama 4-6 ay</strong> sürmektedir.<br><br>📌 <strong>31 Mayıs 2024 Kuralları:</strong> Denklik başvurusunda iş sözleşmesi veya 3 işverenle görüştüğüne dair yazılı iş kanıtı / 1 kabul beyanı (Zusage) istenmektedir. Denklik Birimimiz iş kanıtı temininde adaylarımıza tam destek vermektedir. Mart 2024 itibarıyla evrak tercümelerinin Almanya'da yapılması zorunludur.`;
         }
 
         if (q.includes('birim') || q.includes('ekip') || q.includes('nasıl çalış')) {
@@ -201,7 +201,16 @@
                     📋 <strong>Denklik Karar Belgesi (Bescheid):</strong> Eyalet Sağlık Dairesi (Bezirksregierung) incelemesinde eksik müfredat çıkarsa 2 telafi seçeneği sunulur:<br>
                     • <strong>Anpassungslehrgang:</strong> Klinikte maaşlı uyum stajı.<br>
                     • <strong>Kenntnisprüfung:</strong> Mesleki bilgi denkliği sınavı.<br><br>
-                    📜 <strong>Dil & Belgeler:</strong> B2 Telc, Goethe veya ÖSD sertifikası, sağlık raporu (Gesundheitliche Eignung) ve adli sicil kaydı (Führungszeugnis) zorunludur.`;
+                    📜 <strong>Dil & Belgeler:</strong> Hemşirelik ve Fizyoterapi için B2 Seviyesi (Telc, Goethe veya ÖSD), Doktorlar için B2 + C1 FSP Tıp Almancası zorunludur. Ayrıca sağlık raporu (Gesundheitliche Eignung) ve adli sicil kaydı istenir.`;
+        }
+
+        // KNOWLEDGE BASE FALLBACK
+        if (aiKnowledgeBase && aiKnowledgeBase.faq) {
+            for (let item of aiKnowledgeBase.faq) {
+                if (item.question.toLowerCase().includes(q) || item.answer.toLowerCase().includes(q)) {
+                    return `<strong>Bilgi Bankası Yanıtı:</strong><br>${item.answer}`;
+                }
+            }
         }
 
         return `Talebinizle ilgili size en doğru bilgiyi sunabilmemiz için hemen uzman danışmanımız <strong>Yasemin Acar</strong> ile iletişime geçebilirsiniz:<br><br>📞 <strong>+49 176 61645770</strong><br>✉️ <strong>info@siriusglobal.de</strong> veya sitemizdeki <a href="hakkimizda.html#iletisim" style="color:var(--sirius-teal); font-weight:700;">İletişim Formunu</a> doldurabilirsiniz.`;
