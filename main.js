@@ -82,7 +82,6 @@ const translations = {
         mega_a_col1_title: "Şirketimiz",
         mega_a_col1_1: "Vizyon & Misyonumuz",
         mega_a_col1_2: "Essen Genel Merkezimiz",
-        mega_a_col1_3: "Ekibimiz",
         mega_a_col2_title: "Kalite & Etik",
         mega_a_col2_1: "Gütesiegel Etik İşe Alım",
         mega_a_col2_2: "Basın & Medya",
@@ -209,7 +208,6 @@ const translations = {
         mega_a_col1_title: "Unser Unternehmen",
         mega_a_col1_1: "Vision & Mission",
         mega_a_col1_2: "Standort Essen",
-        mega_a_col1_3: "Unser Team",
         mega_a_col2_title: "Qualität & Ethik",
         mega_a_col2_1: "Gütesiegel Faire Anwerbung",
         mega_a_col2_2: "Presse & Medien",
@@ -338,7 +336,6 @@ const translations = {
         mega_a_col1_title: "Our Company",
         mega_a_col1_1: "Vision & Mission",
         mega_a_col1_2: "Essen HQ Office",
-        mega_a_col1_3: "Our Team",
         mega_a_col2_title: "Quality & Ethics",
         mega_a_col2_1: "Fair Recruitment Quality Seal",
         mega_a_col2_2: "Press & Media",
@@ -461,7 +458,6 @@ const translations = {
         mega_a_col1_title: "Notre Entreprise",
         mega_a_col1_1: "Vision & Mission",
         mega_a_col1_2: "Bureau d'Essen",
-        mega_a_col1_3: "Notre Équipe",
         mega_a_col2_title: "Qualité & Éthique",
         mega_a_col2_1: "Label de Recrutement Équitable",
         mega_a_col2_2: "Presse & Médias",
@@ -578,7 +574,6 @@ const translations = {
         mega_a_col1_title: "شركتنا",
         mega_a_col1_1: "الرؤية والرسالة",
         mega_a_col1_2: "مقراتنا في إيسن وبرلين",
-        mega_a_col1_3: "فريق العمل",
         mega_a_col2_title: "الجودة والأخلاقيات",
         mega_a_col2_1: "معيار التوظيف العادل",
         mega_a_col2_2: "الصحافة والإعلام",
@@ -695,7 +690,6 @@ const translations = {
         mega_a_col1_title: "شرکت ما",
         mega_a_col1_1: "چشم‌انداز و ماموریت",
         mega_a_col1_2: "دفاتر اسن و برلین",
-        mega_a_col1_3: "تیم ما",
         mega_a_col2_title: "کیفیت و اخلاق",
         mega_a_col2_1: "گواهی استخدام عادلانه",
         mega_a_col2_2: "مطبوعات و رسانه‌ها",
@@ -991,7 +985,6 @@ function switchLanguage(lang, notify = true) {
             const items = links[0].querySelectorAll('a');
             if (items[0]) items[0].textContent = dict.mega_a_col1_1;
             if (items[1]) items[1].textContent = dict.mega_a_col1_2;
-            if (items[2]) items[2].textContent = dict.mega_a_col1_3;
         }
         // Column 2 links
         if (links[1]) {
