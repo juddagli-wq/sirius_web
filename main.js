@@ -852,20 +852,30 @@ function switchLanguage(lang, notify = true) {
 
     // 3. Navigation Links
     const navLinks = document.querySelectorAll('.nav-link');
+    const isTranslatable = (key, text) => {
+        text = text.trim();
+        for (const langKey in translations) {
+            if (translations[langKey][key] === text) return true;
+        }
+        return false;
+    };
+
     navLinks.forEach(link => {
         const href = link.getAttribute('href');
-        if (href === 'index.html') link.textContent = dict.nav_home;
-        if (href === 'hakkimizda.html') link.textContent = dict.nav_about;
-        if (href === 'sirius-medicare.html') link.textContent = dict.nav_medicare;
-        if (href === 'sirius-doktorluk.html') link.textContent = dict.mega_t_col1_1;
-        if (href === 'sirius-hemsirelik.html') link.textContent = dict.mega_t_col1_2;
-        if (href === 'sirius-fizyoterapi.html') link.textContent = dict.mega_t_col1_3;
-        if (href === 'sirius-ergoterapi.html') link.textContent = dict.mega_t_col1_4;
-        if (href === 'sirius-yaslibakim.html') link.textContent = dict.mega_t_col1_5;
-        if (href === 'sirius-akademi.html') link.textContent = dict.nav_academy;
-        if (href === 'sirius-talent.html') link.textContent = dict.nav_employers;
-        if (href === 'kariyer-firsatlari.html') link.textContent = dict.nav_jobs;
-        if (href === 'iletisim.html') link.textContent = dict.nav_contact;
+        const text = link.textContent;
+        
+        if (href === 'index.html' && isTranslatable('nav_home', text)) link.textContent = dict.nav_home;
+        if (href === 'hakkimizda.html' && isTranslatable('nav_about', text)) link.textContent = dict.nav_about;
+        if (href === 'sirius-medicare.html' && isTranslatable('nav_medicare', text)) link.textContent = dict.nav_medicare;
+        if (href === 'sirius-doktorluk.html' && isTranslatable('mega_t_col1_1', text)) link.textContent = dict.mega_t_col1_1;
+        if (href === 'sirius-hemsirelik.html' && isTranslatable('mega_t_col1_2', text)) link.textContent = dict.mega_t_col1_2;
+        if (href === 'sirius-fizyoterapi.html' && isTranslatable('mega_t_col1_3', text)) link.textContent = dict.mega_t_col1_3;
+        if (href === 'sirius-ergoterapi.html' && isTranslatable('mega_t_col1_4', text)) link.textContent = dict.mega_t_col1_4;
+        if (href === 'sirius-yaslibakim.html' && isTranslatable('mega_t_col1_5', text)) link.textContent = dict.mega_t_col1_5;
+        if (href === 'sirius-akademi.html' && isTranslatable('nav_academy', text)) link.textContent = dict.nav_academy;
+        if (href === 'sirius-talent.html' && isTranslatable('nav_employers', text)) link.textContent = dict.nav_employers;
+        if (href === 'kariyer-firsatlari.html' && isTranslatable('nav_jobs', text)) link.textContent = dict.nav_jobs;
+        if (href === 'iletisim.html' && isTranslatable('nav_contact', text)) link.textContent = dict.nav_contact;
     });
 
     // 3b. Mega Menu Trigger Buttons

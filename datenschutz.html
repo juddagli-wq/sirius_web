@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css?v=1786841942">
+    <link rel="stylesheet" href="styles.css?v=1786912566">
 </head>
 <body>
 
@@ -59,22 +59,27 @@
 
     <!-- HEADER -->
     <header class="header-nav" role="banner">
-        <div class="container navbar-inner">
-            <a href="index.html" class="brand-logo" aria-label="Sirius Global Startseite">
-                <img src="assets/sirius-global-logo-yeni.v2.png" alt="Sirius Global Logo" class="brand-logo-img">
+        <div class="container navbar-inner" style="display: flex; justify-content: space-between; align-items: center; padding: 15px 0;">
+            <a href="index.html" class="brand-logo" aria-label="Sirius Global Ana Sayfasına Git">
+                <img src="assets/sirius-global-logo-yeni.v2.png" alt="Sirius Global Logo" class="brand-logo-img" style="height: 40px;">
             </a>
 
-            <nav role="navigation" aria-label="Hauptnavigation">
-                <ul class="nav-menu" style="display: flex; gap: 28px; list-style: none;">
-                    <li><a href="index.html" class="nav-link">Startseite</a></li>
-                    <li><a href="hakkimizda.html" class="nav-link">Über uns</a></li>
-                    <li><a href="sirius-medicare.html" class="nav-link">Sirius Medicare</a></li>
-
-                    <li><a href="sirius-talent.html" class="nav-link">Für Arbeitgeber</a></li>
-                    <li><a href="kariyer-firsatlari.html" class="nav-link">Stellenangebote</a></li>
-                    <li><a href="iletisim.html" class="nav-link">Kontakt</a></li>
+            <nav role="navigation" aria-label="Ana Menü">
+                <ul class="nav-menu" style="display: flex; gap: 18px; list-style: none; align-items: center; margin: 0; padding: 0;">
+                    <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
+                    <li><a href="hakkimizda.html" class="nav-link">Vizyon & Misyonumuz</a></li>
+                    <li><a href="hakkimizda.html#team" class="nav-link">Ekibimiz</a></li>
+                    <li><a href="hakkimizda.html#ethics" class="nav-link">Kalite & Etik</a></li>
+                    <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
                 </ul>
             </nav>
+
+            <div style="display: flex; gap: 12px; align-items: center;">
+                <button class="btn btn-orange" type="button" onclick="openModal('candidate')" aria-label="İletişim Kurun">İletişim Kurun</button>
+                <button class="mobile-menu-toggle" id="mobile-toggle" type="button" aria-label="Mobil Menüyü Aç" style="display: none;">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -184,6 +189,6 @@
         </div>
     </footer>
 
-    <script src="main.js?v=1786841942"></script>
+    <script src="main.js?v=1786912566"></script>
 </body>
 </html>
