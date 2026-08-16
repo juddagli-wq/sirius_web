@@ -180,7 +180,7 @@
         }
 
         if (q.includes('dil') || q.includes('almanca') || q.includes('akademi') || q.includes('kurs') || q.includes('fsp')) {
-            return `<strong>Sirius Akademi</strong> ile A1'den C1 Tıp Almancasına (FSP) kadar telc & Goethe sınavlarına hazırlayan interaktif dil eğitimi sunuyoruz.<br><br>👉 <a href="iletisim.html" style="color:var(--sirius-teal); font-weight:700;">İletişime Geçin</a>`;
+            return `<strong>Sirius Akademi</strong> ile A1'den C1 Tıp Almancasına (FSP) kadar telc & Goethe sınavlarına hazırlayan interaktif dil eğitimi sunuyoruz.<br><br>👉 <a href="hakkimizda.html#iletisim" style="color:var(--sirius-teal); font-weight:700;">İletişime Geçin</a>`;
         }
 
         if (q.includes('ev') || q.includes('konaklama') || q.includes('relokasyon') || q.includes('home') || q.includes('anmeldung')) {
@@ -204,7 +204,7 @@
                     📜 <strong>Dil & Belgeler:</strong> B2 Telc, Goethe veya ÖSD sertifikası, sağlık raporu (Gesundheitliche Eignung) ve adli sicil kaydı (Führungszeugnis) zorunludur.`;
         }
 
-        return `Talebinizle ilgili size en doğru bilgiyi sunabilmemiz için hemen uzman danışmanımız <strong>Yasemin Acar</strong> ile iletişime geçebilirsiniz:<br><br>📞 <strong>+49 176 61645770</strong><br>✉️ <strong>info@siriusglobal.de</strong> veya sitemizdeki <a href="iletisim.html" style="color:var(--sirius-teal); font-weight:700;">İletişim Formunu</a> doldurabilirsiniz.`;
+        return `Talebinizle ilgili size en doğru bilgiyi sunabilmemiz için hemen uzman danışmanımız <strong>Yasemin Acar</strong> ile iletişime geçebilirsiniz:<br><br>📞 <strong>+49 176 61645770</strong><br>✉️ <strong>info@siriusglobal.de</strong> veya sitemizdeki <a href="hakkimizda.html#iletisim" style="color:var(--sirius-teal); font-weight:700;">İletişim Formunu</a> doldurabilirsiniz.`;
     }
 
     document.addEventListener('DOMContentLoaded', () => {

@@ -77,7 +77,7 @@ def get_hakkimizda_nav(active_file):
                     <li><a href="hakkimizda.html" class="nav-link{is_active('hakkimizda')}>Vizyon & Misyonumuz</a></li>
                     <li><a href="hakkimizda.html#team" class="nav-link">Ekibimiz</a></li>
                     <li><a href="hakkimizda.html#ethics" class="nav-link">Kalite & Etik</a></li>
-                    <li><a href="iletisim.html" class="nav-link{is_active('iletisim')}>İletişim</a></li>
+                    <li><a href="hakkimizda.html#iletisim" class="nav-link{is_active('iletisim')}">İletişim</a></li>
                 </ul>
             </nav>"""
 

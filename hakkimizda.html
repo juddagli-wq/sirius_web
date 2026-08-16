@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css?v=1786912923">
+    <link rel="stylesheet" href="styles.css?v=1786913648">
 </head>
 <body>
 
@@ -83,9 +83,7 @@
             <nav role="navigation" aria-label="Ana Menü">
                 <ul class="nav-menu" style="display: flex; gap: 18px; list-style: none; align-items: center; margin: 0; padding: 0;">
                     <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
-                    <li><a href="hakkimizda.html" class="nav-link active" style="color: var(--brand-orange); font-weight: 700;">Vizyon & Misyonumuz</a></li>
-                    <li><a href="hakkimizda.html#ethics" class="nav-link">Kalite & Etik</a></li>
-                    <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
+                    <li><a href="hakkimizda.html" class="nav-link active" style="color: var(--brand-orange); font-weight: 700;">Hakkımızda</a></li>
                 </ul>
             </nav>
 
@@ -163,7 +161,99 @@
             </div>
         </section>
 
-        <section class="pillars-section" style="padding: 0 0 100px;" aria-label="Temel Değerlerimiz">
+        <!-- CONTACT DETAILS & FORM -->
+        <section class="pillars-section" style="padding: 60px 0 100px;" id="iletisim" aria-label="İletişim Bilgileri ve Formu">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 48px;">
+                    <!-- OFFICE CONTACT INFO -->
+                    <div style="display: flex; flex-direction: column; gap: 24px;">
+                        <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 20px; padding: 28px;">
+                            <h2 style="font-size: 1.3rem; margin-bottom: 16px; color: var(--brand-orange);"><i class="fa-solid fa-building-flag" aria-hidden="true"></i> Almanya Genel Merkez (Essen)</h2>
+                            <p style="margin-bottom: 10px; color: var(--text-primary); font-weight: 600;">Katernberger Straße 107, 45327 Essen, Almanya</p>
+                            <p style="margin-bottom: 10px; color: var(--text-secondary);"><i class="fa-solid fa-phone" style="color: var(--brand-orange);" aria-hidden="true"></i> +49 2043 6023427</p>
+                            <p style="margin-bottom: 10px; color: var(--text-secondary);"><i class="fa-solid fa-envelope" style="color: var(--brand-orange);" aria-hidden="true"></i> info@siriusglobal.de</p>
+                            <p style="color: var(--text-secondary);"><i class="fa-solid fa-clock" style="color: var(--brand-orange);" aria-hidden="true"></i> Pazartesi - Cumartesi: 08:00 - 16:00</p>
+                        </div>
+
+                        <div style="background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 20px; padding: 28px;">
+                            <h2 style="font-size: 1.3rem; margin-bottom: 16px; color: var(--text-primary);"><i class="fa-solid fa-map-pin" aria-hidden="true"></i> Türkiye Ofisi</h2>
+                            <p style="margin-bottom: 10px; color: var(--text-primary); font-weight: 600;">İstanbul Danışmanlık ve Dil Eğitimi Şubesi</p>
+                            <p style="color: var(--text-secondary);"><i class="fa-solid fa-envelope" style="color: var(--brand-orange);" aria-hidden="true"></i> turkey@siriusglobal.de</p>
+                        </div>
+                    </div>
+
+                    <!-- DIRECT CONTACT FORM -->
+                    <div style="background: var(--bg-white); border: 1px solid var(--border-color); border-radius: 24px; padding: 40px; box-shadow: var(--shadow-md);">
+                        <h2 style="font-size: 1.6rem; margin-bottom: 12px; color: var(--text-primary);">Bize Mesaj Gönderin</h2>
+                        <p style="color: var(--text-secondary); margin-bottom: 28px; font-size: 0.95rem;">Sorularınız veya danışmanlık talepleriniz için aşağıdaki formu doldurun.</p>
+
+                        <form id="contact-page-form">
+                            <div class="form-group">
+                                <label class="form-label" for="contact-name">Adınız Soyadınız *</label>
+                                <input type="text" id="contact-name" class="form-input" placeholder="Ahmet Yılmaz" required>
+                            </div>
+
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                                <div class="form-group">
+                                    <label class="form-label" for="contact-email">E-posta Adresiniz *</label>
+                                    <input type="email" id="contact-email" class="form-input" placeholder="ahmet@example.com" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="contact-phone">Telefon Numaranız *</label>
+                                    <input type="tel" id="contact-phone" class="form-input" placeholder="+90 500 000 0000" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="contact-subject">Konu *</label>
+                                <select id="contact-subject" class="form-select" required>
+                                    <option value="candidate">Almanya Kariyer ve Dil Kursu</option>
+                                    <option value="employer">İşveren / Kurum İş Birliği</option>
+                                    <option value="general">Genel Bilgi Talebi</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="contact-message">Mesajınız *</label>
+                                <textarea id="contact-message" class="form-textarea" style="width: 100%; padding: 12px 16px; border-radius: 10px; border: 1px solid var(--border-color); height: 120px;" placeholder="Bize iletmek istediğiniz detayları buraya yazabilirsiniz..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-orange" style="width: 100%; margin-top: 10px;" aria-label="Mesajı Gönder">
+                                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Mesajı Gönder
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GOOGLE MAPS SECTION -->
+        <section class="map-section" aria-label="Essen Ofisi Haritası" style="width: 100%; margin-top: 40px; line-height: 0; position: relative;">
+            <div style="position: absolute; top: 20px; left: 20px; z-index: 10;">
+                <a href="https://maps.google.com/?q=Katernberger+Str.+107,+45327+Essen,+Germany" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="btn btn-blue" 
+                   style="display: inline-flex; align-items: center; gap: 8px; font-size: 0.88rem; padding: 10px 18px; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.3); text-decoration: none;">
+                    <i class="fa-solid fa-map-location-dot" style="color: #FF5D05;" aria-hidden="true"></i> Google Maps'te Aç / Haritada Yol Tarifi Al
+                </a>
+            </div>
+            <div style="width: 100%; height: 450px; position: relative;">
+                <iframe 
+                    title="Sirius Global Essen Ofisi Google Haritası"
+                    src="https://maps.google.com/maps?q=Katernberger%20Str.%20107%2C%2045327%20Essen%2C%20Germany&t=k&z=17&ie=UTF8&iwloc=&output=embed" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0; width: 100%; height: 450px; filter: contrast(1.05) brightness(0.98);" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+        <section class="pillars-section" style="padding: 100px 0 100px;" aria-label="Temel Değerlerimiz">
             <div class="container">
 
                 <h2 class="section-title" style="text-align: center; margin-bottom: 40px;">Temel İlke ve <span>Değerlerimiz</span></h2>
@@ -257,7 +347,7 @@
         </div>
     </footer>
 
-    <script src="main.js?v=1786912923"></script>
-    <script src="chatbot.js?v=1786912923"></script>
+    <script src="main.js?v=1786913648"></script>
+    <script src="chatbot.js?v=1786913648"></script>
 </body>
 </html>
