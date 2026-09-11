@@ -1,0 +1,119 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+    th { background-color: #001A29; color: #ffffff; font-weight: bold; font-size: 14px; height: 35px; text-align: center; }
+    td { font-size: 13px; height: 30px; vertical-align: middle; border: 1px solid #dcdcdc; padding-left: 5px; }
+    .level-1 { background-color: #e6f2ff; font-weight: bold; color: #004085; }
+    .level-2 { background-color: #fff3cd; font-weight: bold; color: #856404; }
+    .level-3 { background-color: #f8f9fa; color: #333333; }
+    .input-cell { background-color: #ffffff; }
+    .footer-header { background-color: #2c3e50; font-weight: bold; color: #ffffff; }
+</style>
+</head>
+<body>
+<table border="1" style="border-collapse: collapse; font-family: Arial, sans-serif; width: 1000px;">
+    <tr>
+        <th style="width: 200px;">Hauptmenü (Ana Menü)</th>
+        <th style="width: 250px;">Untermenü (Alt Menü)</th>
+        <th style="width: 250px;">Unter-Untermenü (Sayfalar)</th>
+        <th style="width: 300px; background-color: #FF5D05;">Neuer Namensvorschlag (Yeni İsim)</th>
+        <th style="width: 400px; background-color: #FF5D05;">Notizen / Seiteninhalt</th>
+    </tr>
+
+    <!-- YETENEKLER İÇİN -->
+    <tr><td class="level-1">Für Fachkräfte</td><td class="input-cell"></td><td class="input-cell"></td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    
+    <tr><td class="input-cell"></td><td class="level-2">Arbeiten in Deutschland</td><td class="input-cell"></td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Ärzte</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Pflegekräfte</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Physiotherapeuten</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Ergotherapeuten</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Altenpflege</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+
+    <tr><td class="input-cell"></td><td class="level-2">Dienstleistungen & Infos</td><td class="input-cell"></td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Anerkennungsverfahren (Bescheid)</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Arbeitgebersuche & Interview</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Visum & Relocation (Home)</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Onboarding & Integration</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Orientierung</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Behördengänge</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Flughafenabholung</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Unterkunft</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Anerkennung abschließen</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Schulanmeldung für Kinder</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Fördermittel beantragen</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Sprachprüfung</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Urkunde erhalten</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+
+    <!-- İŞVERENLER İÇİN -->
+    <tr><td class="level-1">Für Arbeitgeber</td><td class="input-cell"></td><td class="input-cell"></td><td class="input-cell"></td><td class="input-cell"></td></tr>
+
+    <tr><td class="input-cell"></td><td class="level-2">Infos für Fachkräfte</td><td class="input-cell"></td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Pflegekräfte</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Physiotherapeuten</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Ergotherapeuten</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Gesundheitsberufe</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Ärzte und Zahnärzte</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Ingenieure und Techniker</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+
+    <tr><td class="input-cell"></td><td class="level-2">Unsere Dienstleistungen</td><td class="input-cell"></td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">All-Inclusive Service</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Ausgewählte Services</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+
+    <!-- OTHER TOP MENUS -->
+    <tr><td class="level-1">Über uns</td><td class="input-cell"></td><td class="input-cell"></td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="level-1">Stellenangebote</td><td class="input-cell"></td><td class="input-cell"></td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="level-1">Kontakt</td><td class="input-cell"></td><td class="input-cell"></td><td class="input-cell"></td><td class="input-cell"></td></tr>
+
+    <!-- HEADER & UTILITY MENUS -->
+    <tr><td colspan="5" style="height: 15px; background: #ffffff; border: none;"></td></tr>
+    <tr><td class="footer-header" colspan="3">Header / Top-Bar</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="level-2">Jetzt bewerben (Button)</td><td class="input-cell"></td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="level-2">Sprachauswahl</td><td class="level-3">Türkçe (TR)</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Deutsch (DE)</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">English (EN)</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Français (FR)</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">العربية (AR)</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    
+    <!-- TEST / WIZARD MENU -->
+    <tr><td colspan="5" style="height: 15px; background: #ffffff; border: none;"></td></tr>
+    <tr><td class="footer-header" colspan="3">Test & Formulare</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="level-2">Karriere & Eignungstest Deutschland</td><td class="level-3">Eignungstest starten (Button)</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3" style="font-weight:bold; background-color: #e2e3e5;">Frage 1: Welchen Beruf möchten Sie ausüben?</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">&nbsp;&nbsp;- Arzt / Ärztin</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">&nbsp;&nbsp;- Pflegekraft / med. Fachpersonal</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">&nbsp;&nbsp;- MTR / Radiologie / Physiotherapie</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">&nbsp;&nbsp;- Ingenieurwesen & IT</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3" style="font-weight:bold; background-color: #e2e3e5;">Frage 2: Wie ist Ihr aktuelles Sprachniveau?</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">&nbsp;&nbsp;- Kein Deutsch / Anfänger</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">&nbsp;&nbsp;- A1 - A2 Niveau</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">&nbsp;&nbsp;- B1 - B2 Niveau</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">&nbsp;&nbsp;- C1 / FSP Medizin-Niveau</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3" style="font-weight:bold; background-color: #e2e3e5;">Frage 3: Was erwarten Sie vorrangig von Sirius Global?</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">&nbsp;&nbsp;- Komplettpaket (Sprache + Anerkennung + Job)</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">&nbsp;&nbsp;- Sirius Akademie Sprachkurs</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">&nbsp;&nbsp;- Jobvermittlung & Klinik-Match</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">&nbsp;&nbsp;- Sirius Home Relocation</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+
+    <!-- FOOTER MENUS -->
+    <tr><td colspan="5" style="height: 15px; background: #ffffff; border: none;"></td></tr>
+    <tr><td class="footer-header" colspan="3">Footer (Alt Menü)</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="level-2">Links</td><td class="level-3">Sirius Medicare</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Sirius Home Relocation</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Sirius Talent & Partner</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="level-2">Rechtliches & Gesetzliches (EU/DE)</td><td class="level-3">Über uns</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Legal Notice</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Impressum § 5 DDG</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Datenschutz (DSGVO)</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">AGB</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    <tr><td class="input-cell"></td><td class="input-cell"></td><td class="level-3">Cookie-Einstellungen</td><td class="input-cell"></td><td class="input-cell"></td></tr>
+    
+</table>
+</body>
+</html>
