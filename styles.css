@@ -1813,3 +1813,63 @@ h1, h2, h3, h4, h5, h6 {
         column-count: 1;
     }
 }
+
+
+/* ==========================================
+   KAYAN MESLEK & HİZMET ŞERİDİ (ana sayfa)
+   ========================================== */
+.marquee-strip {
+    overflow: hidden;
+    background: var(--gradient-blue);
+    color: var(--text-white);
+    padding: 16px 0;
+    -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 6%, #000 94%, transparent 100%);
+    mask-image: linear-gradient(90deg, transparent 0, #000 6%, #000 94%, transparent 100%);
+}
+.marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee-scroll 40s linear infinite;
+}
+.marquee-strip:hover .marquee-track { animation-play-state: paused; }
+.marquee-group {
+    display: flex;
+    flex-shrink: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.marquee-group li {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+.marquee-group li::after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--brand-orange-light);
+    margin: 0 28px;
+}
+@keyframes marquee-scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}
+@media (max-width: 768px) {
+    .marquee-strip { padding: 12px 0; }
+    .marquee-group li { font-size: 0.95rem; }
+    .marquee-group li::after { margin: 0 18px; }
+    .marquee-track { animation-duration: 30s; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .marquee-track { animation: none; }
+    .marquee-strip { -webkit-mask-image: none; mask-image: none; }
+    .marquee-track { width: auto; flex-wrap: wrap; justify-content: center; }
+    .marquee-group[aria-hidden="true"] { display: none; }
+    .marquee-group { flex-wrap: wrap; justify-content: center; row-gap: 8px; }
+}
