@@ -86,25 +86,170 @@ src="https://www.facebook.com/tr?id=1803571027304733&ev=PageView&noscript=1"
     <!-- HEADER & NAVBAR -->
     <header class="header-nav" role="banner">
         <div class="container navbar-inner">
-            <a href="index.html" class="brand-logo" aria-label="Sirius Global Ana Sayfasına Git">
+            <a href="index.html" class="brand-logo" aria-label="Sirius Global Ana Sayfa">
                 <img src="assets/sirius-global-logo-yeni.v2.png" alt="Sirius Global Logo" class="brand-logo-img">
             </a>
 
-            <nav role="navigation" aria-label="Ana Menü">
-                <ul class="nav-menu" style="display: flex; gap: 18px; list-style: none;">
-                    <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
-                    <li><a href="sirius-medicare.html#doctors" class="nav-link active" style="color: var(--brand-orange); font-weight: 700;">Doktorluk</a></li>
-                    <li><a href="sirius-medicare.html#nursing" class="nav-link">Hemşirelik</a></li>
-                    <li><a href="sirius-fizyoterapi.html" class="nav-link">Fizyoterapi</a></li>
-                    <li><a href="sirius-ergoterapi.html" class="nav-link">Ergoterapi</a></li>
-                    <li><a href="sirius-medicare.html#care" class="nav-link">Yaşlı Bakım</a></li>
+            <!-- NAVIGATION WITH MEGA DROPDOWNS -->
+            <nav role="navigation" aria-label="Ana Gezinme Menüsü">
+                <ul class="mega-nav-group">
 
-                    <li><a href="hakkimizda.html#iletisim" class="nav-link">İletişim</a></li>
+                    <!-- DROPDOWN 1: YETENEKLER İÇİN -->
+                    <li class="mega-trigger-item">
+                        <button class="mega-trigger-btn active" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="mega-panel-talents">
+                            Yetenekler İçin <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        
+                        <!-- MEGA PANEL 1 -->
+                        <div class="mega-dropdown-panel" id="mega-panel-talents" role="region" aria-label="Yetenekler İçin Menü Paneli">
+                            <div class="mega-panel-inner container">
+                                <div>
+                                    <h2 class="mega-column-title">Almanya'da Çalışmak</h2>
+                                    <ul class="mega-links-list">
+                                        <li><a href="sirius-doktorluk.html">Doktorluk</a></li>
+                                        <li><a href="sirius-hemsirelik.html">Hemşirelik, Ergoterapist, Fizyoterapist</a></li>
+                                        <li><a href="ausbildung.html">Ausbildung (Hemşire Yardımcılığı ve Hemşirelik)</a></li>
+                                        <li><a href="tir-surucusu.html">TIR Sürücüsü</a></li>
+
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h2 class="mega-column-title">Hizmetler ve Bilgiler</h2>
+                                    <ul class="mega-links-list mega-accordion-list">
+                                        <li><a href="denklik-basvurusu.html">Denklik Başvurusu (Bescheid)</a></li>
+                                        <li><a href="isveren-bulma.html">İşveren Bulma & Mülakat</a></li>
+                                        <li><a href="vize.html">Vize & Relokasyon (Home)</a></li>
+                                        <li style="position: relative;">
+                                            <div style="display: flex; align-items: center; justify-content: space-between;">
+                                                <a href="onboarding.html" style="flex-grow: 1;">Onboarding ve Uyum</a>
+                                                <button class="accordion-toggle-btn" onclick="toggleSubmenu(event, 'sub-onboarding')" aria-label="Alt Menüyü Aç"><i class="fa-solid fa-plus"></i></button>
+                                            </div>
+                                            <ul id="sub-onboarding" style="display: none; font-size: 0.85rem; padding-left: 12px; margin-top: 4px; color: var(--text-secondary); list-style-type: none;">
+                                                <li><a href="oryantasyon.html" style="padding: 6px 0; font-weight: 500; font-size: 0.9rem;">Oryantasyon</a></li>
+                                                <li><a href="resmi-daireler.html" style="padding: 6px 0; font-weight: 500; font-size: 0.9rem;">Resmi Daire İşlemleri</a></li>
+                                                <li><a href="havalimani-karsilama.html" style="padding: 6px 0; font-weight: 500; font-size: 0.9rem;">Havalimanı Karşılama</a></li>
+                                                <li><a href="konaklama.html" style="padding: 6px 0; font-weight: 500; font-size: 0.9rem;">Konaklama</a></li>
+                                            </ul>
+                                        </li>
+                                        <li style="position: relative;">
+                                            <div style="display: flex; align-items: center; justify-content: space-between;">
+                                                <a href="denklik-tamamlama.html" style="flex-grow: 1;">Denklik Tamamlama</a>
+                                                <button class="accordion-toggle-btn" onclick="toggleSubmenu(event, 'sub-denklik')" aria-label="Alt Menüyü Aç"><i class="fa-solid fa-plus"></i></button>
+                                            </div>
+                                            <ul id="sub-denklik" style="display: none; font-size: 0.85rem; padding-left: 12px; margin-top: 4px; color: var(--text-secondary); list-style-type: none;">
+                                                <li><a href="okul-ayarlanmasi.html" style="padding: 6px 0; font-weight: 500; font-size: 0.9rem;">Çocuk Okul Ayarlanması</a></li>
+                                                <li><a href="tesvik-basvurusu.html" style="padding: 6px 0; font-weight: 500; font-size: 0.9rem;">Teşvik Başvurusu</a></li>
+                                                <li><a href="sinava-yonlendirme.html" style="padding: 6px 0; font-weight: 500; font-size: 0.9rem;">Dil Sınavına Yönlendirme</a></li>
+                                                <li><a href="urkunde-alinmasi.html" style="padding: 6px 0; font-weight: 500; font-size: 0.9rem;">Urkunde Alınması</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h2 class="mega-column-title">Başvuru</h2>
+                                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 16px;">
+                                        Almanya'da çalışmaya hazır mısınız?
+                                    </p>
+                                    <button class="btn btn-blue" type="button" onclick="openModal('candidate')" aria-label="Aday Olarak Başvur">
+                                        <i class="fa-regular fa-face-smile" aria-hidden="true"></i> Şimdi Başvur
+                                    </button>
+                                </div>
+
+                                <div class="mega-sidebar-box">
+                                    <div class="mega-sidebar-header">
+                                        <div class="badge-icon blue"><i class="fa-solid fa-headset" aria-hidden="true"></i></div>
+                                        <div>
+                                            <div class="mega-sidebar-title">Size Nasıl Yardımcı Olabiliriz?</div>
+                                            <div style="font-size: 0.8rem; color: var(--text-secondary);">Bize Ulaşın</div>
+                                        </div>
+                                    </div>
+                                    <div class="mega-sidebar-desc" style="display: flex; flex-direction: column; gap: 4px; font-size: 0.88rem; margin-bottom: 8px;">
+                                        <a href="mailto:info@siriusglobal.de" style="color: var(--text-secondary); text-decoration: none;"><i class="fa-solid fa-envelope" style="color: var(--brand-orange); margin-right: 6px;" aria-hidden="true"></i> info@siriusglobal.de</a>
+                                    </div>
+                                    <a href="kariyer-firsatlari.html" aria-label="Profesyoneller İçin Bilgiler Sayfasına Git" style="font-size: 0.88rem; font-weight: 700; color: var(--brand-orange); text-decoration: none;">
+                                        &gt; Profesyoneller İçin Bilgiler
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- DROPDOWN 2: İŞVERENLER İÇİN -->
+                    <li class="mega-trigger-item">
+                        <button class="mega-trigger-btn" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="mega-panel-employers">
+                            İşverenler İçin <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        
+                        <!-- MEGA PANEL 2 -->
+                        <div class="mega-dropdown-panel" id="mega-panel-employers" role="region" aria-label="İşverenler İçin Menü Paneli">
+                            <div class="mega-panel-inner container">
+                                <div>
+                                    <h2 class="mega-column-title">Sağlık & Bakım Hizmetleri</h2>
+                                    <ul class="mega-links-list">
+                                        <li><a href="sirius-talent.html">Hemşireler</a></li>
+                                        <li><a href="sirius-fizyoterapi.html">Fizyoterapist</a></li>
+                                        <li><a href="sirius-ergoterapi.html">Ergoterapistler</a></li>
+                                        <li><a href="sirius-talent.html">Sağlık Meslekleri</a></li>
+                                        <li><a href="sirius-talent.html">Doktorlar ve Diş Hekimleri</a></li>
+                                        <li><a href="sirius-talent.html">Mühendisler ve Teknik Meslekler</a></li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h2 class="mega-column-title">Hizmetlerimiz</h2>
+                                    <ul class="mega-links-list">
+                                        <li><a href="sirius-talent.html">Her Şey Dahil Hizmet</a></li>
+                                        <li><a href="sirius-talent.html">Seçilmiş Hizmetler</a></li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h2 class="mega-column-title">İşveren Görüşmesi</h2>
+                                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 16px;">
+                                        Kurumunuz için uzman mı arıyorsunuz?
+                                    </p>
+                                    <button class="btn btn-blue" type="button" onclick="openModal('employer')" aria-label="İşveren Danışmanlık Görüşmesi İste">
+                                        <i class="fa-solid fa-calendar-check" aria-hidden="true"></i> Görüşme Talebi Alın
+                                    </button>
+                                </div>
+
+                                <div class="mega-sidebar-box">
+                                    <div class="mega-sidebar-header">
+                                        <img src="assets/images/yasemin hanim profil .webp" alt="Yasemin Acar - Sirius Global İletişim Kişiniz" class="mega-agent-img" style="object-fit: cover; border: 2px solid var(--sirius-teal);">
+                                        <div>
+                                            <div class="mega-sidebar-title">Size Nasıl Yardımcı Olabiliriz?</div>
+                                            <div style="font-size: 0.8rem; color: var(--text-secondary);">Sirius Global İletişim Kişiniz</div>
+                                        </div>
+                                    </div>
+                                    <div style="font-weight: 700; color: var(--text-primary); margin-bottom: 2px;">Yasemin Acar</div>
+                                    <div style="font-size: 0.8rem; color: var(--brand-orange); margin-bottom: 8px; font-weight: 600;">CEO</div>
+                                    <div class="mega-sidebar-desc" style="display: flex; flex-direction: column; gap: 4px; font-size: 0.88rem; margin-bottom: 8px;">
+                                        <a href="tel:+4917661645770" style="color: var(--text-secondary); text-decoration: none;"><i class="fa-solid fa-phone" style="color: var(--brand-orange); margin-right: 6px;" aria-hidden="true"></i> +49 176 61645770</a>
+                                        <a href="mailto:info@siriusglobal.de" style="color: var(--text-secondary); text-decoration: none;"><i class="fa-solid fa-envelope" style="color: var(--brand-orange); margin-right: 6px;" aria-hidden="true"></i> info@siriusglobal.de</a>
+                                    </div>
+                                    <a href="sirius-talent.html" aria-label="İşverenler İçin Sayfasına Git" style="font-size: 0.88rem; font-weight: 700; color: var(--brand-orange); text-decoration: none;">
+                                        &gt; İşverenler İçin
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- HAKKIMIZDA (Direct Link) -->
+                    <li><a href="hakkimizda.html" class="nav-link">Hakkımızda</a></li>
+
+                    <li><a href="kariyer-firsatlari.html" class="nav-link">Açık İlanlar</a></li>
+
+                    <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
                 </ul>
             </nav>
 
             <div style="display: flex; gap: 12px; align-items: center;">
-                <button class="btn btn-orange" type="button" onclick="openModal('candidate', 'Medicare')" aria-label="Medicare Başvurusu Yap">Medicare Başvurusu</button>
+                <button class="btn btn-orange" type="button" onclick="openModal('candidate')" aria-label="Şimdi Başvur Modalı Aç">
+                    Şimdi Başvur <i class="fa-regular fa-face-smile" aria-hidden="true"></i>
+                </button>
                 <button class="mobile-menu-toggle" id="mobile-toggle" type="button" aria-label="Mobil Menüyü Aç">
                     <i class="fa-solid fa-bars" aria-hidden="true"></i>
                 </button>
@@ -376,6 +521,77 @@ src="https://www.facebook.com/tr?id=1803571027304733&ev=PageView&noscript=1"
             </div>
         </div>
     </footer>
+
+    <!-- BAŞVURU / İLETİŞİM MODALI (index.html ile aynı) -->
+    <div class="modal-overlay" id="contact-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-desc">
+        <div class="modal-container">
+            <button class="modal-close" id="modal-close" type="button" aria-label="Pencereyi Kapat">
+                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            </button>
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal-title">Almanya Kariyer & Başvuru Formu</h3>
+                <p class="modal-desc" id="modal-desc">Formu doldurun, Sirius Global danışmanlarımız 24 saat içinde sizinle iletişime geçsin.</p>
+            </div>
+
+            <form id="sirius-app-form">
+                <div class="form-group">
+                    <label class="form-label" for="form-name">Adınız Soyadınız *</label>
+                    <input type="text" id="form-name" class="form-input" placeholder="Örn: Dr. Ahmet Yılmaz" required>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                    <div class="form-group">
+                        <label class="form-label" for="form-email">E-posta Adresiniz *</label>
+                        <input type="email" id="form-email" class="form-input" placeholder="ahmet@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="form-phone">Telefon Numaranız *</label>
+                        <input type="tel" id="form-phone" class="form-input" placeholder="+90 532 000 0000" required>
+                    </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                    <div class="form-group">
+                        <label class="form-label" for="form-profession">Uzmanlık / Meslek *</label>
+                        <select id="form-profession" class="form-select" required>
+                            <option value="doctor">Hekim / Diş Hekimi</option>
+                            <option value="nurse">Hemşire / Sağlık Çalışanı</option>
+                            <option value="mtr">MTR, ATA, OTA, Ebe, MTLA</option>
+                            <option value="engineer">Mühendis / BT Uzmanı</option>
+                            <option value="employer">İşveren / Kurum Temsilcisi</option>
+                            <option value="other">Diğer</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="form-german">Almanca Seviyeniz</label>
+                        <select id="form-german" class="form-select">
+                            <option value="none">Seviyem Yok (A0)</option>
+                            <option value="a1a2">A1 - A2</option>
+                            <option value="b1b2">B1 - B2</option>
+                            <option value="c1">C1 / FSP Hazır</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="file-cv-upload">Özgeçmiş / CV (İsteğe Bağlı)</label>
+                    <label class="file-upload-box" for="file-cv-upload" style="display: block; cursor: pointer; text-align: center;">
+                        <input type="file" id="file-cv-upload" name="attachment" style="display: none;" accept=".pdf,.doc,.docx">
+                        <i class="fa-solid fa-cloud-arrow-up" style="font-size: 1.8rem; color: var(--brand-orange); margin-bottom: 8px;" aria-hidden="true"></i>
+                        <div style="font-size: 0.9rem; color: var(--text-primary); font-weight: 600;">CV Dosyanızı Buraya Sürükleyin veya Seçin</div>
+                        <div style="font-size: 0.78rem; color: var(--text-secondary);">PDF, DOC, DOCX (Max 10MB)</div>
+                    </label>
+                    <div id="file-name-display" style="font-size: 0.85rem; color: var(--brand-orange); margin-top: 8px; text-align: center;"></div>
+                </div>
+
+                <button type="submit" class="btn btn-orange" style="width: 100%; margin-top: 10px;" aria-label="Formu Gönder">
+                    <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Başvurumu Gönder
+                </button>
+            </form>
+        </div>
+    </div>
 
     <script src="main.js?v=1789163503"></script>
     <script src="chatbot.js?v=1789163503"></script>
