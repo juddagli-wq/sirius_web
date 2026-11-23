@@ -1820,7 +1820,7 @@ h1, h2, h3, h4, h5, h6 {
    ========================================== */
 .marquee-strip {
     overflow: hidden;
-    background: #1391F0;
+    background: #005CA1;
     color: #FFFFFF;
     padding: 16px 0;
     -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 6%, #000 94%, transparent 100%);
