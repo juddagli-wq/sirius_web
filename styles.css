@@ -1874,3 +1874,15 @@ h1, h2, h3, h4, h5, h6 {
     .marquee-group[aria-hidden="true"] { display: none; }
     .marquee-group { flex-wrap: wrap; justify-content: center; row-gap: 8px; }
 }
+
+/* "Şimdi Başvur" butonları – marka koyu tonu #005CA1 (kayan şeritle aynı) */
+.header-nav .navbar-inner > div > .btn-orange,
+#mega-panel-talents .btn-blue {
+    background: #005CA1;
+    box-shadow: 0 8px 20px rgba(0, 92, 161, 0.3);
+}
+.header-nav .navbar-inner > div > .btn-orange:hover,
+#mega-panel-talents .btn-blue:hover {
+    background: #004E89;
+    box-shadow: 0 14px 32px rgba(0, 92, 161, 0.4);
+}
