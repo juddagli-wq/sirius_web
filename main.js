@@ -103,7 +103,7 @@ const translations = {
         
         hero_tag_candidate: `<i class="fa-solid fa-certificate" aria-hidden="true"></i> ALMANYA'DA KANITLANMIŞ KARİYER YOLCULUĞU`,
         hero_title_candidate: `Almanya'da Hayalinizdeki Kariyer ve Yaşama Giden <span class="highlight">Uluslararası Köprü</span>`,
-        hero_desc_candidate: `Sirius Global; sağlık çalışanları, doktorlar, hekimler ve uzman nitelikli profesyonelleri Almanya'nın önde gelen sağlık kurumları ve şirketleriyle buluşturuyor. Dil eğitiminden denkliğe, vizeden konaklamaya tüm süreçte sizinleyiz.`,
+        hero_desc_candidate: `Sirius Global; hekimleri, diş hekimlerini, hemşireleri, fizyoterapistleri, ergoterapistleri ve diğer sağlık profesyonellerini Almanya’nın önde gelen sağlık kurumlarıyla buluşturuyor. Mesleğe yeni başlamak isteyenler için 1,5 yıllık Pflegeassistent ve 3 yıllık Pflegefachkraft Ausbildung programlarına da yerleştirme yapıyoruz. Dil eğitiminden denkliğe, vizeden konaklamaya kadar tüm süreçte yanınızdayız.`,
         
         hero_tag_employer: `<i class="fa-solid fa-building-hospital" aria-hidden="true"></i> SAĞLIK VE İŞ PİYASASI İÇİN YETENEK ÇÖZÜMLERİ`,
         hero_title_employer: `Kurumunuz İçin Nitelikli Uluslararası İnsan Kaynağı <span class="highlight">Ve Etik İşe Alım</span>`,
@@ -123,7 +123,7 @@ const translations = {
         
         section_reels_tag: `<i class="fa-brands fa-instagram" aria-hidden="true"></i> INSTAGRAM CANLI VİDEOLAR & HİKAYELER`,
         section_reels_title: `Almanya Yolculuğu <span>Canlı Deneyimler</span>`,
-        section_reels_subtitle: `Doktor, hemşire ve uzmanlarımızın Almanya'daki ilk günleri, klinik deneyimleri ve dil başarıları. @sirius_global Instagram kanalımızdan en sevilen reels videoları.`,
+        section_reels_subtitle: `Almanya’da yeni bir kariyere adım atan adaylarımızın başarı hikâyeleri, ilk günleri ve iş yerindeki deneyimleri. @sirius_global Instagram kanalımızdan en sevilen reels videoları.`,
         
         stat_candidates: "Danışmanlık Verilen Aday",
         stat_placed: "Almanya'da Yerleşen Uzman",
